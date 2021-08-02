@@ -49,7 +49,6 @@ namespace PrototipoLaboratorio
             funGestorventas(new Ventanas.wpfGestorusuario());
         }
 
-
         private void funGestorventas(UserControl control)
         {
             this.pnlVentanas.Children.Clear();

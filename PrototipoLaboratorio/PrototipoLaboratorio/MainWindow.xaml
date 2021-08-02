@@ -101,7 +101,7 @@
 						</Image.OpacityMask>
 					</Image>
 				</MenuItem.Icon>
-				<MenuItem Header="MenuItem"/>
+				<MenuItem x:Name="btnGestionar" Header="Gestionar" ItemsSource="{Binding ClickEvent, ElementName=btnGestionar}" Click="btnGestionaraseguradora_Click"/>
 				<MenuItem Header="MenuItem"/>
 			</MenuItem>
 			<MenuItem x:Name="btnUsuarios" Header="   Usuarios" Width="96" Background="#FFE3E3E3" Click="btnUsuarios_Click" FontFamily="Century Gothic" ItemsSource="{Binding ClickEvent, ElementName=btnGestionusuario}">
@@ -161,7 +161,11 @@
 			</MenuItem>
 
 		</Menu>
-		<Grid x:Name="pnlVentanas" Grid.ColumnSpan="2" Margin="0,50,0,0"/>
+		<Grid x:Name="pnlVentanas" Grid.ColumnSpan="2" Margin="0,50,0,0">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition/>
+			</Grid.ColumnDefinitions>
+		</Grid>
 		<Rectangle HorizontalAlignment="Left" Height="76" Margin="1106,33,0,0" VerticalAlignment="Top" Width="180" RadiusX="19" RadiusY="19" Opacity="0.31" Fill="#FFC6D7DF" Grid.Column="1">
 			<Rectangle.Stroke>
 				<SolidColorBrush Color="#FF015478" Opacity="0.31"/>
