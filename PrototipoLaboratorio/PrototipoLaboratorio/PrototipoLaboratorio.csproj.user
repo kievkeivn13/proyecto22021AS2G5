@@ -7,24 +7,12 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Ventanas\wfpDescuentosaseguradoras.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="Ventanas\wpfAseguradoras.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Update="Ventanas\wpfGestorusuario.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="MainWindow.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Ventanas\wfpDescuentosaseguradoras.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Ventanas\wpfAseguradoras.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Ventanas\wpfGestorusuario.xaml">

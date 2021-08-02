@@ -49,10 +49,6 @@ namespace PrototipoLaboratorio
             funGestorventas(new Ventanas.wpfGestorusuario());
         }
 
-        private void btnGestionaraseguradora_Click(object sender, RoutedEventArgs e){
-            funGestorventas(new Ventanas.wpfAseguradoras());
-        }
-
         private void funGestorventas(UserControl control)
         {
             this.pnlVentanas.Children.Clear();
