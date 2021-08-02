@@ -11,7 +11,7 @@
 			<Grid.Background>
 				<ImageBrush ImageSource="/Ventanas/fondo_2.jpg"/>
 			</Grid.Background>
-			<Button x:Name="btnModificar"  HorizontalAlignment="Left" Margin="585,574,0,0" VerticalAlignment="Top" Height="70" Width="126" RenderTransformOrigin="0.5,0.5" Background="#FFF0F4F4" FontFamily="Century Gothic" FontSize="14">
+			<Button x:Name="btnModificar"  HorizontalAlignment="Left" Margin="585,574,0,0" VerticalAlignment="Top" Height="70" Width="126" RenderTransformOrigin="0.5,0.5" Background="#FFF0F4F4" FontFamily="Century Gothic" FontSize="14" Click="btnModificar_Click">
 				<Button.BorderBrush>
 					<SolidColorBrush Color="#FF2FB0C8" Opacity="0.2"/>
 				</Button.BorderBrush>

@@ -10,28 +10,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using PrototipoLaboratorio;
 
 namespace PrototipoLaboratorio.Ventanas
 {
     /// <summary>
-    /// Lógica de interacción para wpfGestorusuario.xaml
+    /// Lógica de interacción para wpfRequerimientosClinica.xaml
     /// </summary>
-    public partial class wpfGestorusuario : UserControl
+    public partial class wpfRequerimientosClinica : UserControl
     {
-        public wpfGestorusuario()
+        public wpfRequerimientosClinica()
         {
             InitializeComponent();
-        }
-
-        private void btnSalir_Click(object sender, RoutedEventArgs e)
-        {
-            
-        }
-
-        private void btnModificar_Click(object sender, RoutedEventArgs e)
-        {
-           
         }
     }
 }
