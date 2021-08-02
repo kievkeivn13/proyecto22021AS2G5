@@ -14,13 +14,12 @@ namespace PrototipoLaboratorio
             string usuario = "root";
             string password = "Sebas1234";
 
-            string cadenaConexion = "Database=" + bd + "; Data Source=" +
-                servidor + "; User Id=" + usuario + "; Password=" + password;
+            string cadenaConexion = "server=" + servidor + ";database=" + bd + ";Uid=" + usuario + ";pwd=" + password;
 
             try
             {
                 MySqlConnection conexionBD = new MySqlConnection(cadenaConexion);
-
+                
                 return conexionBD;
             }
             catch (MySqlException ex)
