@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "6pGWr4CucfG8rzmwRLEQ0H0ud5DmBiYVpGDU7Twuby66H9DnWZeiztMwPzSqqphqgTP6ejm1hkrZeZigtFQXXw==",
+  "dgSpecHash": "mJjcaaneZNblGyafbs20UaxlQkCV+jEQXg+zOgJU95nunzF51YdrG4rRLynVfpV1RzDTTGIacb4RLTpN6JUIPg==",
   "success": true,
   "projectFilePath": "D:\\UMG\\Año4\\Semestre 2\\Analisis De Sistemas 2\\ProyectoLaboratorio\\proyecto22021AS2G5\\PrototipoLaboratorio\\PrototipoLaboratorio\\PrototipoLaboratorio.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\SEBAS\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "C:\\Users\\SEBAS\\.nuget\\packages\\system.data.odbc\\5.0.0\\system.data.odbc.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -1,6 +1,7 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
+using System.Data.Odbc;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -19,6 +20,7 @@ namespace PrototipoLaboratorio.Ventanas
     /// </summary>
     public partial class wpfEmpleados : UserControl
     {
+        Conexion cn = new Conexion();
         public wpfEmpleados()
         {
             InitializeComponent();
@@ -26,54 +28,33 @@ namespace PrototipoLaboratorio.Ventanas
 
         private void btnInsertar_Click(object sender, RoutedEventArgs e)
         {
-            String strIdEmpleado = txtIdEmpleado.Text;
-            String strCui = txtCui.Text;
-            String strNit = txtNit.Text;
-            String strNombre= txtNombre.Text;
-            String strApellido = txtApellido.Text;
-            String strGenero = txtGenero.Text;
-            int intEdad = int.Parse(txtEdad.Text);
-            String strTelefono = txtTelefono.Text;
-            String strDireccion = txtDireccion.Text;
-            String strEmail = txtEmail.Text;
-            String strStatus = txtStatus.Text;
-            String strIdPuesto = txtIdPuesto.Text;
-            String strColegiado = txtColegiado.Text;
+            /*
+             (id_empleado, cui_empleado, nit_empleado, nombre_empleado, apellido_empleado," +
+                " genero_empleado, edad_empleado, telefono_empleado, direccion_empleado, email_empleado," +
+                " status_empleado, id_puesto, colegiado_empleado) 
+             */
+            
+            string cadena = "INSERT INTO" +
+                " empleado (id_empleado, cui_empleado, nit_empleado, nombre_empleado, apellido_empleado," +
+                " genero_empleado, edad_empleado, telefono_empleado, direccion_empleado, email_empleado," +
+                " status_empleado, id_puesto, colegiado_empleado) VALUES (" +
+                "'" + txtIdEmpleado.Text + "', '"
+                 + txtCui.Text + "', '"
+                 + txtNit.Text + ", '"
+                 + txtNombre.Text + "', '"
+                 + txtApellido.Text + "', '"
+                 + txtGenero.Text + "', "
+                 + int.Parse(txtEdad.Text) + " , '"
+                 + txtTelefono.Text + "', '"
+                 + txtDireccion.Text + "', '"
+                 + txtEmail.Text + "', '"
+                 + txtStatus.Text + "', '"
+                 + txtIdPuesto.Text + "', '"
+                 + txtColegiado.Text + "' ); ";
 
-            string sql = "INSERT INTO empleado VALUES (" +
-                +'"' + strIdEmpleado +
-                "' , '" + strCui +
-                "' , '" + strNit +
-                "' , '" + strNombre +
-                "' , '" + strApellido +
-                "' , '" + strGenero +
-                "' , '" + intEdad +
-                "' , '" + strTelefono +
-                "' , '" + strDireccion +
-                "' , '" + strEmail +
-                "' , '" + strStatus +
-                "' , '" + strIdPuesto +
-                "' , '" + strColegiado 
-                + ");";
+            OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
+            consulta.ExecuteNonQuery();
 
-            MySqlConnection conexionBD = Conexion.conexion();
-            conexionBD.Open();
-
-            try
-            {
-                MySqlCommand comando = new MySqlCommand(sql, conexionBD);
-                comando.ExecuteNonQuery();
-                MessageBox.Show("Registro guardado con éxito!");
-            }
-            catch (MySqlException ex)
-            {
-                MessageBox.Show("Error al guardar: " + ex.Message);
-            }
-
-            finally
-            {
-                conexionBD.Close();
-            }
         }
     }
 }

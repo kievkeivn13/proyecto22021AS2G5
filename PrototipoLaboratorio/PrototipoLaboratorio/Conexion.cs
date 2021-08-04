@@ -1,31 +1,37 @@
-﻿using MySql.Data.MySqlClient;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using System.Data.Odbc;
 using System.Text;
 
 namespace PrototipoLaboratorio
 {
     class Conexion
     {
-        public static MySqlConnection conexion()
+        public OdbcConnection conexion()
         {
-            string servidor = "localhost";
-            string bd = "clinica";
-            string usuario = "root";
-            string password = "Sebas1234";
-
-            string cadenaConexion = "server=" + servidor + ";database=" + bd + ";Uid=" + usuario + ";pwd=" + password;
-
+            //creacion de la conexion via ODBC
+            OdbcConnection conn = new OdbcConnection("Dsn=ConexionLaboratorio1");
             try
             {
-                MySqlConnection conexionBD = new MySqlConnection(cadenaConexion);
-                
-                return conexionBD;
+                conn.Open();
+                Console.WriteLine("Conectó");
             }
-            catch (MySqlException ex)
+            catch (OdbcException)
             {
-                Console.WriteLine("Error:" + ex.Message);
-                return null;
+                Console.WriteLine("No Conectó");
+            }
+            return conn;
+        }
+        //metodo para cerrar la conexion
+        public void desconexion(OdbcConnection conn)
+        {
+            try
+            {
+                conn.Close();
+            }
+            catch (OdbcException)
+            {
+                Console.WriteLine("No Conectó");
             }
         }
     }
