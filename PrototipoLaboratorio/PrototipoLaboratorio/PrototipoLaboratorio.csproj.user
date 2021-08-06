@@ -15,6 +15,12 @@
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Ventanas\wpfClientes.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Ventanas\wpfPuestos.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Ventanas\wpfGestorusuario.xaml">
       <SubType>Designer</SubType>
     </Page>

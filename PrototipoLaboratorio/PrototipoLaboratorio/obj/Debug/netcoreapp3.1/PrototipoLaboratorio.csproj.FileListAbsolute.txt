@@ -70,3 +70,15 @@ C:\Users\kievk\OneDrive\Desktop\PrototipoLaboratorio\PrototipoLaboratorio\Protot
 C:\Users\kievk\OneDrive\Desktop\PrototipoLaboratorio\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio.csproj.CoreCompileInputs.cache
 C:\Users\kievk\OneDrive\Desktop\PrototipoLaboratorio\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio.csproj.CopyComplete
 C:\Users\kievk\OneDrive\Desktop\PrototipoLaboratorio\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio.genruntimeconfig.cache
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\pruebas\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio.csprojAssemblyReference.cache
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\pruebas\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\pruebas\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\wfpDescuentosaseguradoras.g.cs
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\pruebas\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\wpfAseguradoras.g.cs
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\pruebas\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\wpfClientes.g.cs
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\pruebas\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\wpfGestorusuario.g.cs
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\pruebas\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\wpfPuestos.g.cs
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\pruebas\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\pruebas\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio_MarkupCompile.cache
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\pruebas\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio_MarkupCompile.lref
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\pruebas\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio.dll
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\pruebas\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio.pdb

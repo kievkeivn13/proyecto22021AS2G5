@@ -62,4 +62,10 @@
     <Resource Include="Ventanas\search_80px.png" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Page Update="Ventanas\wpfClientes.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+
 </Project>
