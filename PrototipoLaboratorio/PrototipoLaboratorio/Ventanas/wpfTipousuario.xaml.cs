@@ -32,7 +32,7 @@ namespace PrototipoLaboratorio.Ventanas
         {
             try
             {
-                string cadena = "update CLINICA.TIPO_USUARIO set id_tipo_usuario ='" + this.txtIdtipousuario.Text
+                string cadena = "update CLINICA1.TIPO_USUARIO set id_tipo_usuario ='" + this.txtIdtipousuario.Text
                     + "',nombre_tipo_usuario ='" + this.txtNombretipousuario.Text
 
                     + "'where id_tipo_usuario='" + this.txtIdtipousuario.Text + "';";
@@ -62,7 +62,7 @@ namespace PrototipoLaboratorio.Ventanas
 
                 try
                 {
-                    string Query = "select * from CLINICA.TIPO_USUARIO where id_tipo_usuario='" + this.txtBuscar.Text + "';";
+                    string Query = "select * from CLINICA1.TIPO_USUARIO where id_tipo_usuario='" + this.txtBuscar.Text + "';";
 
                     OdbcCommand consulta = new OdbcCommand(Query, cn.conexion());
                     consulta.ExecuteNonQuery();
@@ -103,7 +103,7 @@ namespace PrototipoLaboratorio.Ventanas
             try
             {
                 string cadena = "INSERT INTO" +
-                    " TIPO_USUARIO (id_tipo_usuario, nombre_tipo_usuario) VALUES (" +
+                    " CLINICA1.TIPO_USUARIO (id_tipo_usuario, nombre_tipo_usuario) VALUES (" +
                     "'" + txtIdtipousuario.Text + "', '"
                      + txtNombretipousuario.Text + "' ); ";
 

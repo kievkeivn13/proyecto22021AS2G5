@@ -30,7 +30,7 @@ namespace PrototipoLaboratorio.Ventanas
 
         void cargarCbo()
         {            
-            string cadena = "SELECT nombre_tipo_usuario FROM CLINICA.TIPO_USUARIO";
+            string cadena = "SELECT nombre_tipo_usuario FROM CLINICA1.TIPO_USUARIO";
 
             OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
             consulta.ExecuteNonQuery();
@@ -52,7 +52,7 @@ namespace PrototipoLaboratorio.Ventanas
             try
             {
                 string cadena = "INSERT INTO " +
-                    " CLINICA.USUARIOS (id_usuario, id_tipo_usuario, nombre_usuario," +
+                    " CLINICA1.USUARIOS (id_usuario, id_tipo_usuario, nombre_usuario," +
                     " passwd_usuario, estado_usuario) VALUES (" +
                     "'" + txtIdusuario.Text + "', '"
                      + txtIdtipousuario.Text + "', '"
@@ -83,7 +83,7 @@ namespace PrototipoLaboratorio.Ventanas
         {
             try
             {
-                string cadena = "update CLINICA.USUARIOS set id_usuario ='" + this.txtIdusuario.Text
+                string cadena = "update CLINICA1.USUARIOS set id_usuario ='" + this.txtIdusuario.Text
                     + "',id_tipo_usuario ='" + this.txtIdtipousuario.Text
                     + "',nombre_usuario ='" + this.txtNombreusuario.Text
                     + "',passwd_usuario ='" + this.txtContraseñausuario.Password
@@ -134,7 +134,7 @@ namespace PrototipoLaboratorio.Ventanas
             try
             {
 
-                string cadena = "delete from CLINICA.USUARIOS where id_usuario='" + this.txtIdusuario.Text + "';";
+                string cadena = "delete from CLINICA1.USUARIOS where id_usuario='" + this.txtIdusuario.Text + "';";
 
 
                 OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
@@ -170,7 +170,7 @@ namespace PrototipoLaboratorio.Ventanas
             {
                 try
                 {
-                    string Query = "select * from CLINICA.USUARIOS where id_usuario='" + this.txtBuscar.Text + "';";
+                    string Query = "select * from CLINICA1.USUARIOS where id_usuario='" + this.txtBuscar.Text + "';";
 
                     OdbcCommand consulta = new OdbcCommand(Query, cn.conexion());
                     consulta.ExecuteNonQuery();
@@ -192,7 +192,7 @@ namespace PrototipoLaboratorio.Ventanas
                     }
                     try
                     {
-                        string Query2 = "select * from CLINICA.TIPO_USUARIO where id_tipo_usuario='" + this.txtIdtipousuario.Text.Trim() + "';";
+                        string Query2 = "select * from CLINICA1.TIPO_USUARIO where id_tipo_usuario='" + this.txtIdtipousuario.Text.Trim() + "';";
 
                         OdbcCommand consulta2 = new OdbcCommand(Query2, cn.conexion());
                         consulta2.ExecuteNonQuery();
@@ -234,7 +234,7 @@ namespace PrototipoLaboratorio.Ventanas
         {
             try
             {
-                string cadena = "SELECT id_tipo_usuario FROM CLINICA.TIPO_USUARIO where nombre_tipo_usuario='" + this.cboTipousuario.SelectedItem.ToString() + "';";
+                string cadena = "SELECT id_tipo_usuario FROM CLINICA1.TIPO_USUARIO where nombre_tipo_usuario='" + this.cboTipousuario.SelectedItem.ToString() + "';";
 
                 OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
                 consulta.ExecuteNonQuery();

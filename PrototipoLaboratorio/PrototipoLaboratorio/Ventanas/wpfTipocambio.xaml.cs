@@ -29,7 +29,7 @@ namespace PrototipoLaboratorio.Ventanas
         {
             try
             {
-                string cadena = "update CLINICA.MONEDA set id_moneda ='" + this.txtIdmoneda.Text
+                string cadena = "update CLINICA1.MONEDA set id_moneda ='" + this.txtIdmoneda.Text
                     + "',nombre_moneda ='" + this.txtNombremoneda.Text
                     + "',tipo_cambio ='" + this.txtTipocambio.Text
                     + "',status_moneda ='" + this.txtEstadomoneda.Text
@@ -63,7 +63,7 @@ namespace PrototipoLaboratorio.Ventanas
             try
             {
                 string cadena = "INSERT INTO" +
-                    " CLINICA.MONEDA (id_moneda, nombre_moneda, tipo_cambio, status_moneda) VALUES (" +
+                    " CLINICA1.MONEDA (id_moneda, nombre_moneda, tipo_cambio, status_moneda) VALUES (" +
                     "'" + txtIdmoneda.Text + "', '"
                         + txtNombremoneda.Text + "', '"
                         + txtTipocambio.Text + "', '"
@@ -104,7 +104,7 @@ namespace PrototipoLaboratorio.Ventanas
             try
             {
 
-                string cadena = "delete from CLINICA.MONEDA where id_moneda='" + this.txtIdmoneda.Text + "';";
+                string cadena = "delete from CLINICA1.MONEDA where id_moneda='" + this.txtIdmoneda.Text + "';";
 
 
                 OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
@@ -137,7 +137,7 @@ namespace PrototipoLaboratorio.Ventanas
         {
             try
             {
-                string Query = "select * from CLINICA.MONEDA where id_moneda='" + this.txtBuscar.Text + "';";
+                string Query = "select * from CLINICA1.MONEDA where id_moneda='" + this.txtBuscar.Text + "';";
 
                 OdbcCommand consulta = new OdbcCommand(Query, cn.conexion());
                 consulta.ExecuteNonQuery();
