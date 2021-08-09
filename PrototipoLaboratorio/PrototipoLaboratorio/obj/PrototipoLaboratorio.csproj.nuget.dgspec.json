@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ranbr\\Documents\\SISTEMAS\\ANALISIS DE SISTEMAS II\\pruebas\\PrototipoLaboratorio\\PrototipoLaboratorio\\PrototipoLaboratorio.csproj": {}
+    "C:\\Users\\ranbr\\Documents\\SISTEMAS\\ANALISIS DE SISTEMAS II\\ProyectoLaboratorio (1)\\ProyectoLaboratorio\\proyecto22021AS2G5\\PrototipoLaboratorio\\PrototipoLaboratorio\\PrototipoLaboratorio.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ranbr\\Documents\\SISTEMAS\\ANALISIS DE SISTEMAS II\\pruebas\\PrototipoLaboratorio\\PrototipoLaboratorio\\PrototipoLaboratorio.csproj": {
+    "C:\\Users\\ranbr\\Documents\\SISTEMAS\\ANALISIS DE SISTEMAS II\\ProyectoLaboratorio (1)\\ProyectoLaboratorio\\proyecto22021AS2G5\\PrototipoLaboratorio\\PrototipoLaboratorio\\PrototipoLaboratorio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ranbr\\Documents\\SISTEMAS\\ANALISIS DE SISTEMAS II\\pruebas\\PrototipoLaboratorio\\PrototipoLaboratorio\\PrototipoLaboratorio.csproj",
+        "projectUniqueName": "C:\\Users\\ranbr\\Documents\\SISTEMAS\\ANALISIS DE SISTEMAS II\\ProyectoLaboratorio (1)\\ProyectoLaboratorio\\proyecto22021AS2G5\\PrototipoLaboratorio\\PrototipoLaboratorio\\PrototipoLaboratorio.csproj",
         "projectName": "PrototipoLaboratorio",
-        "projectPath": "C:\\Users\\ranbr\\Documents\\SISTEMAS\\ANALISIS DE SISTEMAS II\\pruebas\\PrototipoLaboratorio\\PrototipoLaboratorio\\PrototipoLaboratorio.csproj",
+        "projectPath": "C:\\Users\\ranbr\\Documents\\SISTEMAS\\ANALISIS DE SISTEMAS II\\ProyectoLaboratorio (1)\\ProyectoLaboratorio\\proyecto22021AS2G5\\PrototipoLaboratorio\\PrototipoLaboratorio\\PrototipoLaboratorio.csproj",
         "packagesPath": "C:\\Users\\ranbr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ranbr\\Documents\\SISTEMAS\\ANALISIS DE SISTEMAS II\\pruebas\\PrototipoLaboratorio\\PrototipoLaboratorio\\obj\\",
+        "outputPath": "C:\\Users\\ranbr\\Documents\\SISTEMAS\\ANALISIS DE SISTEMAS II\\ProyectoLaboratorio (1)\\ProyectoLaboratorio\\proyecto22021AS2G5\\PrototipoLaboratorio\\PrototipoLaboratorio\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -41,13 +41,9 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
-            "Castle.Core": {
+            "System.Data.Odbc": {
               "target": "Package",
-              "version": "[4.4.1, )"
-            },
-            "MySqlConnector": {
-              "target": "Package",
-              "version": "[1.3.11, )"
+              "version": "[5.0.0, )"
             }
           },
           "imports": [

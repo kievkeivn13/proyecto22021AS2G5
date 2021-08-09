@@ -1,7 +1,6 @@
-﻿//using Castle.Components.DictionaryAdapter.Xaml;
-using MySqlConnector;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using System.Data.Odbc;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -15,122 +14,132 @@ using System.Windows.Shapes;
 
 namespace PrototipoLaboratorio.Ventanas
 {
-	/// <summary>
-	/// Lógica de interacción para wpfClientes.xaml
-	/// </summary>
-	public partial class wpfClientes : UserControl
-	{
-		/*public static MySqlConnection ObtenerConexion()
-		{
-			MySqlConnection conectar = new MySqlConnection(@"server=127.0.0.1;database=clinica;Uid=root;pwd=6182;");
-			conectar.Open();
-			return conectar;
-
-		}*/
-		public wpfClientes()
-		{
-			InitializeComponent();
-
-		}
- private void btnModificar_Click(object sender, RoutedEventArgs e)
+    /// <summary>
+    /// Lógica de interacción para wpfClientes.xaml
+    /// </summary>
+    public partial class wpfClientes : UserControl
+    {
+        Conexion cn = new Conexion();
+        public wpfClientes()
         {
-           
-                try
-                {
-                    string MyConnection2 = "datasource=localhost;port=3306;username=root;password=6182";
-                    string Query = "update CLINICA.CLIENTE set pk_id_cliente='" + this.txtIdcliente.Text + "',nombre_cliente='" + this.txtNombrecliente.Text + "',apellido_cliente='" + this.txtApellidocliente.Text + "',birthday_cliente='" + this.dpEdadcliente.Text + "',edad_cliente='" + this.txtEdadcliente.Text + "'where pk_id_cliente='" + this.txtIdcliente.Text + "';";
-                    MySqlConnection MyConn2 = new MySqlConnection(MyConnection2);
-                    MySqlCommand MyCommand2 = new MySqlCommand(Query, MyConn2);
-                    MySqlDataReader MyReader2;
-                    MyConn2.Open();
-                    MyReader2 = MyCommand2.ExecuteReader();
+            InitializeComponent();
+        }
 
-                    MessageBox.Show("Modificacion realizada");
-                    while (MyReader2.Read())
-                    {
-                    }
-                    MyConn2.Close();
-                    this.txtIdcliente.Text = "";
-                    this.txtNombrecliente.Text = "";
-                    this.txtApellidocliente.Text = "";
-                    this.txtEdadcliente.Text = "";
+        private void btnInsertar_Click(object sender, RoutedEventArgs e)
+        {
+            string cadena = "INSERT INTO" +
+                " CLIENTES (pk_id_cliente,nombre_cliente,apellido_cliente,birthday_cliente,edad_cliente) VALUES (" + "'" + txtIdCliente.Text + "', '"+ txtNombreCliente.Text + txtApellidoCliente.Text + dpFecha.Text + txtEdadCliente.Text + "' ); ";
+
+            OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
+            consulta.ExecuteNonQuery();
+            MessageBox.Show("Inserción realizada");
+
+
+            txtIdCliente.Text = "";
+            txtNombreCliente.Text = "";
+            txtApellidoCliente.Text = "";
+            dpFecha.Text = "";
+            txtEdadCliente.Text = "";
+        }
+
+        private void btnModificar_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                //string MyConnection2 = "datasource=localhost;port=3306;username=root;password=6182";
+                string cadena = "update CLINICA.CLIENTES pk_id_cliente='" + this.txtIdCliente.Text + "',nombre_cliente='" + this.txtNombreCliente.Text + "',apellido_cliente='" + this.txtApellidoCliente.Text + "',birthday_cliente='" + this.dpFecha.Text + "',edad_cliente='" + 
+                    this.txtEdadCliente.Text + "'where pk_id_cliente='" + this.txtIdCliente.Text + "';";
+
+
+                OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
+                consulta.ExecuteNonQuery();
+
+                MessageBox.Show("Modificacion realizada");
 
             }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-            
-        }
-		public void btnIngresaraseguradora_Click(object sender, RoutedEventArgs e)
-		{
-          
-                try
-                {
-                    string MyConnection2 = "datasource=localhost;port=3306;username=root;password=6182";
-                    
-                    string Query = "insert into CLINICA.CLIENTE(pk_id_cliente,nombre_cliente,apellido_cliente,birthday_cliente,edad_cliente) values('" + this.txtIdcliente.Text + "','" + this.txtNombrecliente.Text + this.txtApellidocliente.Text + this.dpEdadcliente.Text + this.txtEdadcliente.Text + "');";
-                    MySqlConnection MyConn2 = new MySqlConnection(MyConnection2);
-                    MySqlCommand MyCommand2 = new MySqlCommand(Query, MyConn2);
-                    MySqlDataReader MyReader2;
-                    MyConn2.Open();
-                    MyReader2 = MyCommand2.ExecuteReader();
-                    this.txtIdcliente.Text = "";
-                    this.txtNombrecliente.Text = "";
-                    this.txtApellidocliente.Text = "";
-                    this.dpEdadcliente.Text = "";
-                    this.txtEdadcliente.Text = "";
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
 
+            txtIdCliente.Text = "";
+            txtNombreCliente.Text = "";
+            txtApellidoCliente.Text = "";
+            dpFecha.Text = "";
+            txtEdadCliente.Text = "";
 
-                MessageBox.Show("Datos guardados");
-
-                    while (MyReader2.Read())
-                    {
-
-                    }
-                    MyConn2.Close();
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-            
         }
 
         private void btnLimpiar_Click(object sender, RoutedEventArgs e)
         {
-            this.txtIdcliente.Text = "";
-            this.txtNombrecliente.Text = "";
-            this.txtApellidocliente.Text = "";
-            this.txtEdadcliente.Text = "";
-            this.dpEdadcliente.Text = "";
-            this.txtBuscar.Text = "";           
+            txtIdCliente.Text = "";
+            txtNombreCliente.Text = "";
+            txtApellidoCliente.Text = "";
+            dpFecha.Text = "";
+            txtEdadCliente.Text = "";
+        }
+
+        private void btnBuscar_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                
+                string Query = "select * from CLINICA.CLIENTES where pk_id_cliente='" + this.txtBuscar.Text + "';";
+
+
+                OdbcCommand consulta = new OdbcCommand(Query, cn.conexion());
+                consulta.ExecuteNonQuery();
+
+                OdbcDataReader busqueda;
+                busqueda = consulta.ExecuteReader();
+
+                if (busqueda.Read())
+                {
+                    txtIdCliente.Text = busqueda["pk_id_cliente"].ToString();
+                    txtNombreCliente.Text = busqueda["nombre_cliente"].ToString();
+                    txtApellidoCliente.Text = busqueda["apellido_cliente"].ToString();
+                    dpFecha.Text = busqueda["birthday_cliente"].ToString();
+                    txtEdadCliente.Text = busqueda["edad_cliente"].ToString();
+
+                }
+                else
+                {
+                    MessageBox.Show("Registro no encontrado");
+                }
+                //MyConn2.Close();
+                this.txtBuscar.Text = "";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void btnEliminar_Click(object sender, RoutedEventArgs e)
         {
-            try
-            {
-                string MyConnection2 = "datasource=localhost;port=3306;username=root;password=6182";
-                string Query = "delete from CLINICA.CLIENTE where pk_id_cliente='" + this.txtIdcliente.Text + "';";
-                MySqlConnection MyConn2 = new MySqlConnection(MyConnection2);
-                MySqlCommand MyCommand2 = new MySqlCommand(Query, MyConn2);
-                MySqlDataReader MyReader2;
-                MyConn2.Open();
-                MyReader2 = MyCommand2.ExecuteReader();
-                MessageBox.Show("Datos Eliminados");
-                while (MyReader2.Read())
-                {
-                }
-                MyConn2.Close();
-                this.txtIdcliente.Text = "";
-                this.txtNombrecliente.Text = "";
-                this.txtApellidocliente.Text = "";
-                this.dpEdadcliente.Text = "";
-                this.txtEdadcliente.Text = "";
 
-                this.txtBuscar.Text = "";
+            try { 
+            string cadena = "delete from CLINICA.CLIENTES where pk_id_cliente='" + this.txtIdCliente.Text + "';";
+
+                OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
+            consulta.ExecuteNonQuery();
+
+            OdbcDataReader busqueda;
+            busqueda = consulta.ExecuteReader();
+
+            MessageBox.Show("Datos Eliminados");
+            while (busqueda.Read())
+            {
             }
+                //MyConn2.Close();
+
+                txtIdCliente.Text = "";
+                txtNombreCliente.Text = "";
+                txtApellidoCliente.Text = "";
+                dpFecha.Text = "";
+                txtEdadCliente.Text = "";
+
+            }   
 
             catch (Exception ex)
             {
@@ -138,49 +147,16 @@ namespace PrototipoLaboratorio.Ventanas
             }
         }
 
-        private void btnBuscar_Click(object sender, RoutedEventArgs e)
+        private void seleccionar(object sender, DependencyPropertyChangedEventArgs e)
         {
-            
-                try
-                {
-                    string MyConnection2 = "datasource=localhost;port=3306;username=root;password=6182";
-                    string Query = "select * from CLINICA.CLIENTE where pk_id_cliente='" + this.txtBuscar.Text + "';";
-                    MySqlConnection MyConn2 = new MySqlConnection(MyConnection2);
-                    MySqlCommand MyCommand2 = new MySqlCommand(Query, MyConn2);
-                    MySqlDataReader MyReader2;
-                    MyConn2.Open();
-                    MyReader2 = MyCommand2.ExecuteReader();
-
-                    if (MyReader2.Read())
-                    {
-                        txtIdcliente.Text = MyReader2["pk_id_cliente"].ToString();
-                        txtNombrecliente.Text = MyReader2["nombre_cliente"].ToString();
-                        txtApellidocliente.Text = MyReader2["apellido_cliente"].ToString();
-                        dpEdadcliente.Text = MyReader2["birthday_cliente"].ToString();
-                        txtEdadcliente.Text = MyReader2["edad_cliente"].ToString();
-
-                }
-                    else
-                    {
-                        MessageBox.Show("Registro no encontrado");
-                    }
-                    MyConn2.Close();
-                    this.txtBuscar.Text = "";
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-            
+           
         }
-
-      
 
         private void btnCalcular_Click(object sender, RoutedEventArgs e)
         {
-            DateTime fecha = dpEdadcliente.SelectedDate.Value;
+            DateTime fecha = dpFecha.SelectedDate.Value;
             int edad = DateTime.Today.AddTicks(-fecha.Ticks).Year - 1;
-            this.txtEdadcliente.Text = edad.ToString();
+            this.txtEdadCliente.Text = edad.ToString();
         }
     }
 }

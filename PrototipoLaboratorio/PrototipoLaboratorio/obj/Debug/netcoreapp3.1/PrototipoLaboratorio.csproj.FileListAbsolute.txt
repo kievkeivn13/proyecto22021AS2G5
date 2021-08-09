@@ -19,66 +19,82 @@ C:\DevSoft\cygwin64\home\kievk\Projects\PrototipoLaboratorio\PrototipoLaboratori
 C:\DevSoft\cygwin64\home\kievk\Projects\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\MainWindow.baml
 C:\DevSoft\cygwin64\home\kievk\Projects\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\wpfGestorusuario.g.cs
 C:\DevSoft\cygwin64\home\kievk\Projects\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\wpfGestorusuario.baml
-C:\Users\sucel\Desktop\PrototipoLaboratorio\PrototipoLaboratorio\PrototipoLaboratorio\bin\Debug\netcoreapp3.1\PrototipoLaboratorio.exe
-C:\Users\sucel\Desktop\PrototipoLaboratorio\PrototipoLaboratorio\PrototipoLaboratorio\bin\Debug\netcoreapp3.1\PrototipoLaboratorio.deps.json
-C:\Users\sucel\Desktop\PrototipoLaboratorio\PrototipoLaboratorio\PrototipoLaboratorio\bin\Debug\netcoreapp3.1\PrototipoLaboratorio.runtimeconfig.json
-C:\Users\sucel\Desktop\PrototipoLaboratorio\PrototipoLaboratorio\PrototipoLaboratorio\bin\Debug\netcoreapp3.1\PrototipoLaboratorio.runtimeconfig.dev.json
-C:\Users\sucel\Desktop\PrototipoLaboratorio\PrototipoLaboratorio\PrototipoLaboratorio\bin\Debug\netcoreapp3.1\PrototipoLaboratorio.dll
-C:\Users\sucel\Desktop\PrototipoLaboratorio\PrototipoLaboratorio\PrototipoLaboratorio\bin\Debug\netcoreapp3.1\PrototipoLaboratorio.pdb
-C:\Users\sucel\Desktop\PrototipoLaboratorio\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio.csproj.AssemblyReference.cache
-C:\Users\sucel\Desktop\PrototipoLaboratorio\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\MainWindow.g.cs
-C:\Users\sucel\Desktop\PrototipoLaboratorio\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\wpfGestorusuario.g.cs
-C:\Users\sucel\Desktop\PrototipoLaboratorio\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\App.g.cs
-C:\Users\sucel\Desktop\PrototipoLaboratorio\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio_MarkupCompile.cache
-C:\Users\sucel\Desktop\PrototipoLaboratorio\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio_MarkupCompile.lref
-C:\Users\sucel\Desktop\PrototipoLaboratorio\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\MainWindow.baml
-C:\Users\sucel\Desktop\PrototipoLaboratorio\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\wpfGestorusuario.baml
-C:\Users\sucel\Desktop\PrototipoLaboratorio\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio.g.resources
-C:\Users\sucel\Desktop\PrototipoLaboratorio\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio.AssemblyInfoInputs.cache
-C:\Users\sucel\Desktop\PrototipoLaboratorio\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio.AssemblyInfo.cs
-C:\Users\sucel\Desktop\PrototipoLaboratorio\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio.csproj.CoreCompileInputs.cache
-C:\Users\sucel\Desktop\PrototipoLaboratorio\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio.dll
-C:\Users\sucel\Desktop\PrototipoLaboratorio\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio.pdb
-C:\Users\sucel\Desktop\PrototipoLaboratorio\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio.genruntimeconfig.cache
-C:\Users\sucel\Desktop\PrototipoLaboratorio\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\wpfAseguradoras.g.cs
-C:\Users\sucel\Desktop\PrototipoLaboratorio\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\wpfAseguradoras.baml
-C:\Users\kievk\OneDrive\Desktop\PrototipoLaboratorio\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio.csproj.AssemblyReference.cache
-C:\Users\kievk\OneDrive\Desktop\PrototipoLaboratorio\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\MainWindow.g.cs
-C:\Users\kievk\OneDrive\Desktop\PrototipoLaboratorio\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\wfpDescuentosaseguradoras.g.cs
-C:\Users\kievk\OneDrive\Desktop\PrototipoLaboratorio\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\wpfAseguradoras.g.cs
-C:\Users\kievk\OneDrive\Desktop\PrototipoLaboratorio\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\wpfGestorusuario.g.cs
-C:\Users\kievk\OneDrive\Desktop\PrototipoLaboratorio\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\App.g.cs
-C:\Users\kievk\OneDrive\Desktop\PrototipoLaboratorio\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio_MarkupCompile.cache
-C:\Users\kievk\OneDrive\Desktop\PrototipoLaboratorio\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio_MarkupCompile.lref
-C:\Users\kievk\OneDrive\Desktop\PrototipoLaboratorio\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio.dll
-C:\Users\kievk\OneDrive\Desktop\PrototipoLaboratorio\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio.pdb
-C:\Users\kievk\OneDrive\Desktop\PrototipoLaboratorio\PrototipoLaboratorio\PrototipoLaboratorio\bin\Debug\netcoreapp3.1\PrototipoLaboratorio.exe
-C:\Users\kievk\OneDrive\Desktop\PrototipoLaboratorio\PrototipoLaboratorio\PrototipoLaboratorio\bin\Debug\netcoreapp3.1\PrototipoLaboratorio.deps.json
-C:\Users\kievk\OneDrive\Desktop\PrototipoLaboratorio\PrototipoLaboratorio\PrototipoLaboratorio\bin\Debug\netcoreapp3.1\PrototipoLaboratorio.runtimeconfig.json
-C:\Users\kievk\OneDrive\Desktop\PrototipoLaboratorio\PrototipoLaboratorio\PrototipoLaboratorio\bin\Debug\netcoreapp3.1\PrototipoLaboratorio.runtimeconfig.dev.json
-C:\Users\kievk\OneDrive\Desktop\PrototipoLaboratorio\PrototipoLaboratorio\PrototipoLaboratorio\bin\Debug\netcoreapp3.1\PrototipoLaboratorio.dll
-C:\Users\kievk\OneDrive\Desktop\PrototipoLaboratorio\PrototipoLaboratorio\PrototipoLaboratorio\bin\Debug\netcoreapp3.1\PrototipoLaboratorio.pdb
-C:\Users\kievk\OneDrive\Desktop\PrototipoLaboratorio\PrototipoLaboratorio\PrototipoLaboratorio\bin\Debug\netcoreapp3.1\Castle.Core.dll
-C:\Users\kievk\OneDrive\Desktop\PrototipoLaboratorio\PrototipoLaboratorio\PrototipoLaboratorio\bin\Debug\netcoreapp3.1\MySqlConnector.dll
-C:\Users\kievk\OneDrive\Desktop\PrototipoLaboratorio\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\MainWindow.baml
-C:\Users\kievk\OneDrive\Desktop\PrototipoLaboratorio\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\wfpDescuentosaseguradoras.baml
-C:\Users\kievk\OneDrive\Desktop\PrototipoLaboratorio\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\wpfAseguradoras.baml
-C:\Users\kievk\OneDrive\Desktop\PrototipoLaboratorio\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\wpfGestorusuario.baml
-C:\Users\kievk\OneDrive\Desktop\PrototipoLaboratorio\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio.g.resources
-C:\Users\kievk\OneDrive\Desktop\PrototipoLaboratorio\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio.AssemblyInfoInputs.cache
-C:\Users\kievk\OneDrive\Desktop\PrototipoLaboratorio\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio.AssemblyInfo.cs
-C:\Users\kievk\OneDrive\Desktop\PrototipoLaboratorio\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio.csproj.CoreCompileInputs.cache
-C:\Users\kievk\OneDrive\Desktop\PrototipoLaboratorio\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio.csproj.CopyComplete
-C:\Users\kievk\OneDrive\Desktop\PrototipoLaboratorio\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio.genruntimeconfig.cache
-C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\pruebas\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio.csprojAssemblyReference.cache
-C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\pruebas\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\MainWindow.g.cs
-C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\pruebas\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\wfpDescuentosaseguradoras.g.cs
-C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\pruebas\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\wpfAseguradoras.g.cs
-C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\pruebas\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\wpfClientes.g.cs
-C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\pruebas\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\wpfGestorusuario.g.cs
-C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\pruebas\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\wpfPuestos.g.cs
-C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\pruebas\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\App.g.cs
-C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\pruebas\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio_MarkupCompile.cache
-C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\pruebas\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio_MarkupCompile.lref
-C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\pruebas\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio.dll
-C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\pruebas\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio.pdb
+D:\UMG\Año4\Semestre 2\Analisis De Sistemas 2\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\bin\Debug\netcoreapp3.1\PrototipoLaboratorio.exe
+D:\UMG\Año4\Semestre 2\Analisis De Sistemas 2\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\bin\Debug\netcoreapp3.1\PrototipoLaboratorio.deps.json
+D:\UMG\Año4\Semestre 2\Analisis De Sistemas 2\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\bin\Debug\netcoreapp3.1\PrototipoLaboratorio.runtimeconfig.json
+D:\UMG\Año4\Semestre 2\Analisis De Sistemas 2\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\bin\Debug\netcoreapp3.1\PrototipoLaboratorio.runtimeconfig.dev.json
+D:\UMG\Año4\Semestre 2\Analisis De Sistemas 2\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\bin\Debug\netcoreapp3.1\PrototipoLaboratorio.dll
+D:\UMG\Año4\Semestre 2\Analisis De Sistemas 2\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\bin\Debug\netcoreapp3.1\PrototipoLaboratorio.pdb
+D:\UMG\Año4\Semestre 2\Analisis De Sistemas 2\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio.csprojAssemblyReference.cache
+D:\UMG\Año4\Semestre 2\Analisis De Sistemas 2\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+D:\UMG\Año4\Semestre 2\Analisis De Sistemas 2\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\wpfGestorusuario.g.cs
+D:\UMG\Año4\Semestre 2\Analisis De Sistemas 2\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\App.g.cs
+D:\UMG\Año4\Semestre 2\Analisis De Sistemas 2\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio_MarkupCompile.cache
+D:\UMG\Año4\Semestre 2\Analisis De Sistemas 2\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio_MarkupCompile.lref
+D:\UMG\Año4\Semestre 2\Analisis De Sistemas 2\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\MainWindow.baml
+D:\UMG\Año4\Semestre 2\Analisis De Sistemas 2\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\wpfGestorusuario.baml
+D:\UMG\Año4\Semestre 2\Analisis De Sistemas 2\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio.g.resources
+D:\UMG\Año4\Semestre 2\Analisis De Sistemas 2\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio.AssemblyInfoInputs.cache
+D:\UMG\Año4\Semestre 2\Analisis De Sistemas 2\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio.AssemblyInfo.cs
+D:\UMG\Año4\Semestre 2\Analisis De Sistemas 2\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio.csproj.CoreCompileInputs.cache
+D:\UMG\Año4\Semestre 2\Analisis De Sistemas 2\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio.dll
+D:\UMG\Año4\Semestre 2\Analisis De Sistemas 2\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio.pdb
+D:\UMG\Año4\Semestre 2\Analisis De Sistemas 2\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio.genruntimeconfig.cache
+D:\UMG\Año4\Semestre 2\Analisis De Sistemas 2\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\wpfEmpleados.g.cs
+D:\UMG\Año4\Semestre 2\Analisis De Sistemas 2\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\wpfEmpleados.baml
+D:\UMG\Año4\Semestre 2\Analisis De Sistemas 2\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\wpfRequerimientosClinica.g.cs
+D:\UMG\Año4\Semestre 2\Analisis De Sistemas 2\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\wpfRequerimientosClinica.baml
+D:\UMG\Año4\Semestre 2\Analisis De Sistemas 2\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\bin\Debug\netcoreapp3.1\MySql.Data.dll
+D:\UMG\Año4\Semestre 2\Analisis De Sistemas 2\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\bin\Debug\netcoreapp3.1\Google.Protobuf.dll
+D:\UMG\Año4\Semestre 2\Analisis De Sistemas 2\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\bin\Debug\netcoreapp3.1\Zstandard.Net.dll
+D:\UMG\Año4\Semestre 2\Analisis De Sistemas 2\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.Streams.dll
+D:\UMG\Año4\Semestre 2\Analisis De Sistemas 2\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+D:\UMG\Año4\Semestre 2\Analisis De Sistemas 2\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\bin\Debug\netcoreapp3.1\Ubiety.Dns.Core.dll
+D:\UMG\Año4\Semestre 2\Analisis De Sistemas 2\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.dll
+D:\UMG\Año4\Semestre 2\Analisis De Sistemas 2\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\bin\Debug\netcoreapp3.1\K4os.Hash.xxHash.dll
+D:\UMG\Año4\Semestre 2\Analisis De Sistemas 2\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\bin\Debug\netcoreapp3.1\MySql.Data.xml
+D:\UMG\Año4\Semestre 2\Analisis De Sistemas 2\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio.csproj.CopyComplete
+D:\UMG\Año4\Semestre 2\Analisis De Sistemas 2\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\bin\Debug\netcoreapp3.1\System.Data.Odbc.dll
+D:\UMG\Año4\Semestre 2\Analisis De Sistemas 2\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\bin\Debug\netcoreapp3.1\runtimes\freebsd\lib\netcoreapp2.0\System.Data.Odbc.dll
+D:\UMG\Año4\Semestre 2\Analisis De Sistemas 2\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\bin\Debug\netcoreapp3.1\runtimes\linux\lib\netcoreapp2.0\System.Data.Odbc.dll
+D:\UMG\Año4\Semestre 2\Analisis De Sistemas 2\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\bin\Debug\netcoreapp3.1\runtimes\osx\lib\netcoreapp2.0\System.Data.Odbc.dll
+D:\UMG\Año4\Semestre 2\Analisis De Sistemas 2\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Data.Odbc.dll
+D:\UMG\Año4\Semestre 2\Analisis De Sistemas 2\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\PruebaComboBox.g.cs
+D:\UMG\Año4\Semestre 2\Analisis De Sistemas 2\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\PruebaComboBox.baml
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\ProyectoLaboratorio (1)\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio.csprojAssemblyReference.cache
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\ProyectoLaboratorio (1)\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\ProyectoLaboratorio (1)\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\PruebaComboBox.g.cs
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\ProyectoLaboratorio (1)\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\wpfClientes.g.cs
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\ProyectoLaboratorio (1)\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\wpfEmpleados.g.cs
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\ProyectoLaboratorio (1)\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\wpfGestorusuario.g.cs
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\ProyectoLaboratorio (1)\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\wpfPuestos.g.cs
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\ProyectoLaboratorio (1)\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\wpfRequerimientosClinica.g.cs
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\ProyectoLaboratorio (1)\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\ProyectoLaboratorio (1)\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio_MarkupCompile.cache
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\ProyectoLaboratorio (1)\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio_MarkupCompile.lref
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\ProyectoLaboratorio (1)\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio.dll
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\ProyectoLaboratorio (1)\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio.pdb
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\ProyectoLaboratorio (1)\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\bin\Debug\netcoreapp3.1\PrototipoLaboratorio.exe
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\ProyectoLaboratorio (1)\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\bin\Debug\netcoreapp3.1\PrototipoLaboratorio.deps.json
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\ProyectoLaboratorio (1)\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\bin\Debug\netcoreapp3.1\PrototipoLaboratorio.runtimeconfig.json
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\ProyectoLaboratorio (1)\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\bin\Debug\netcoreapp3.1\PrototipoLaboratorio.runtimeconfig.dev.json
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\ProyectoLaboratorio (1)\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\bin\Debug\netcoreapp3.1\PrototipoLaboratorio.dll
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\ProyectoLaboratorio (1)\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\bin\Debug\netcoreapp3.1\PrototipoLaboratorio.pdb
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\ProyectoLaboratorio (1)\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\bin\Debug\netcoreapp3.1\System.Data.Odbc.dll
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\ProyectoLaboratorio (1)\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\bin\Debug\netcoreapp3.1\runtimes\freebsd\lib\netcoreapp2.0\System.Data.Odbc.dll
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\ProyectoLaboratorio (1)\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\bin\Debug\netcoreapp3.1\runtimes\linux\lib\netcoreapp2.0\System.Data.Odbc.dll
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\ProyectoLaboratorio (1)\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\bin\Debug\netcoreapp3.1\runtimes\osx\lib\netcoreapp2.0\System.Data.Odbc.dll
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\ProyectoLaboratorio (1)\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Data.Odbc.dll
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\ProyectoLaboratorio (1)\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\ProyectoLaboratorio (1)\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\PruebaComboBox.baml
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\ProyectoLaboratorio (1)\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\wpfClientes.baml
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\ProyectoLaboratorio (1)\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\wpfEmpleados.baml
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\ProyectoLaboratorio (1)\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\wpfGestorusuario.baml
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\ProyectoLaboratorio (1)\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\wpfPuestos.baml
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\ProyectoLaboratorio (1)\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\wpfRequerimientosClinica.baml
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\ProyectoLaboratorio (1)\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio.g.resources
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\ProyectoLaboratorio (1)\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio.AssemblyInfoInputs.cache
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\ProyectoLaboratorio (1)\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio.AssemblyInfo.cs
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\ProyectoLaboratorio (1)\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio.csproj.CoreCompileInputs.cache
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\ProyectoLaboratorio (1)\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio.csproj.CopyComplete
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\ProyectoLaboratorio (1)\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio.genruntimeconfig.cache

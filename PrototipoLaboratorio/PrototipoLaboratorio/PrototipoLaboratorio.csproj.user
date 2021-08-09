@@ -7,12 +7,30 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Ventanas\PruebaComboBox.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Ventanas\wpfEmpleados.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Ventanas\wpfGestorusuario.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Ventanas\wpfRequerimientosClinica.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Ventanas\PruebaComboBox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Ventanas\wpfEmpleados.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Ventanas\wpfGestorusuario.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Ventanas\wpfClientes.xaml">
@@ -21,7 +39,7 @@
     <Page Update="Ventanas\wpfPuestos.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Ventanas\wpfGestorusuario.xaml">
+    <Page Update="Ventanas\wpfRequerimientosClinica.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

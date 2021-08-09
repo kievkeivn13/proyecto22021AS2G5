@@ -49,6 +49,22 @@ namespace PrototipoLaboratorio
             funGestorventas(new Ventanas.wpfGestorusuario());
         }
 
+        private void btnEmpleado_Click(object sender, RoutedEventArgs e)
+        {
+            funGestorventas(new Ventanas.wpfEmpleados());
+        }
+
+
+        private void btnRequerimientosC_Click(object sender, RoutedEventArgs e)
+        {
+            funGestorventas(new Ventanas.wpfRequerimientosClinica());
+        }
+
+        private void btnPruebaCBX_Click(object sender, RoutedEventArgs e)
+        {
+            funGestorventas(new Ventanas.PruebaComboBox());
+        }
+
         private void funGestorventas(UserControl control)
         {
             this.pnlVentanas.Children.Clear();

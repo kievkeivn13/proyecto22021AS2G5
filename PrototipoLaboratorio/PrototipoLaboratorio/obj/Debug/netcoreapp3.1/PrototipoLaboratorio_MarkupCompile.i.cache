@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\pruebas\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\ProyectoLaboratorio (1)\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\
 PrototipoLaboratorio
 none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
-C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\pruebas\PrototipoLaboratorio\PrototipoLaboratorio\App.xaml
-61758369921
+C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\ProyectoLaboratorio (1)\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\App.xaml
+71116833018
 
-10-428463588
-201-1688777873
-MainWindow.xaml;Ventanas\wfpDescuentosaseguradoras.xaml;Ventanas\wpfAseguradoras.xaml;Ventanas\wpfClientes.xaml;Ventanas\wpfGestorusuario.xaml;Ventanas\wpfPuestos.xaml;
+12-872571225
+2001693428102
+MainWindow.xaml;Ventanas\PruebaComboBox.xaml;Ventanas\wpfClientes.xaml;Ventanas\wpfEmpleados.xaml;Ventanas\wpfGestorusuario.xaml;Ventanas\wpfPuestos.xaml;Ventanas\wpfRequerimientosClinica.xaml;
 
 True
 

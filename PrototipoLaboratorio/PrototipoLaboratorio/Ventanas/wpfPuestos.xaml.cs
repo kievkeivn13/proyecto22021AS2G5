@@ -1,7 +1,6 @@
-﻿//using Castle.Components.DictionaryAdapter.Xaml;
-using MySqlConnector;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using System.Data.Odbc;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -15,149 +14,122 @@ using System.Windows.Shapes;
 
 namespace PrototipoLaboratorio.Ventanas
 {
-	/// <summary>
-	/// Lógica de interacción para wpfPuestos.xaml
-	/// </summary>
-	public partial class wpfPuestos : UserControl
-	{
-		/*public static MySqlConnection ObtenerConexion()
-		{
-			MySqlConnection conectar = new MySqlConnection(@"server=127.0.0.1;database=clinica;Uid=root;pwd=6182;");
-			conectar.Open();
-			return conectar;
-
-		}*/
-		public wpfPuestos()
-		{
-			InitializeComponent();
-
-		}
- private void btnModificar_Click(object sender, RoutedEventArgs e)
+    /// <summary>
+    /// Lógica de interacción para wpfRequerimientosClinica.xaml
+    /// </summary>
+    public partial class wpfPuestos : UserControl
+    {
+        Conexion cn = new Conexion();
+        public wpfPuestos()
         {
-           
-                try
-                {
-                    string MyConnection2 = "datasource=localhost;port=3306;username=root;password=6182";
-                    string Query = "update CLINICA.PUESTO set pk_id_puesto='" + this.txtIdpuesto.Text + "',puesto_puesto='" + "'where pk_id_puesto='" + this.txtIdpuesto.Text + "';";
-                    MySqlConnection MyConn2 = new MySqlConnection(MyConnection2);
-                    MySqlCommand MyCommand2 = new MySqlCommand(Query, MyConn2);
-                    MySqlDataReader MyReader2;
-                    MyConn2.Open();
-                    MyReader2 = MyCommand2.ExecuteReader();
-
-                    MessageBox.Show("Modificacion realizada");
-                    while (MyReader2.Read())
-                    {
-                    }
-                    MyConn2.Close();
-                    this.txtIdpuesto.Text = "";
-                    this.txtNombrepuesto.Text = "";
-                                        
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-            
+            InitializeComponent();
         }
-		public void btnIngresaraseguradora_Click(object sender, RoutedEventArgs e)
-		{
-          
-                try
-                {
-                    string MyConnection2 = "datasource=localhost;port=3306;username=root;password=6182";
-                    string Query = "insert into CLINICA.PUESTO(pk_id_puesto,puesto_puesto) values('" + this.txtIdpuesto.Text + "','" + this.txtNombrepuesto.Text + "');";
-                    MySqlConnection MyConn2 = new MySqlConnection(MyConnection2);
-                    MySqlCommand MyCommand2 = new MySqlCommand(Query, MyConn2);
-                    MySqlDataReader MyReader2;
-                    MyConn2.Open();
-                    MyReader2 = MyCommand2.ExecuteReader();
-                    this.txtIdpuesto.Text = "";
-                    this.txtNombrepuesto.Text = "";
-                   
-                    
-                    MessageBox.Show("Datos guardados");
 
-                    while (MyReader2.Read())
-                    {
+        private void btnInsertar_Click(object sender, RoutedEventArgs e)
+        {
+            string cadena = "INSERT INTO" +
+                " PUESTOS (pk_id_puesto, puesto_puesto) VALUES (" + "'" + txtIdPuesto.Text + "', '"+ txtNombrePuesto.Text + "' ); ";
 
-                    }
-                    MyConn2.Close();
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-            
+            OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
+            consulta.ExecuteNonQuery();
+            MessageBox.Show("Inserción realizada");
+
+
+            txtIdPuesto.Text = "";
+            txtNombrePuesto.Text = "";
+        }
+
+        private void btnModificar_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                //string MyConnection2 = "datasource=localhost;port=3306;username=root;password=6182";
+                string cadena = "update CLINICA.PUESTOS set pk_id_puesto ='" + this.txtIdPuesto.Text
+                    + "',puesto_puesto ='" + this.txtNombrePuesto.Text + "';";
+
+
+                OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
+                consulta.ExecuteNonQuery();
+
+                MessageBox.Show("Modificacion realizada");
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+            txtIdPuesto.Text = "";
+            txtNombrePuesto.Text = "";
+
         }
 
         private void btnLimpiar_Click(object sender, RoutedEventArgs e)
         {
-            this.txtIdpuesto.Text = "";
-            this.txtNombrepuesto.Text = "";
-            
-            this.txtBuscar.Text = "";           
+            txtIdPuesto.Text = "";
+            txtNombrePuesto.Text = "";
         }
 
-        private void btnEliminar_Click(object sender, RoutedEventArgs e)
+        private void btnBuscar_Click(object sender, RoutedEventArgs e)
         {
             try
             {
-                string MyConnection2 = "datasource=localhost;port=3306;username=root;password=6182";
-                string Query = "delete from CLINICA.PUESTO where pk_id_puesto='" + this.txtIdpuesto.Text + "';";
-                MySqlConnection MyConn2 = new MySqlConnection(MyConnection2);
-                MySqlCommand MyCommand2 = new MySqlCommand(Query, MyConn2);
-                MySqlDataReader MyReader2;
-                MyConn2.Open();
-                MyReader2 = MyCommand2.ExecuteReader();
-                MessageBox.Show("Datos Eliminados");
-                while (MyReader2.Read())
-                {
-                }
-                MyConn2.Close();
-                this.txtIdpuesto.Text = "";
-                this.txtNombrepuesto.Text = "";
                 
+                string Query = "select * from CLINICA.PUESTOS where pk_id_puesto='" + this.txtBuscar.Text + "';";
+                
+
+                OdbcCommand consulta = new OdbcCommand(Query, cn.conexion());
+                consulta.ExecuteNonQuery();
+
+                OdbcDataReader busqueda;
+                busqueda = consulta.ExecuteReader();
+
+                if (busqueda.Read())
+                {
+                    txtIdPuesto.Text = busqueda["id_puesto"].ToString();
+                    txtNombrePuesto.Text = busqueda["puesto_puesto"].ToString();
+                    
+                }
+                else
+                {
+                    MessageBox.Show("Registro no encontrado");
+                }
+                //MyConn2.Close();
                 this.txtBuscar.Text = "";
             }
-
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
         }
 
-        private void btnBuscar_Click(object sender, RoutedEventArgs e)
+        private void btnEliminar_Click(object sender, RoutedEventArgs e)
         {
-            
-                try
-                {
-                    string MyConnection2 = "datasource=localhost;port=3306;username=root;password=6182";
-                    string Query = "select * from CLINICA.PUESTO where pk_id_puesto='" + this.txtBuscar.Text + "';";
-                    MySqlConnection MyConn2 = new MySqlConnection(MyConnection2);
-                    MySqlCommand MyCommand2 = new MySqlCommand(Query, MyConn2);
-                    MySqlDataReader MyReader2;
-                    MyConn2.Open();
-                    MyReader2 = MyCommand2.ExecuteReader();
 
-                    if (MyReader2.Read())
-                    {
-                        txtIdpuesto.Text = MyReader2["pk_id_puesto"].ToString();
-                        txtNombrepuesto.Text = MyReader2["puesto_puesto"].ToString();
-                                               
-                    }
-                    else
-                    {
-                        MessageBox.Show("Registro no encontrado");
-                    }
-                    MyConn2.Close();
-                    this.txtBuscar.Text = "";
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
+            try { 
+            string cadena = "delete from CLINICA.PUESTOS where pk_id_puesto='" + this.txtIdPuesto.Text + "';";
             
+            OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
+            consulta.ExecuteNonQuery();
+
+            OdbcDataReader busqueda;
+            busqueda = consulta.ExecuteReader();
+
+            MessageBox.Show("Datos Eliminados");
+            while (busqueda.Read())
+            {
+            }
+                //MyConn2.Close();
+
+                txtIdPuesto.Text = "";
+                txtNombrePuesto.Text = "";
+
+            }   
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
