@@ -134,7 +134,7 @@
             </TextBox>
             <Label x:Name="lblNombreEmpleado_Copy5" Content="EDAD:" HorizontalAlignment="Left" Margin="890,374,0,0" VerticalAlignment="Top" Height="38" Width="88" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center"/>
             <DatePicker x:Name="dpFecha" HorizontalAlignment="Left" Margin="597,374,0,0" VerticalAlignment="Top" Width="167"/>
-            <Button x:Name="btnCalcular"  HorizontalAlignment="Left" Margin="791,370,0,0" VerticalAlignment="Top" Height="36" Width="80" RenderTransformOrigin="0.5,0.5" Background="#FFF0F4F4" FontFamily="Century Gothic" FontSize="14" Click="btnCalcular_Click">
+            <Button x:Name="btnCalcular"  HorizontalAlignment="Left" Margin="791,370,0,0" VerticalAlignment="Top" Height="42" Width="80" RenderTransformOrigin="0.5,0.5" Background="#FFF0F4F4" FontFamily="Century Gothic" FontSize="14" Click="btnCalcular_Click">
                 <Button.BorderBrush>
                     <SolidColorBrush Color="#FF2FB0C8" Opacity="0.2"/>
                 </Button.BorderBrush>
