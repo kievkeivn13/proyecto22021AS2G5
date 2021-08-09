@@ -68,7 +68,7 @@
 						</Image.OpacityMask>
 					</Image>
 				</MenuItem.Icon>
-				<MenuItem Header="MenuItem"/>
+                <MenuItem x:Name="btnRequerimientosClinica" Header="RequerimientosC" ItemsSource="{Binding ClickEvent, ElementName=btnGestionusuario}" Click="btnRequerimientosC_Click"/>
 				<MenuItem Header="MenuItem"/>
 			</MenuItem>
 			<MenuItem x:Name="btnCotizacion" Header="   Cotizaciones" Width="120" Background="#FFE3E3E3" FontFamily="Century Gothic">
@@ -101,7 +101,7 @@
 						</Image.OpacityMask>
 					</Image>
 				</MenuItem.Icon>
-				<MenuItem x:Name="btnGestionar" Header="Gestionar" ItemsSource="{Binding ClickEvent, ElementName=btnGestionar}" Click="btnGestionaraseguradora_Click"/>
+				<MenuItem Header="MenuItem"/>
 				<MenuItem Header="MenuItem"/>
 			</MenuItem>
 			<MenuItem x:Name="btnUsuarios" Header="   Usuarios" Width="96" Background="#FFE3E3E3" Click="btnUsuarios_Click" FontFamily="Century Gothic" ItemsSource="{Binding ClickEvent, ElementName=btnGestionusuario}">
@@ -123,9 +123,10 @@
 						</Image.OpacityMask>
 					</Image>
 				</MenuItem.Icon>
-				<MenuItem Header="MenuItem"/>
-				<MenuItem Header="MenuItem"/>
-			</MenuItem>
+                <MenuItem x:Name="btnEmpleado" Header="Empleados" ItemsSource="{Binding ClickEvent, ElementName=btnEmpleado}" Click="btnEmpleado_Click"/>
+                <MenuItem x:Name="btnPruebaCBX" Header="PruebaCBX" ItemsSource="{Binding ClickEvent, ElementName=btnPruebaCBX}" Click="btnPruebaCBX_Click"/>
+                <MenuItem Header="MenuItem"/>
+            </MenuItem>
 			<MenuItem x:Name="btnFinanzas" Header="    Finanzas" Width="94" Background="#FFE3E3E3" FontFamily="Century Gothic">
 				<MenuItem.Icon>
 					<Image Source="/Finanzas.png" Margin="-4,-15,-25,-14">
@@ -161,11 +162,7 @@
 			</MenuItem>
 
 		</Menu>
-		<Grid x:Name="pnlVentanas" Grid.ColumnSpan="2" Margin="0,50,0,0">
-			<Grid.ColumnDefinitions>
-				<ColumnDefinition/>
-			</Grid.ColumnDefinitions>
-		</Grid>
+		<Grid x:Name="pnlVentanas" Grid.ColumnSpan="2" Margin="0,50,0,0"/>
 		<Rectangle HorizontalAlignment="Left" Height="76" Margin="1106,33,0,0" VerticalAlignment="Top" Width="180" RadiusX="19" RadiusY="19" Opacity="0.31" Fill="#FFC6D7DF" Grid.Column="1">
 			<Rectangle.Stroke>
 				<SolidColorBrush Color="#FF015478" Opacity="0.31"/>

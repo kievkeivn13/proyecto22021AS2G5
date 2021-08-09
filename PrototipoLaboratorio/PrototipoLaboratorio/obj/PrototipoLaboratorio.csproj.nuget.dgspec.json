@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sucel\\Desktop\\PrototipoLaboratorio\\PrototipoLaboratorio\\PrototipoLaboratorio\\PrototipoLaboratorio\\PrototipoLaboratorio.csproj": {}
+    "C:\\Users\\ranbr\\Documents\\SISTEMAS\\ANALISIS DE SISTEMAS II\\proyecto\\PrototipoLaboratorio\\PrototipoLaboratorio\\PrototipoLaboratorio.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sucel\\Desktop\\PrototipoLaboratorio\\PrototipoLaboratorio\\PrototipoLaboratorio\\PrototipoLaboratorio\\PrototipoLaboratorio.csproj": {
+    "C:\\Users\\ranbr\\Documents\\SISTEMAS\\ANALISIS DE SISTEMAS II\\proyecto\\PrototipoLaboratorio\\PrototipoLaboratorio\\PrototipoLaboratorio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sucel\\Desktop\\PrototipoLaboratorio\\PrototipoLaboratorio\\PrototipoLaboratorio\\PrototipoLaboratorio\\PrototipoLaboratorio.csproj",
+        "projectUniqueName": "C:\\Users\\ranbr\\Documents\\SISTEMAS\\ANALISIS DE SISTEMAS II\\proyecto\\PrototipoLaboratorio\\PrototipoLaboratorio\\PrototipoLaboratorio.csproj",
         "projectName": "PrototipoLaboratorio",
-        "projectPath": "C:\\Users\\sucel\\Desktop\\PrototipoLaboratorio\\PrototipoLaboratorio\\PrototipoLaboratorio\\PrototipoLaboratorio\\PrototipoLaboratorio.csproj",
-        "packagesPath": "C:\\Users\\sucel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sucel\\Desktop\\PrototipoLaboratorio\\PrototipoLaboratorio\\PrototipoLaboratorio\\PrototipoLaboratorio\\obj\\",
+        "projectPath": "C:\\Users\\ranbr\\Documents\\SISTEMAS\\ANALISIS DE SISTEMAS II\\proyecto\\PrototipoLaboratorio\\PrototipoLaboratorio\\PrototipoLaboratorio.csproj",
+        "packagesPath": "C:\\Users\\ranbr\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ranbr\\Documents\\SISTEMAS\\ANALISIS DE SISTEMAS II\\proyecto\\PrototipoLaboratorio\\PrototipoLaboratorio\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\sucel\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\ranbr\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -30,7 +29,6 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -42,15 +40,10 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "dependencies": {
-            "Castle.Core": {
+            "System.Data.Odbc": {
               "target": "Package",
-              "version": "[4.4.1, )"
-            },
-            "MySqlConnector": {
-              "target": "Package",
-              "version": "[1.3.11, )"
+              "version": "[5.0.0, )"
             }
           },
           "imports": [
@@ -71,7 +64,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     }
