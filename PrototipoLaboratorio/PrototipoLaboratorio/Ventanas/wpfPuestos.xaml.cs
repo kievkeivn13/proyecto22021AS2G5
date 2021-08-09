@@ -15,7 +15,7 @@ using System.Windows.Shapes;
 namespace PrototipoLaboratorio.Ventanas
 {
     /// <summary>
-    /// Lógica de interacción para wpfRequerimientosClinica.xaml
+    /// Lógica de interacción para wpfPuestos.xaml
     /// </summary>
     public partial class wpfPuestos : UserControl
     {
@@ -28,7 +28,7 @@ namespace PrototipoLaboratorio.Ventanas
         private void btnInsertar_Click(object sender, RoutedEventArgs e)
         {
             string cadena = "INSERT INTO" +
-                " PUESTOS (pk_id_puesto, puesto_puesto) VALUES (" + "'" + txtIdPuesto.Text + "', '"+ txtNombrePuesto.Text + "' ); ";
+                " PUESTOS (id_puesto, nombre_puesto, status_puesto) VALUES (" + "'" + txtIdPuesto.Text + "', '"+ txtNombrePuesto.Text + txtEstatusPuesto.Text + "' ); ";
 
             OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
             consulta.ExecuteNonQuery();
@@ -37,6 +37,7 @@ namespace PrototipoLaboratorio.Ventanas
 
             txtIdPuesto.Text = "";
             txtNombrePuesto.Text = "";
+            txtEstatusPuesto.Text = "";
         }
 
         private void btnModificar_Click(object sender, RoutedEventArgs e)
@@ -44,8 +45,8 @@ namespace PrototipoLaboratorio.Ventanas
             try
             {
                 //string MyConnection2 = "datasource=localhost;port=3306;username=root;password=6182";
-                string cadena = "update CLINICA.PUESTOS set pk_id_puesto ='" + this.txtIdPuesto.Text
-                    + "',puesto_puesto ='" + this.txtNombrePuesto.Text + "';";
+                string cadena = "update CLINICA1.PUESTOS set id_puesto ='" + this.txtIdPuesto.Text
+                    + "',nombre_puesto ='" + this.txtNombrePuesto.Text + "',status_puesto ='" + this.txtEstatusPuesto.Text + "';";
 
 
                 OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
@@ -61,6 +62,7 @@ namespace PrototipoLaboratorio.Ventanas
 
             txtIdPuesto.Text = "";
             txtNombrePuesto.Text = "";
+            txtEstatusPuesto.Text = "";
 
         }
 
@@ -68,6 +70,7 @@ namespace PrototipoLaboratorio.Ventanas
         {
             txtIdPuesto.Text = "";
             txtNombrePuesto.Text = "";
+            txtEstatusPuesto.Text = "";
         }
 
         private void btnBuscar_Click(object sender, RoutedEventArgs e)
@@ -75,7 +78,7 @@ namespace PrototipoLaboratorio.Ventanas
             try
             {
                 
-                string Query = "select * from CLINICA.PUESTOS where pk_id_puesto='" + this.txtBuscar.Text + "';";
+                string Query = "select * from CLINICA1.PUESTOS where id_puesto='" + this.txtBuscar.Text + "';";
                 
 
                 OdbcCommand consulta = new OdbcCommand(Query, cn.conexion());
@@ -87,8 +90,9 @@ namespace PrototipoLaboratorio.Ventanas
                 if (busqueda.Read())
                 {
                     txtIdPuesto.Text = busqueda["id_puesto"].ToString();
-                    txtNombrePuesto.Text = busqueda["puesto_puesto"].ToString();
-                    
+                    txtNombrePuesto.Text = busqueda["nombre_puesto"].ToString();
+                    txtEstatusPuesto.Text = busqueda["status_puesto"].ToString();
+
                 }
                 else
                 {
@@ -107,7 +111,7 @@ namespace PrototipoLaboratorio.Ventanas
         {
 
             try { 
-            string cadena = "delete from CLINICA.PUESTOS where pk_id_puesto='" + this.txtIdPuesto.Text + "';";
+            string cadena = "delete from CLINICA1.PUESTOS where id_puesto='" + this.txtIdPuesto.Text + "';";
             
             OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
             consulta.ExecuteNonQuery();
@@ -123,6 +127,7 @@ namespace PrototipoLaboratorio.Ventanas
 
                 txtIdPuesto.Text = "";
                 txtNombrePuesto.Text = "";
+                txtEstatusPuesto.Text = "";
 
             }   
 

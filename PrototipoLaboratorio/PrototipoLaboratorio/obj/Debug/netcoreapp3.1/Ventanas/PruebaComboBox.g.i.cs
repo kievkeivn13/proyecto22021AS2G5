@@ -134,7 +134,7 @@ namespace PrototipoLaboratorio.Ventanas {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/PrototipoLaboratorio;component/ventanas/pruebacombobox.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/PrototipoLaboratorio;V1.0.0.0;component/ventanas/pruebacombobox.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Ventanas\PruebaComboBox.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

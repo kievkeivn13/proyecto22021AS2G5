@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "l3S6cNcBvYleDHUXDnaqx1NsHGaJQGdsYe3BhjskjLN5NgJcPl1AJeq7f6ZrEjMVpOsboe0FGa9oGumJGvPWnw==",
+  "dgSpecHash": "+MWgFu7VYjMdQIZ4DjGbdXr2KTcxuzXCmQ0fTzQw2V7Ze+HNOchnLOOfRa8JN66w+0BCZjlensucDCBPfgOq7A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ranbr\\Documents\\SISTEMAS\\ANALISIS DE SISTEMAS II\\ProyectoLaboratorio (1)\\ProyectoLaboratorio\\proyecto22021AS2G5\\PrototipoLaboratorio\\PrototipoLaboratorio\\PrototipoLaboratorio.csproj",
+  "projectFilePath": "C:\\Users\\ranbr\\Documents\\SISTEMAS\\ANALISIS DE SISTEMAS II\\proyecto\\PrototipoLaboratorio\\PrototipoLaboratorio\\PrototipoLaboratorio.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ranbr\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
     "C:\\Users\\ranbr\\.nuget\\packages\\system.data.odbc\\5.0.0\\system.data.odbc.5.0.0.nupkg.sha512"

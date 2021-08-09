@@ -87,7 +87,16 @@
                     <SolidColorBrush Color="#FF2FB0C8" Opacity="0.15"/>
                 </TextBox.Background>
             </TextBox>
-            <Label x:Name="lblIdNombrePuesto" Content="Nombre Puesto:" HorizontalAlignment="Left" Margin="24,202,0,0" VerticalAlignment="Top" Height="38" Width="88" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center"/>
+            <Label x:Name="lblIdNombrePuesto" Content="Nombre Puesto:" HorizontalAlignment="Left" Margin="24,202,0,0" VerticalAlignment="Top" Height="38" Width="136" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center"/>
+            <TextBox x:Name="txtEstatusPuesto" HorizontalAlignment="Left" Margin="222,295,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="38" TextAlignment="Left" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}">
+                <TextBox.CaretBrush>
+                    <SolidColorBrush Color="#FF2FB0C8" Opacity="0.3"/>
+                </TextBox.CaretBrush>
+                <TextBox.Background>
+                    <SolidColorBrush Color="#FF2FB0C8" Opacity="0.15"/>
+                </TextBox.Background>
+            </TextBox>
+            <Label x:Name="lblIdEstatusPuesto" Content="Status Puesto:" HorizontalAlignment="Left" Margin="24,295,0,0" VerticalAlignment="Top" Height="38" Width="136" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center"/>
         </Grid>
     </Grid>
 </UserControl>
