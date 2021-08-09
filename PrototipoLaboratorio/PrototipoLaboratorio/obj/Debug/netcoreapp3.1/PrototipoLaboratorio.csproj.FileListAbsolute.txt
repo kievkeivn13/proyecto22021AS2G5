@@ -45,3 +45,20 @@ C:\DevSoft\cygwin64\home\kievk\Projects\PrototipoLaboratorio\PrototipoLaboratori
 C:\DevSoft\cygwin64\home\kievk\Projects\PrototipoLaboratorio\PrototipoLaboratorio\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
 C:\DevSoft\cygwin64\home\kievk\Projects\PrototipoLaboratorio\PrototipoLaboratorio\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
 C:\DevSoft\cygwin64\home\kievk\Projects\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio.csproj.CopyComplete
+C:\DevSoft\cygwin64\home\kievk\Projects\PrototipoLaboratorio\PrototipoLaboratorio\bin\Debug\netcoreapp3.1\Databasic.dll
+C:\DevSoft\cygwin64\home\kievk\Projects\PrototipoLaboratorio\PrototipoLaboratorio\bin\Debug\netcoreapp3.1\Databasic.OdbcSql.dll
+C:\DevSoft\cygwin64\home\kievk\Projects\PrototipoLaboratorio\PrototipoLaboratorio\bin\Debug\netcoreapp3.1\Horseshoe.NET (netstandard2.0).dll
+C:\DevSoft\cygwin64\home\kievk\Projects\PrototipoLaboratorio\PrototipoLaboratorio\bin\Debug\netcoreapp3.1\Horseshoe.NET.Odbc (netstandard2.0).dll
+C:\DevSoft\cygwin64\home\kievk\Projects\PrototipoLaboratorio\PrototipoLaboratorio\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+C:\DevSoft\cygwin64\home\kievk\Projects\PrototipoLaboratorio\PrototipoLaboratorio\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+C:\DevSoft\cygwin64\home\kievk\Projects\PrototipoLaboratorio\PrototipoLaboratorio\bin\Debug\netcoreapp3.1\System.Data.Odbc.dll
+C:\DevSoft\cygwin64\home\kievk\Projects\PrototipoLaboratorio\PrototipoLaboratorio\bin\Debug\netcoreapp3.1\runtimes\freebsd\lib\netcoreapp2.0\System.Data.Odbc.dll
+C:\DevSoft\cygwin64\home\kievk\Projects\PrototipoLaboratorio\PrototipoLaboratorio\bin\Debug\netcoreapp3.1\runtimes\linux\lib\netcoreapp2.0\System.Data.Odbc.dll
+C:\DevSoft\cygwin64\home\kievk\Projects\PrototipoLaboratorio\PrototipoLaboratorio\bin\Debug\netcoreapp3.1\runtimes\osx\lib\netcoreapp2.0\System.Data.Odbc.dll
+C:\DevSoft\cygwin64\home\kievk\Projects\PrototipoLaboratorio\PrototipoLaboratorio\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Data.Odbc.dll
+C:\DevSoft\cygwin64\home\kievk\Projects\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\wpfTipousuario.g.cs
+C:\DevSoft\cygwin64\home\kievk\Projects\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\wpfTipousuario.baml
+C:\DevSoft\cygwin64\home\kievk\Projects\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\wpfTipocambio.g.cs
+C:\DevSoft\cygwin64\home\kievk\Projects\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\wpfTipocambio.baml
+C:\DevSoft\cygwin64\home\kievk\Projects\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\wpfGestorcaja.g.cs
+C:\DevSoft\cygwin64\home\kievk\Projects\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\wpfGestorcaja.baml

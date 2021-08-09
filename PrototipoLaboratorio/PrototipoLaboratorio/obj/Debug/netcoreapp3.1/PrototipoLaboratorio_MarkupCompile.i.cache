@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
 C:\DevSoft\cygwin64\home\kievk\Projects\PrototipoLaboratorio\PrototipoLaboratorio\App.xaml
-22014812364
+51795570379
 
-6-446400413
-221537631871
-MainWindow.xaml;Ventanas\wpfGestorusuario.xaml;
+10462607725
+228-818779817
+MainWindow.xaml;Ventanas\wpfGestorcaja.xaml;Ventanas\wpfGestorusuario.xaml;Ventanas\wpfTipocambio.xaml;Ventanas\wpfTipousuario.xaml;
 
-True
+False
 

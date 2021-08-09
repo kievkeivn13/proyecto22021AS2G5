@@ -62,44 +62,67 @@
 					<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center"><Run Language="es-gt" Text="Busca"/><Run Text="r"/></TextBlock>
 				</DockPanel>
 			</Button>
-			<TextBox x:Name="txtUsuario" HorizontalAlignment="Left" Margin="177,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="38" TextAlignment="Left" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}">
+			<TextBox x:Name="txtIdusuario" HorizontalAlignment="Left" Margin="177,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="38" TextAlignment="Left" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}">
 				<TextBox.CaretBrush>
-					<SolidColorBrush Color="#FF2FB0C8" Opacity="0.3"/>
+					<SolidColorBrush Color="Black" Opacity="0.8"/>
 				</TextBox.CaretBrush>
 				<TextBox.Background>
 					<SolidColorBrush Color="#FF2FB0C8" Opacity="0.15"/>
 				</TextBox.Background>
 			</TextBox>
-			<Label x:Name="lblIdusuario" Content="Usuario:" HorizontalAlignment="Left" Margin="24,122,0,0" VerticalAlignment="Top" Height="38" Width="88" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center"/>
+			<Label x:Name="lblIdusuario" Content="ID Usuario:" HorizontalAlignment="Left" Margin="24,122,0,0" VerticalAlignment="Top" Height="38" Width="88" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center"/>
 			<TextBox x:Name="txtBuscar" HorizontalAlignment="Left" Margin="674,9,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="38" TextAlignment="Left" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}">
 				<TextBox.CaretBrush>
-					<SolidColorBrush Color="#FF2FB0C8" Opacity="0.3"/>
+					<SolidColorBrush Color="Black" Opacity="0.8"/>
 				</TextBox.CaretBrush>
 				<TextBox.Background>
 					<SolidColorBrush Color="#FF2FB0C8" Opacity="0.15"/>
 				</TextBox.Background>
 			</TextBox>
-			<Label x:Name="lblNombreusuario" Content="Contraseña:" HorizontalAlignment="Left" Margin="24,185,0,0" VerticalAlignment="Top" Height="38" Width="125" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center"/>
-			<Label x:Name="lblIdusuariocombo" Content="Roll Usuario:" HorizontalAlignment="Left" Margin="24,260,0,0" VerticalAlignment="Top" Height="38" Width="125" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center"/>
-			<ComboBox x:Name="cboNombreusuario" HorizontalAlignment="Left" Margin="177,260,0,0" VerticalAlignment="Top" Width="234" Height="38">
+			<Label x:Name="lblTipousuario" Content="Tipo Usuario:" HorizontalAlignment="Left" Margin="24,185,0,0" VerticalAlignment="Top" Height="38" Width="125" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center"/>
+			<Label x:Name="lblNombreusuario" Content="Nombre Usuario:" HorizontalAlignment="Left" Margin="24,260,0,0" VerticalAlignment="Top" Height="38" Width="125" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center"/>
+			<ComboBox x:Name="cboTipousuario"  HorizontalAlignment="Left" Margin="177,185,0,0" VerticalAlignment="Top" Width="234" Height="38" SelectionChanged="cboTipousuario_SelectionChanged" FontFamily="Century Gothic" FontSize="14" VerticalContentAlignment="Center">
 				<ComboBox.Background>
-					<SolidColorBrush Color="#FFF4F4F4" Opacity="0.35"/>
+					<SolidColorBrush Color="#FF2FB0C8" Opacity="0.15"/>
 				</ComboBox.Background>
 				<ComboBox.BorderBrush>
-					<SolidColorBrush Color="#FFACACAC" Opacity="0.2"/>
+					<SolidColorBrush Color="#FF2FB0C8" Opacity="0.2"/>
 				</ComboBox.BorderBrush>
 			</ComboBox>
-			<PasswordBox x:Name="txtContraseña" HorizontalAlignment="Left" Margin="177,185,0,0" VerticalAlignment="Top" Width="234" Height="38" BorderBrush="{x:Null}" FontFamily="Century Gothic" FontSize="14">
+			<TextBox x:Name="txtNombreusuario" HorizontalAlignment="Left" Margin="177,260,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="38" TextAlignment="Left" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}">
+				<TextBox.CaretBrush>
+					<SolidColorBrush Color="Black" Opacity="0.8"/>
+				</TextBox.CaretBrush>
+				<TextBox.Background>
+					<SolidColorBrush Color="#FF2FB0C8" Opacity="0.15"/>
+				</TextBox.Background>
+			</TextBox>
+			<Label x:Name="lblContraseñausuario" Content="Contraseña:" HorizontalAlignment="Left" Margin="24,328,0,0" VerticalAlignment="Top" Height="38" Width="125" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center"/>
+			<TextBox x:Name="txtEstadousuario" HorizontalAlignment="Left" Margin="177,391,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="38" TextAlignment="Left" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}">
+				<TextBox.CaretBrush>
+					<SolidColorBrush Color="Black" Opacity="0.8"/>
+				</TextBox.CaretBrush>
+				<TextBox.Background>
+					<SolidColorBrush Color="#FF2FB0C8" Opacity="0.15"/>
+				</TextBox.Background>
+			</TextBox>
+			<Label x:Name="lblEstadousuario" Content="Estado:" HorizontalAlignment="Left" Margin="24,391,0,0" VerticalAlignment="Top" Height="38" Width="125" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center"/>
+			<PasswordBox x:Name="txtContraseñausuario" HorizontalAlignment="Left" Margin="177,328,0,0" VerticalAlignment="Top" Width="234" Height="38" Foreground="Black" BorderBrush="{x:Null}" VerticalContentAlignment="Center">
 				<PasswordBox.CaretBrush>
-					<SolidColorBrush Color="#FF2FB0C8" Opacity="0.3"/>
+					<SolidColorBrush Color="Black" Opacity="0.8"/>
 				</PasswordBox.CaretBrush>
-				<PasswordBox.SelectionBrush>
-					<SolidColorBrush Color="#FF0078D7" Opacity="0.3"/>
-				</PasswordBox.SelectionBrush>
 				<PasswordBox.Background>
 					<SolidColorBrush Color="#FF2FB0C8" Opacity="0.15"/>
 				</PasswordBox.Background>
 			</PasswordBox>
+			<TextBox x:Name="txtIdtipousuario" HorizontalAlignment="Left" Margin="440,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="108" Height="38" TextAlignment="Left" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}">
+				<TextBox.CaretBrush>
+					<SolidColorBrush Color="#FF2FB0C8" Opacity="0.3"/>
+				</TextBox.CaretBrush>
+				<TextBox.Background>
+					<SolidColorBrush Color="#FF2FB0C8" Opacity="0.15"/>
+				</TextBox.Background>
+			</TextBox>
 		</Grid>
 
 	</Grid>

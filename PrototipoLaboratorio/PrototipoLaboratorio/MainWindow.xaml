@@ -104,7 +104,7 @@
 				<MenuItem Header="MenuItem"/>
 				<MenuItem Header="MenuItem"/>
 			</MenuItem>
-			<MenuItem x:Name="btnUsuarios" Header="   Usuarios" Width="96" Background="#FFE3E3E3" Click="btnUsuarios_Click" FontFamily="Century Gothic" ItemsSource="{Binding ClickEvent, ElementName=btnGestionusuario}">
+			<MenuItem x:Name="btnUsuarios" Header="   Usuarios" Width="96" Background="#FFE3E3E3" Click="btnUsuarios_Click" FontFamily="Century Gothic">
 				<MenuItem.Icon>
 					<Image Source="/Usuarios.png" Margin="-4,-15,-25,-14">
 						<Image.OpacityMask>
@@ -113,6 +113,7 @@
 					</Image>
 				</MenuItem.Icon>
 				<MenuItem Name="btnGestionusuario" Header="Gestionar" Click="btnGestionusuario_Click"/>
+				<MenuItem x:Name="btnTipousuario" Header="Tipo Usuario" Click="btnTipousuario_Click"/>
 				<MenuItem Header="MenuItem"/>
 			</MenuItem>
 			<MenuItem x:Name="btnPersonal" Header="    Personal" Width="94" Background="#FFE3E3E3" FontFamily="Century Gothic" Click="btnPersonal_Click">
@@ -126,7 +127,7 @@
 				<MenuItem Header="MenuItem"/>
 				<MenuItem Header="MenuItem"/>
 			</MenuItem>
-			<MenuItem x:Name="btnFinanzas" Header="    Finanzas" Width="94" Background="#FFE3E3E3" FontFamily="Century Gothic">
+			<MenuItem x:Name="btnFinanzas" Header="    Finanzas" Width="94" Background="#FFE3E3E3" FontFamily="Century Gothic" ItemsSource="{Binding ClickEvent, ElementName=btnFinanzas}">
 				<MenuItem.Icon>
 					<Image Source="/Finanzas.png" Margin="-4,-15,-25,-14">
 						<Image.OpacityMask>
@@ -134,10 +135,10 @@
 						</Image.OpacityMask>
 					</Image>
 				</MenuItem.Icon>
-				<MenuItem Header="MenuItem"/>
+				<MenuItem x:Name="btnTipocambio" Header="Tipo Cambio  " ItemsSource="{Binding ClickEvent, ElementName=btnTipocambio}" Click="btnTipocambio_Click"/>
 				<MenuItem Header="MenuItem"/>
 			</MenuItem>
-			<MenuItem x:Name="btnAdministracion" Header="   Administración" Width="135" Background="#FFE3E3E3" FontFamily="Century Gothic">
+			<MenuItem x:Name="btnAdministracion" Header="   Administración" Width="135" Background="#FFE3E3E3" FontFamily="Century Gothic" Click="btnTipocambio_Click">
 				<MenuItem.Icon>
 					<Image Source="/Administracion.png" Margin="-4,-15,-25,-14">
 						<Image.OpacityMask>
@@ -186,4 +187,5 @@
 		</Button>
 
 	</Grid>
+		
 </Window>

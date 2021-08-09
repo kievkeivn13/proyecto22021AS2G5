@@ -44,6 +44,14 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "Databasic.OdbcSql": {
+              "target": "Package",
+              "version": "[1.2.8, )"
+            },
+            "Horseshoe.NET.Odbc": {
+              "target": "Package",
+              "version": "[1.2.4.2, )"
+            },
             "MySql.Data": {
               "target": "Package",
               "version": "[8.0.26, )"
@@ -55,6 +63,10 @@
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
               "version": "[5.0.1, )"
+            },
+            "System.Data.Odbc": {
+              "target": "Package",
+              "version": "[5.0.0, )"
             }
           },
           "imports": [
