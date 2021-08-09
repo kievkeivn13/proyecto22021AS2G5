@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\UMG\Año4\Semestre 2\Analisis De Sistemas 2\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\
+C:\Users\GiancarloS\Desktop\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\
 PrototipoLaboratorio
 none
 false
-TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
-D:\UMG\Año4\Semestre 2\Analisis De Sistemas 2\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\App.xaml
-4-2102301030
+TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
+C:\Users\GiancarloS\Desktop\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\App.xaml
+10453884589
 
-7958369572
-2011894084544
-MainWindow.xaml;Ventanas\wpfEmpleados.xaml;Ventanas\wpfGestorusuario.xaml;Ventanas\wpfRequerimientosClinica.xaml;
+13-15331566
+200411914877
+MainWindow.xaml;Ventanas\Examen.xaml;Ventanas\Formas_pago.xaml;Ventanas\Paquete.xaml;Ventanas\PruebaComboBox.xaml;Ventanas\Tipo_examen.xaml;Ventanas\Tipo_muestra.xaml;Ventanas\wpfEmpleados.xaml;Ventanas\wpfGestorusuario.xaml;Ventanas\wpfRequerimientosClinica.xaml;
 
 False
 

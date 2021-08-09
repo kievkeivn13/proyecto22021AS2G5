@@ -54,10 +54,17 @@ namespace PrototipoLaboratorio
             funGestorventas(new Ventanas.wpfEmpleados());
         }
 
+
         private void btnRequerimientosC_Click(object sender, RoutedEventArgs e)
         {
             funGestorventas(new Ventanas.wpfRequerimientosClinica());
         }
+
+        private void btnPruebaCBX_Click(object sender, RoutedEventArgs e)
+        {
+            funGestorventas(new Ventanas.PruebaComboBox());
+        }
+
         private void funGestorventas(UserControl control)
         {
             this.pnlVentanas.Children.Clear();
@@ -68,6 +75,37 @@ namespace PrototipoLaboratorio
         private void btnSalir_Click(object sender, RoutedEventArgs e)
         {
             this.pnlVentanas.Children.Clear();
+        }
+
+
+        private void btnExamen_Click(object sender, RoutedEventArgs e)
+        {
+            funGestorventas(new Ventanas.Examen());
+        }
+
+        private void btnTipo_muestra_Click(object sender, RoutedEventArgs e)
+        {
+            funGestorventas(new Ventanas.Tipo_muestra());
+        }
+
+        private void btnTipo_examen_Click(object sender, RoutedEventArgs e)
+        {
+            funGestorventas(new Ventanas.Tipo_examen());
+        }
+
+        private void btnFormas_pago_Click(object sender, RoutedEventArgs e)
+        {
+            funGestorventas(new Ventanas.Formas_pago());
+        }
+
+        private void btnPaquete_Click(object sender, RoutedEventArgs e)
+        {
+            funGestorventas(new Ventanas.Paquete());
+        }
+
+        private void btnPaquetes_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 

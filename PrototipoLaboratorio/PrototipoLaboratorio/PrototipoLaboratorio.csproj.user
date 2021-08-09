@@ -7,6 +7,24 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Ventanas\Examen.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Ventanas\Formas_pago.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Ventanas\Paquete.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Ventanas\PruebaComboBox.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Ventanas\Tipo_examen.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Ventanas\Tipo_muestra.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Ventanas\wpfEmpleados.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -19,6 +37,24 @@
   </ItemGroup>
   <ItemGroup>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Ventanas\Examen.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Ventanas\Formas_pago.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Ventanas\Paquete.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Ventanas\PruebaComboBox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Ventanas\Tipo_examen.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Ventanas\Tipo_muestra.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Ventanas\wpfEmpleados.xaml">

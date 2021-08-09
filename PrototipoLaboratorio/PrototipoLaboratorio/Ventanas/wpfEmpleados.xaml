@@ -11,7 +11,7 @@
             <Grid.Background>
                 <ImageBrush ImageSource="/Ventanas/fondo_2.jpg"/>
             </Grid.Background>
-            <Button x:Name="btnModificar"  HorizontalAlignment="Left" Margin="585,574,0,0" VerticalAlignment="Top" Height="70" Width="126" RenderTransformOrigin="0.5,0.5" Background="#FFF0F4F4" FontFamily="Century Gothic" FontSize="14">
+            <Button x:Name="btnModificar"  HorizontalAlignment="Left" Margin="585,574,0,0" VerticalAlignment="Top" Height="70" Width="126" RenderTransformOrigin="0.5,0.5" Background="#FFF0F4F4" FontFamily="Century Gothic" FontSize="14" Click="btnModificar_Click">
                 <Button.BorderBrush>
                     <SolidColorBrush Color="#FF2FB0C8" Opacity="0.2"/>
                 </Button.BorderBrush>
@@ -20,7 +20,7 @@
                     <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center"><Run Language="es-gt" Text="Modificar"/></TextBlock>
                 </DockPanel>
             </Button>
-            <Button x:Name="btnEliminar"  HorizontalAlignment="Left" Margin="1013,573,0,0" VerticalAlignment="Top" Height="71" Width="123" RenderTransformOrigin="0.5,0.5" FontFamily="Century Gothic" FontSize="14">
+            <Button x:Name="btnEliminar"  HorizontalAlignment="Left" Margin="1013,573,0,0" VerticalAlignment="Top" Height="71" Width="123" RenderTransformOrigin="0.5,0.5" FontFamily="Century Gothic" FontSize="14" Click="btnEliminar_Click">
                 <Button.Background>
                     <SolidColorBrush Color="#FFF0F4F4" Opacity="0.2"/>
                 </Button.Background>
@@ -32,7 +32,7 @@
                     <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center"><Run Language="es-gt" Text="Eliminar"/></TextBlock>
                 </DockPanel>
             </Button>
-            <Button x:Name="btnLimpiar"  HorizontalAlignment="Left" Margin="873,573,0,0" VerticalAlignment="Top" Height="71" Width="123" RenderTransformOrigin="0.5,0.5" FontFamily="Century Gothic" FontSize="14">
+            <Button x:Name="btnLimpiar"  HorizontalAlignment="Left" Margin="873,573,0,0" VerticalAlignment="Top" Height="71" Width="123" RenderTransformOrigin="0.5,0.5" FontFamily="Century Gothic" FontSize="14" Click="btnLimpiar_Click">
                 <Button.Background>
                     <SolidColorBrush Color="#FFF0F4F4" Opacity="0.002"/>
                 </Button.Background>
@@ -53,7 +53,7 @@
                     <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center"><Run Language="es-gt" Text="Insertar"/></TextBlock>
                 </DockPanel>
             </Button>
-            <Button x:Name="btnBuscar"  HorizontalAlignment="Left" Margin="931,9,0,0" VerticalAlignment="Top" Height="38" Width="123" RenderTransformOrigin="0.5,0.5" Background="#FFF0F4F4" FontFamily="Century Gothic" FontSize="14">
+            <Button x:Name="btnBuscar"  HorizontalAlignment="Left" Margin="931,9,0,0" VerticalAlignment="Top" Height="38" Width="123" RenderTransformOrigin="0.5,0.5" Background="#FFF0F4F4" FontFamily="Century Gothic" FontSize="14" Click="btnBuscar_Click">
                 <Button.BorderBrush>
                     <SolidColorBrush Color="#FF2FB0C8" Opacity="0.2"/>
                 </Button.BorderBrush>
@@ -62,7 +62,7 @@
                     <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center"><Run Language="es-gt" Text="Busca"/><Run Text="r"/></TextBlock>
                 </DockPanel>
             </Button>
-            <TextBox x:Name="txtIdEmpleado" HorizontalAlignment="Left" Margin="145,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="38" TextAlignment="Left" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}">
+            <TextBox x:Name="txtIdEmpleado" HorizontalAlignment="Left" Margin="145,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="38" TextAlignment="Left" FontSize="16" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}" FontWeight="Normal">
                 <TextBox.CaretBrush>
                     <SolidColorBrush Color="#FF2FB0C8" Opacity="0.3"/>
                 </TextBox.CaretBrush>
@@ -71,7 +71,7 @@
                 </TextBox.Background>
             </TextBox>
             <Label x:Name="lblIdusuario" Content="ID USUARIO:" HorizontalAlignment="Left" Margin="24,122,0,0" VerticalAlignment="Top" Height="38" Width="88" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center"/>
-            <TextBox x:Name="txtBuscar" HorizontalAlignment="Left" Margin="674,9,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="38" TextAlignment="Left" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}">
+            <TextBox x:Name="txtBuscar" HorizontalAlignment="Left" Margin="674,9,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="38" TextAlignment="Left" FontSize="16" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}" FontWeight="Normal">
                 <TextBox.CaretBrush>
                     <SolidColorBrush Color="#FF2FB0C8" Opacity="0.3"/>
                 </TextBox.CaretBrush>
@@ -79,7 +79,7 @@
                     <SolidColorBrush Color="#FF2FB0C8" Opacity="0.15"/>
                 </TextBox.Background>
             </TextBox>
-            <TextBox x:Name="txtCui" HorizontalAlignment="Left" Margin="145,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="38" TextAlignment="Left" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}">
+            <TextBox x:Name="txtCui" HorizontalAlignment="Left" Margin="145,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="38" TextAlignment="Left" FontSize="16" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}" FontWeight="Normal">
                 <TextBox.CaretBrush>
                     <SolidColorBrush Color="#FF2FB0C8" Opacity="0.3"/>
                 </TextBox.CaretBrush>
@@ -88,7 +88,7 @@
                 </TextBox.Background>
             </TextBox>
             <Label x:Name="lblNombreEmpleado" Content="CUI:" HorizontalAlignment="Left" Margin="24,196,0,0" VerticalAlignment="Top" Height="38" Width="88" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center"/>
-            <TextBox x:Name="txtNit" HorizontalAlignment="Left" Margin="674,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="38" TextAlignment="Left" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}">
+            <TextBox x:Name="txtNit" HorizontalAlignment="Left" Margin="674,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="38" TextAlignment="Left" FontSize="16" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}" FontWeight="Normal">
                 <TextBox.CaretBrush>
                     <SolidColorBrush Color="#FF2FB0C8" Opacity="0.3"/>
                 </TextBox.CaretBrush>
@@ -97,7 +97,7 @@
                 </TextBox.Background>
             </TextBox>
             <Label x:Name="lblNombreEmpleado_Copy" Content="NIT:" HorizontalAlignment="Left" Margin="553,196,0,0" VerticalAlignment="Top" Height="38" Width="88" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center"/>
-            <TextBox x:Name="txtNombre" HorizontalAlignment="Left" Margin="149,295,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="366" Height="38" TextAlignment="Left" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}">
+            <TextBox x:Name="txtNombre" HorizontalAlignment="Left" Margin="149,295,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="366" Height="38" TextAlignment="Left" FontSize="16" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}" FontWeight="Normal">
                 <TextBox.CaretBrush>
                     <SolidColorBrush Color="#FF2FB0C8" Opacity="0.3"/>
                 </TextBox.CaretBrush>
@@ -106,7 +106,7 @@
                 </TextBox.Background>
             </TextBox>
             <Label x:Name="lblNombreEmpleado_Copy1" Content="NOMBRE:" HorizontalAlignment="Left" Margin="28,295,0,0" VerticalAlignment="Top" Height="38" Width="88" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center"/>
-            <TextBox x:Name="txtApellido" HorizontalAlignment="Left" Margin="692,295,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="410" Height="38" TextAlignment="Left" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}">
+            <TextBox x:Name="txtApellido" HorizontalAlignment="Left" Margin="692,295,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="410" Height="38" TextAlignment="Left" FontSize="16" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}" FontWeight="Normal">
                 <TextBox.CaretBrush>
                     <SolidColorBrush Color="#FF2FB0C8" Opacity="0.3"/>
                 </TextBox.CaretBrush>
@@ -115,7 +115,7 @@
                 </TextBox.Background>
             </TextBox>
             <Label x:Name="lblNombreEmpleado_Copy2" Content="APELLIDO:" HorizontalAlignment="Left" Margin="571,295,0,0" VerticalAlignment="Top" Height="38" Width="88" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center"/>
-            <TextBox x:Name="txtGenero" HorizontalAlignment="Left" Margin="149,374,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="38" TextAlignment="Left" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}">
+            <TextBox x:Name="txtGenero" HorizontalAlignment="Left" Margin="149,374,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="38" TextAlignment="Left" FontSize="16" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}" FontWeight="Normal">
                 <TextBox.CaretBrush>
                     <SolidColorBrush Color="#FF2FB0C8" Opacity="0.3"/>
                 </TextBox.CaretBrush>
@@ -124,7 +124,7 @@
                 </TextBox.Background>
             </TextBox>
             <Label x:Name="lblNombreEmpleado_Copy3" Content="GENERO:" HorizontalAlignment="Left" Margin="28,374,0,0" VerticalAlignment="Top" Height="38" Width="88" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center"/>
-            <TextBox x:Name="txtEdad" HorizontalAlignment="Left" Margin="587,374,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="38" TextAlignment="Left" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}">
+            <TextBox x:Name="txtEdad" HorizontalAlignment="Left" Margin="587,374,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="38" TextAlignment="Left" FontSize="16" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}" FontWeight="Normal">
                 <TextBox.CaretBrush>
                     <SolidColorBrush Color="#FF2FB0C8" Opacity="0.3"/>
                 </TextBox.CaretBrush>
@@ -134,7 +134,7 @@
             </TextBox>
             <Label x:Name="lblNombreEmpleado_Copy5" Content="EDAD:" HorizontalAlignment="Left" Margin="466,374,0,0" VerticalAlignment="Top" Height="38" Width="88" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center"/>
         </Grid>
-        <TextBox x:Name="txtTelefono" HorizontalAlignment="Left" Margin="151,438,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="38" TextAlignment="Left" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}">
+        <TextBox x:Name="txtTelefono" HorizontalAlignment="Left" Margin="151,438,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="38" TextAlignment="Left" FontSize="16" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}" FontWeight="Normal">
             <TextBox.CaretBrush>
                 <SolidColorBrush Color="#FF2FB0C8" Opacity="0.3"/>
             </TextBox.CaretBrush>
@@ -143,7 +143,7 @@
             </TextBox.Background>
         </TextBox>
         <Label x:Name="lblNombreEmpleado_Copy6" Content="TELEFONO:" HorizontalAlignment="Left" Margin="30,438,0,0" VerticalAlignment="Top" Height="38" Width="88" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center"/>
-        <TextBox x:Name="txtDireccion" HorizontalAlignment="Left" Margin="591,438,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="38" TextAlignment="Left" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}">
+        <TextBox x:Name="txtDireccion" HorizontalAlignment="Left" Margin="591,438,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="38" TextAlignment="Left" FontSize="16" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}" FontWeight="Normal">
             <TextBox.CaretBrush>
                 <SolidColorBrush Color="#FF2FB0C8" Opacity="0.3"/>
             </TextBox.CaretBrush>
@@ -152,7 +152,7 @@
             </TextBox.Background>
         </TextBox>
         <Label x:Name="lblNombreEmpleado_Copy7" Content="DIRECCION::" HorizontalAlignment="Left" Margin="470,438,0,0" VerticalAlignment="Top" Height="38" Width="88" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center"/>
-        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Margin="151,512,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="38" TextAlignment="Left" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}">
+        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Margin="151,512,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="38" TextAlignment="Left" FontSize="16" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}" FontWeight="Normal">
             <TextBox.CaretBrush>
                 <SolidColorBrush Color="#FF2FB0C8" Opacity="0.3"/>
             </TextBox.CaretBrush>
@@ -161,7 +161,7 @@
             </TextBox.Background>
         </TextBox>
         <Label x:Name="lblNombreEmpleado_Copy8" Content="EMAIL:" HorizontalAlignment="Left" Margin="30,512,0,0" VerticalAlignment="Top" Height="38" Width="88" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center"/>
-        <TextBox x:Name="txtColegiado" HorizontalAlignment="Left" Margin="591,507,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="38" TextAlignment="Left" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}">
+        <TextBox x:Name="txtColegiado" HorizontalAlignment="Left" Margin="591,507,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="38" TextAlignment="Left" FontSize="16" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}" FontWeight="Normal">
             <TextBox.CaretBrush>
                 <SolidColorBrush Color="#FF2FB0C8" Opacity="0.3"/>
             </TextBox.CaretBrush>
@@ -170,7 +170,7 @@
             </TextBox.Background>
         </TextBox>
         <Label x:Name="lblNombreEmpleado_Copy9" Content="COLEGIADO:" HorizontalAlignment="Left" Margin="470,507,0,0" VerticalAlignment="Top" Height="38" Width="106" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center"/>
-        <TextBox x:Name="txtIdPuesto" HorizontalAlignment="Left" Margin="1005,378,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="38" TextAlignment="Left" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}">
+        <TextBox x:Name="txtIdPuesto" HorizontalAlignment="Left" Margin="1005,378,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="38" TextAlignment="Left" FontSize="16" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}" FontWeight="Normal">
             <TextBox.CaretBrush>
                 <SolidColorBrush Color="#FF2FB0C8" Opacity="0.3"/>
             </TextBox.CaretBrush>
@@ -179,7 +179,7 @@
             </TextBox.Background>
         </TextBox>
         <Label x:Name="lblNombreEmpleado_Copy10" Content="ID PUESTO:" HorizontalAlignment="Left" Margin="884,378,0,0" VerticalAlignment="Top" Height="38" Width="88" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center"/>
-        <TextBox x:Name="txtStatus" HorizontalAlignment="Left" Margin="1005,438,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="38" TextAlignment="Left" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}">
+        <TextBox x:Name="txtStatus" HorizontalAlignment="Left" Margin="1005,438,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="38" TextAlignment="Left" FontSize="16" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}" FontWeight="Normal">
             <TextBox.CaretBrush>
                 <SolidColorBrush Color="#FF2FB0C8" Opacity="0.3"/>
             </TextBox.CaretBrush>

@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "mJjcaaneZNblGyafbs20UaxlQkCV+jEQXg+zOgJU95nunzF51YdrG4rRLynVfpV1RzDTTGIacb4RLTpN6JUIPg==",
+  "dgSpecHash": "h3QMKxOQ4PHowPJVzGup+rUzZSDvLd6ERkvOE0Z3vpn+xatpWkrt+4Ni/iqV3etyLi7HriX4BUs1UKtnnAQ5qA==",
   "success": true,
-  "projectFilePath": "D:\\UMG\\Año4\\Semestre 2\\Analisis De Sistemas 2\\ProyectoLaboratorio\\proyecto22021AS2G5\\PrototipoLaboratorio\\PrototipoLaboratorio\\PrototipoLaboratorio.csproj",
+  "projectFilePath": "C:\\Users\\GiancarloS\\Desktop\\ProyectoLaboratorio\\proyecto22021AS2G5\\PrototipoLaboratorio\\PrototipoLaboratorio\\PrototipoLaboratorio.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\SEBAS\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
-    "C:\\Users\\SEBAS\\.nuget\\packages\\system.data.odbc\\5.0.0\\system.data.odbc.5.0.0.nupkg.sha512"
+    "C:\\Users\\GiancarloS\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "C:\\Users\\GiancarloS\\.nuget\\packages\\system.data.odbc\\5.0.0\\system.data.odbc.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }
