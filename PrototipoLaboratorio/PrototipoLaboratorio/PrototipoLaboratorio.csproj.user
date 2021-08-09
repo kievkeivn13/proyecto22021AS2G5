@@ -27,6 +27,9 @@
     <Page Update="Ventanas\PruebaComboBox.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Ventanas\wpfPacientes.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Ventanas\wpfEmpleados.xaml">
       <SubType>Designer</SubType>
     </Page>

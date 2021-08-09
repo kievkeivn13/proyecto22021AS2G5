@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
 C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\proyecto\PrototipoLaboratorio\PrototipoLaboratorio\App.xaml
-91331681953
+10532023600
 
-14109756824
+15-653872381
 2001693428102
-MainWindow.xaml;Ventanas\PruebaComboBox.xaml;Ventanas\wfpDescuentosaseguradoras.xaml;Ventanas\wpfAseguradoras.xaml;Ventanas\wpfClientes.xaml;Ventanas\wpfEmpleados.xaml;Ventanas\wpfGestorusuario.xaml;Ventanas\wpfPuestos.xaml;Ventanas\wpfRequerimientosClinica.xaml;
+MainWindow.xaml;Ventanas\PruebaComboBox.xaml;Ventanas\wfpDescuentosaseguradoras.xaml;Ventanas\wpfAseguradoras.xaml;Ventanas\wpfClientes.xaml;Ventanas\wpfEmpleados.xaml;Ventanas\wpfGestorusuario.xaml;Ventanas\wpfPacientes.xaml;Ventanas\wpfPuestos.xaml;Ventanas\wpfRequerimientosClinica.xaml;
 
-False
+True
 

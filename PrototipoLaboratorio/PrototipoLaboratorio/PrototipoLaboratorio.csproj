@@ -71,6 +71,9 @@
     <Compile Update="Ventanas\wpfClientes.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Ventanas\wpfPacientes.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Ventanas\wpfPuestos.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -78,6 +81,9 @@
 
   <ItemGroup>
     <Page Update="Ventanas\wpfClientes.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Ventanas\wpfPacientes.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Ventanas\wpfPuestos.xaml">
