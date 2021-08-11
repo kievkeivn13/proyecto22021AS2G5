@@ -6,6 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v3.1": {
+<<<<<<< HEAD
       "BouncyCastle.NetCore/1.8.5": {
         "runtime": {
           "lib/netstandard2.0/BouncyCastle.Crypto.dll": {
@@ -119,6 +120,9 @@
           }
         }
       },
+=======
+      "Microsoft.NETCore.Platforms/5.0.0": {},
+>>>>>>> 04703d5135c526ad9b263c3e74e7d37c6b9e8bd8
       "System.Data.Odbc/5.0.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "5.0.0"
@@ -155,6 +159,7 @@
             "fileVersion": "5.0.20.51904"
           }
         }
+<<<<<<< HEAD
       },
       "System.Drawing.Common/4.7.0": {
         "dependencies": {
@@ -298,10 +303,13 @@
             "fileVersion": "4.700.19.56404"
           }
         }
+=======
+>>>>>>> 04703d5135c526ad9b263c3e74e7d37c6b9e8bd8
       }
     }
   },
   "libraries": {
+<<<<<<< HEAD
     "BouncyCastle.NetCore/1.8.5": {
       "type": "package",
       "serviceable": true,
@@ -337,6 +345,8 @@
       "path": "k4os.hash.xxhash/1.0.6",
       "hashPath": "k4os.hash.xxhash.1.0.6.nupkg.sha512"
     },
+=======
+>>>>>>> 04703d5135c526ad9b263c3e74e7d37c6b9e8bd8
     "Microsoft.NETCore.Platforms/5.0.0": {
       "type": "package",
       "serviceable": true,
@@ -344,6 +354,7 @@
       "path": "microsoft.netcore.platforms/5.0.0",
       "hashPath": "microsoft.netcore.platforms.5.0.0.nupkg.sha512"
     },
+<<<<<<< HEAD
     "Microsoft.Win32.SystemEvents/4.7.0": {
       "type": "package",
       "serviceable": true,
@@ -372,12 +383,15 @@
       "path": "system.configuration.configurationmanager/4.4.1",
       "hashPath": "system.configuration.configurationmanager.4.4.1.nupkg.sha512"
     },
+=======
+>>>>>>> 04703d5135c526ad9b263c3e74e7d37c6b9e8bd8
     "System.Data.Odbc/5.0.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-j4WsYGmcD7m1D0Tc3N7HqWqcdUHNn9+kdXh9ODTWEsOGrAvALf+BgRStd7L0/O/zDS0R4Uu9vNM8UY6EnK+WYw==",
       "path": "system.data.odbc/5.0.0",
       "hashPath": "system.data.odbc.5.0.0.nupkg.sha512"
+<<<<<<< HEAD
     },
     "System.Drawing.Common/4.7.0": {
       "type": "package",
@@ -441,6 +455,8 @@
       "sha512": "sha512-CeWTdRNfRaSh0pm2gDTJFwVaXfTq6Xwv/sA887iwPTneW7oMtMlpvDIO+U60+3GWTB7Aom6oQwv5VZVUhQRdPQ==",
       "path": "system.windows.extensions/4.7.0",
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
+=======
+>>>>>>> 04703d5135c526ad9b263c3e74e7d37c6b9e8bd8
     }
   }
 }

@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\sucel\\Desktop\\PROYECTO\\PrototipoLaboratorio\\PrototipoLaboratorio\\PrototipoLaboratorio.csproj": {}
   },
   "projects": {
@@ -12,14 +13,33 @@
         "projectPath": "C:\\Users\\sucel\\Desktop\\PROYECTO\\PrototipoLaboratorio\\PrototipoLaboratorio\\PrototipoLaboratorio.csproj",
         "packagesPath": "C:\\Users\\sucel\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\sucel\\Desktop\\PROYECTO\\PrototipoLaboratorio\\PrototipoLaboratorio\\obj\\",
+=======
+    "C:\\Users\\GiancarloS\\Desktop\\ProyectoLaboratorio\\proyecto22021AS2G5\\PrototipoLaboratorio\\PrototipoLaboratorio\\PrototipoLaboratorio.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\GiancarloS\\Desktop\\ProyectoLaboratorio\\proyecto22021AS2G5\\PrototipoLaboratorio\\PrototipoLaboratorio\\PrototipoLaboratorio.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\GiancarloS\\Desktop\\ProyectoLaboratorio\\proyecto22021AS2G5\\PrototipoLaboratorio\\PrototipoLaboratorio\\PrototipoLaboratorio.csproj",
+        "projectName": "PrototipoLaboratorio",
+        "projectPath": "C:\\Users\\GiancarloS\\Desktop\\ProyectoLaboratorio\\proyecto22021AS2G5\\PrototipoLaboratorio\\PrototipoLaboratorio\\PrototipoLaboratorio.csproj",
+        "packagesPath": "C:\\Users\\GiancarloS\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\GiancarloS\\Desktop\\ProyectoLaboratorio\\proyecto22021AS2G5\\PrototipoLaboratorio\\PrototipoLaboratorio\\obj\\",
+>>>>>>> 04703d5135c526ad9b263c3e74e7d37c6b9e8bd8
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\sucel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\GiancarloS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 04703d5135c526ad9b263c3e74e7d37c6b9e8bd8
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -44,10 +64,13 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+<<<<<<< HEAD
             "MySql.Data": {
               "target": "Package",
               "version": "[8.0.26, )"
             },
+=======
+>>>>>>> 04703d5135c526ad9b263c3e74e7d37c6b9e8bd8
             "System.Data.Odbc": {
               "target": "Package",
               "version": "[5.0.0, )"

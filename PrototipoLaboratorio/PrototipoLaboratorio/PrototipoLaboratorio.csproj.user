@@ -7,9 +7,30 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Update="Ventanas\PruebaComboBox.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+=======
+    <Compile Update="Ventanas\Examen.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Ventanas\Formas_pago.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Ventanas\Paquete.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Ventanas\PruebaComboBox.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Ventanas\Tipo_examen.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Ventanas\Tipo_muestra.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+>>>>>>> 04703d5135c526ad9b263c3e74e7d37c6b9e8bd8
     <Compile Update="Ventanas\wpfEmpleados.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -24,10 +45,29 @@
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
+<<<<<<< HEAD
     <Page Update="Ventanas\PruebaComboBox.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Ventanas\wpfPacientes.xaml">
+=======
+    <Page Update="Ventanas\Examen.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Ventanas\Formas_pago.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Ventanas\Paquete.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Ventanas\PruebaComboBox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Ventanas\Tipo_examen.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Ventanas\Tipo_muestra.xaml">
+>>>>>>> 04703d5135c526ad9b263c3e74e7d37c6b9e8bd8
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Ventanas\wpfEmpleados.xaml">
@@ -36,9 +76,12 @@
     <Page Update="Ventanas\wpfGestorusuario.xaml">
       <SubType>Designer</SubType>
     </Page>
+<<<<<<< HEAD
     <Page Update="Ventanas\wpfPuestos.xaml">
       <SubType>Designer</SubType>
     </Page>
+=======
+>>>>>>> 04703d5135c526ad9b263c3e74e7d37c6b9e8bd8
     <Page Update="Ventanas\wpfRequerimientosClinica.xaml">
       <SubType>Designer</SubType>
     </Page>
