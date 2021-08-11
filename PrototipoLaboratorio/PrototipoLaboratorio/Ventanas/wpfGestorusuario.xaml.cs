@@ -28,6 +28,10 @@ namespace PrototipoLaboratorio.Ventanas
         {
             
         }
-     
+
+        private void btnModificar_Click(object sender, RoutedEventArgs e)
+        {
+           
+        }
     }
 }
