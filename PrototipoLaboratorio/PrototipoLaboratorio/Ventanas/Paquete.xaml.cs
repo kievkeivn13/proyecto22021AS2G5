@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-﻿using MySql.Data.MySqlClient;
-=======
 ﻿
->>>>>>> 04703d5135c526ad9b263c3e74e7d37c6b9e8bd8
 using System;
 using System.Collections.Generic;
 using System.Data.Odbc;
@@ -22,18 +18,18 @@ namespace PrototipoLaboratorio.Ventanas
     /// <summary>
     /// Lógica de interacción para wpfEmpleados.xaml
     /// </summary>
-    public partial class wpfEmpleados : UserControl
+    public partial class Paquete : UserControl
     {
         Conexion cn = new Conexion();
-       
-        public wpfEmpleados()
+
+        public Paquete()
         {
             InitializeComponent();
         }
 
         private void btnInsertar_Click(object sender, RoutedEventArgs e)
         {
-            
+
             /*
              (id_empleado, cui_empleado, nit_empleado, nombre_empleado, apellido_empleado," +
                 " genero_empleado, edad_empleado, telefono_empleado, direccion_empleado, email_empleado," +
@@ -62,7 +58,7 @@ namespace PrototipoLaboratorio.Ventanas
             consulta.ExecuteNonQuery();
             MessageBox.Show("Inserción realizada");
 
-            
+
             txtIdEmpleado.Text = "";
             txtCui.Text = "";
             txtNit.Text = "";
@@ -81,38 +77,38 @@ namespace PrototipoLaboratorio.Ventanas
         private void btnModificar_Click(object sender, RoutedEventArgs e)
         {
             //string p = this.txtIdEmpleado.Text.Trim();
-            
-            
-                try
-                {
-                    //string MyConnection2 = "datasource=localhost;port=3306;username=root;password=6182";
-                    string cadena = "update CLINICA1.EMPLEADO set id_empleado ='" + this.txtIdEmpleado.Text
-                        + "',cui_empleado ='" + this.txtCui.Text
-                        + "',nit_empleado='" + this.txtNit.Text
-                        + "',nombre_empleado='" + this.txtNombre.Text
-                        + "',apellido_empleado='" + this.txtApellido.Text
-                        + "',genero_empleado='" + this.txtGenero.Text
-                        + "',edad_empleado='" + this.txtEdad.Text
-                        + "',telefono_empleado='" + this.txtTelefono.Text
-                        + "',direccion_empleado='" + this.txtDireccion.Text
-                        + "',email_empleado='" + this.txtEmail.Text
-                        + "',status_empleado='" + this.txtStatus.Text
-                        + "',id_puesto='" + this.txtIdPuesto.Text
-                        + "',colegiado_empleado='" + this.txtColegiado.Text
-
-                        + "'where id_empleado='" + this.txtIdEmpleado.Text + "';";
 
 
-                    OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
-                    consulta.ExecuteNonQuery();
+            try
+            {
+                //string MyConnection2 = "datasource=localhost;port=3306;username=root;password=6182";
+                string cadena = "update CLINICA1.EMPLEADO set id_empleado ='" + this.txtIdEmpleado.Text
+                    + "',cui_empleado ='" + this.txtCui.Text
+                    + "',nit_empleado='" + this.txtNit.Text
+                    + "',nombre_empleado='" + this.txtNombre.Text
+                    + "',apellido_empleado='" + this.txtApellido.Text
+                    + "',genero_empleado='" + this.txtGenero.Text
+                    + "',edad_empleado='" + this.txtEdad.Text
+                    + "',telefono_empleado='" + this.txtTelefono.Text
+                    + "',direccion_empleado='" + this.txtDireccion.Text
+                    + "',email_empleado='" + this.txtEmail.Text
+                    + "',status_empleado='" + this.txtStatus.Text
+                    + "',id_puesto='" + this.txtIdPuesto.Text
+                    + "',colegiado_empleado='" + this.txtColegiado.Text
 
-                    MessageBox.Show("Modificacion realizada");
+                    + "'where id_empleado='" + this.txtIdEmpleado.Text + "';";
 
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
+
+                OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
+                consulta.ExecuteNonQuery();
+
+                MessageBox.Show("Modificacion realizada");
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
 
             txtIdEmpleado.Text = "";
             txtCui.Text = "";
@@ -210,9 +206,9 @@ namespace PrototipoLaboratorio.Ventanas
         {
             try
             {
-                
+
                 string cadena = "delete from CLINICA1.EMPLEADO where id_empleado='" + this.txtIdEmpleado.Text + "';";
-                
+
 
                 OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
                 consulta.ExecuteNonQuery();
@@ -224,7 +220,7 @@ namespace PrototipoLaboratorio.Ventanas
                 while (busqueda.Read())
                 {
                 }
-                
+
 
                 txtIdEmpleado.Text = "";
                 txtCui.Text = "";

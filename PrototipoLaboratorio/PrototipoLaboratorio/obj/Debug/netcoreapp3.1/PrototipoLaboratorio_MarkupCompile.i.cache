@@ -4,17 +4,30 @@
 winexe
 C#
 .cs
+<<<<<<< HEAD
 C:\Users\sucel\Desktop\PROYECTO\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\
+=======
+C:\Users\GiancarloS\Desktop\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\
+>>>>>>> 04703d5135c526ad9b263c3e74e7d37c6b9e8bd8
 PrototipoLaboratorio
 none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
+<<<<<<< HEAD
 C:\Users\sucel\Desktop\PROYECTO\PrototipoLaboratorio\PrototipoLaboratorio\App.xaml
 14-1902285590
 
 38-1225158191
 208337906047
 MainWindow.xaml;PrototipoLaboratorio\PrototipoLaboratorio\App.xaml;PrototipoLaboratorio\PrototipoLaboratorio\MainWindow.xaml;PrototipoLaboratorio\PrototipoLaboratorio\Ventanas\wfpDescuentosaseguradoras.xaml;PrototipoLaboratorio\PrototipoLaboratorio\Ventanas\wpfAseguradoras.xaml;PrototipoLaboratorio\PrototipoLaboratorio\Ventanas\wpfGestorusuario.xaml;Ventanas\PruebaComboBox.xaml;Ventanas\wfpDescuentosaseguradoras.xaml;Ventanas\wpfAseguradoras.xaml;Ventanas\wpfEmpleados.xaml;Ventanas\wpfGestorusuario.xaml;Ventanas\wpfPacientes.xaml;Ventanas\wpfPuestos.xaml;Ventanas\wpfRequerimientosClinica.xaml;
+=======
+C:\Users\GiancarloS\Desktop\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\App.xaml
+10453884589
+
+15789597377
+200411914877
+MainWindow.xaml;Ventanas\Examen.xaml;Ventanas\Formas_pago.xaml;Ventanas\Paquete.xaml;Ventanas\PruebaComboBox.xaml;Ventanas\Tipo_examen.xaml;Ventanas\Tipo_muestra.xaml;Ventanas\wpfEmpleados.xaml;Ventanas\wpfGestorusuario.xaml;Ventanas\wpfRequerimientosClinica.xaml;
+>>>>>>> 04703d5135c526ad9b263c3e74e7d37c6b9e8bd8
 
 False
 

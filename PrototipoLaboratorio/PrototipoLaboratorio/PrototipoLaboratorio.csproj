@@ -33,14 +33,21 @@
   </ItemGroup>
 
   <ItemGroup>
+<<<<<<< HEAD
     <PackageReference Include="MySql.Data" Version="8.0.26" />
+=======
+>>>>>>> 04703d5135c526ad9b263c3e74e7d37c6b9e8bd8
     <PackageReference Include="System.Data.Odbc" Version="5.0.0" />
   </ItemGroup>
 
   <ItemGroup>
+<<<<<<< HEAD
     <Reference Include="MySql.Data">
       <HintPath>C:\Program Files (x86)\MySQL\MySQL Connector Net 8.0.25\Assemblies\v4.5.2\MySql.Data.dll</HintPath>
     </Reference>
+=======
+
+>>>>>>> 04703d5135c526ad9b263c3e74e7d37c6b9e8bd8
   </ItemGroup>
 
   <ItemGroup>

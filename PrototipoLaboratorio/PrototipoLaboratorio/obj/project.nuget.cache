@@ -1,5 +1,6 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "pgEhXmH8rvFG9oAxe+zq+Vdb9kecLOtPPTMz1ZNnJfXPgk7APyabtPX8U7h73czk5J6eZD8KPlZHW5CCC4NaXA==",
   "success": true,
   "projectFilePath": "C:\\Users\\sucel\\Desktop\\PROYECTO\\PrototipoLaboratorio\\PrototipoLaboratorio\\PrototipoLaboratorio.csproj",
@@ -24,6 +25,14 @@
     "C:\\Users\\sucel\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512",
     "C:\\Users\\sucel\\.nuget\\packages\\system.text.encoding.codepages\\4.4.0\\system.text.encoding.codepages.4.4.0.nupkg.sha512",
     "C:\\Users\\sucel\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
+=======
+  "dgSpecHash": "h3QMKxOQ4PHowPJVzGup+rUzZSDvLd6ERkvOE0Z3vpn+xatpWkrt+4Ni/iqV3etyLi7HriX4BUs1UKtnnAQ5qA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\GiancarloS\\Desktop\\ProyectoLaboratorio\\proyecto22021AS2G5\\PrototipoLaboratorio\\PrototipoLaboratorio\\PrototipoLaboratorio.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\GiancarloS\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "C:\\Users\\GiancarloS\\.nuget\\packages\\system.data.odbc\\5.0.0\\system.data.odbc.5.0.0.nupkg.sha512"
+>>>>>>> 04703d5135c526ad9b263c3e74e7d37c6b9e8bd8
   ],
   "logs": []
 }
