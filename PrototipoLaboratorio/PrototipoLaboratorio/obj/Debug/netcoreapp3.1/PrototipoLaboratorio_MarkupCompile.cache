@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\ProyectoLaboratorio (1)\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\
+C:\Users\sucel\Desktop\PROYECTO\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\
 PrototipoLaboratorio
 none
 false
-TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
-C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\ProyectoLaboratorio (1)\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\App.xaml
-71116833018
+TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
+C:\Users\sucel\Desktop\PROYECTO\PrototipoLaboratorio\PrototipoLaboratorio\App.xaml
+14-1902285590
 
-101558115597
-2001693428102
-MainWindow.xaml;Ventanas\PruebaComboBox.xaml;Ventanas\wpfClientes.xaml;Ventanas\wpfEmpleados.xaml;Ventanas\wpfGestorusuario.xaml;Ventanas\wpfPuestos.xaml;Ventanas\wpfRequerimientosClinica.xaml;
+36-2030087134
+200-1852579933
+MainWindow.xaml;PrototipoLaboratorio\PrototipoLaboratorio\App.xaml;PrototipoLaboratorio\PrototipoLaboratorio\MainWindow.xaml;PrototipoLaboratorio\PrototipoLaboratorio\Ventanas\wfpDescuentosaseguradoras.xaml;PrototipoLaboratorio\PrototipoLaboratorio\Ventanas\wpfAseguradoras.xaml;PrototipoLaboratorio\PrototipoLaboratorio\Ventanas\wpfGestorusuario.xaml;Ventanas\PruebaComboBox.xaml;Ventanas\wfpDescuentosaseguradoras.xaml;Ventanas\wpfAseguradoras.xaml;Ventanas\wpfEmpleados.xaml;Ventanas\wpfGestorusuario.xaml;Ventanas\wpfPacientes.xaml;Ventanas\wpfPuestos.xaml;Ventanas\wpfRequerimientosClinica.xaml;
 
-False
+True
 

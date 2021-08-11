@@ -98,3 +98,23 @@ C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\ProyectoLaboratorio (1
 C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\ProyectoLaboratorio (1)\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio.csproj.CoreCompileInputs.cache
 C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\ProyectoLaboratorio (1)\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio.csproj.CopyComplete
 C:\Users\ranbr\Documents\SISTEMAS\ANALISIS DE SISTEMAS II\ProyectoLaboratorio (1)\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio.genruntimeconfig.cache
+C:\Users\sucel\Desktop\PROYECTO\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio.csproj.AssemblyReference.cache
+C:\Users\sucel\Desktop\PROYECTO\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\sucel\Desktop\PROYECTO\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio\PrototipoLaboratorio\App.g.cs
+C:\Users\sucel\Desktop\PROYECTO\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio\PrototipoLaboratorio\MainWindow.g.cs
+C:\Users\sucel\Desktop\PROYECTO\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio\PrototipoLaboratorio\Ventanas\wfpDescuentosaseguradoras.g.cs
+C:\Users\sucel\Desktop\PROYECTO\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio\PrototipoLaboratorio\Ventanas\wpfAseguradoras.g.cs
+C:\Users\sucel\Desktop\PROYECTO\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio\PrototipoLaboratorio\Ventanas\wpfGestorusuario.g.cs
+C:\Users\sucel\Desktop\PROYECTO\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\PruebaComboBox.g.cs
+C:\Users\sucel\Desktop\PROYECTO\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\wfpDescuentosaseguradoras.g.cs
+C:\Users\sucel\Desktop\PROYECTO\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\wpfAseguradoras.g.cs
+C:\Users\sucel\Desktop\PROYECTO\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\wpfEmpleados.g.cs
+C:\Users\sucel\Desktop\PROYECTO\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\wpfGestorusuario.g.cs
+C:\Users\sucel\Desktop\PROYECTO\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\wpfPacientes.g.cs
+C:\Users\sucel\Desktop\PROYECTO\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\wpfPuestos.g.cs
+C:\Users\sucel\Desktop\PROYECTO\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\wpfRequerimientosClinica.g.cs
+C:\Users\sucel\Desktop\PROYECTO\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\sucel\Desktop\PROYECTO\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio_MarkupCompile.cache
+C:\Users\sucel\Desktop\PROYECTO\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio_MarkupCompile.lref
+C:\Users\sucel\Desktop\PROYECTO\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio.dll
+C:\Users\sucel\Desktop\PROYECTO\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio.pdb
