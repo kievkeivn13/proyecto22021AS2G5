@@ -18,7 +18,6 @@
 			<ImageBrush ImageSource="/fondo_2.jpg"/>
 		</Grid.Background>
 		<Menu Margin="0,0,0,666" Background="#FFE3E3E3" Grid.ColumnSpan="2">
-
 			<MenuItem x:Name="menuCitas" Header="    Citas" RenderTransformOrigin="0.528,0.507" Height="50" Click="MenuItem_Click" FontSize="14" Width="0" Background="#FFE3E3E3" >
 				<MenuItem.Icon>
 					<Image Source="calendar_80px.png" Margin="-4,-14,-25,-14"/>
@@ -45,7 +44,7 @@
 						</Image.OpacityMask>
 					</Image>
 				</MenuItem.Icon>
-				<MenuItem x:Name="menuItem" Header="MenuItem"/>
+				<MenuItem x:Name="btnAgendarCita" Header="Agendar Cita" ItemsSource="{Binding ClickEvent, ElementName=btnAgendarCita}" Click="btnAgendarCita_Click"/>
 				<MenuItem Header="MenuItem"/>
 				<MenuItem Header="MenuItem"/>
 			</MenuItem>
@@ -57,7 +56,7 @@
 						</Image.OpacityMask>
 					</Image>
 				</MenuItem.Icon>
-				<MenuItem Header="MenuItem"/>
+				<MenuItem x:Name="btnGestorPaquete" Header="Paquetes" ItemsSource="{Binding ClickEvent, ElementName=btnGestorPaquete}" Click="btnPaquete_Click"/>
 				<MenuItem Header="MenuItem"/>
 			</MenuItem>
 			<MenuItem x:Name="btnExamenes" Header="    Exámenes" Width="104" Background="#FFE3E3E3" FontFamily="Century Gothic">
@@ -68,8 +67,11 @@
 						</Image.OpacityMask>
 					</Image>
 				</MenuItem.Icon>
-				<MenuItem Header="MenuItem"/>
-				<MenuItem Header="MenuItem"/>
+				<MenuItem x:Name="btnRequerimientosClinica" Header="RequerimientosC" ItemsSource="{Binding ClickEvent, ElementName=btnGestionusuario}" Click="btnRequerimientosC_Click"/>
+				<MenuItem x:Name="btnRequerimientosPaciente" Header="RequerimientosP" ItemsSource="{Binding ClickEvent, ElementName=btnEmpleado}" Click="btnRequerimientosP_Click"/>
+				<MenuItem x:Name="btnGestorExamen" Header="Examen" ItemsSource="{Binding ClickEvent, ElementName=btnGestorExamen}" Click="btnExamen_Click"/>
+				<MenuItem x:Name="btnTipoExamen" Header="Tipo Examen" ItemsSource="{Binding ClickEvent, ElementName=btnTipoExamen}" Click="btnTipo_examen_Click"/>
+				<MenuItem x:Name="btnTipoMuestra" Header="Tipo Muestra" ItemsSource="{Binding ClickEvent, ElementName=btnTipoMuestra}" Click="btnTipo_muestra_Click"/>
 			</MenuItem>
 			<MenuItem x:Name="btnCotizacion" Header="   Cotizaciones" Width="120" Background="#FFE3E3E3" FontFamily="Century Gothic">
 				<MenuItem.Icon>
@@ -101,10 +103,10 @@
 						</Image.OpacityMask>
 					</Image>
 				</MenuItem.Icon>
-				<MenuItem Header="MenuItem"/>
-				<MenuItem Header="MenuItem"/>
+				<MenuItem x:Name="btnGestionar" Header="Gestionar" ItemsSource="{Binding ClickEvent, ElementName=btnGestionar}" Click="btnGestionaraseguradora_Click"/>
+				<MenuItem x:Name="btnDescuento" Header="Gestor Descuentos" ItemsSource="{Binding ClickEvent, ElementName=btnDescuento}" Click="btnDescuentoaseguradoras_Click"/>
 			</MenuItem>
-			<MenuItem x:Name="btnUsuarios" Header="   Usuarios" Width="96" Background="#FFE3E3E3" Click="btnUsuarios_Click" FontFamily="Century Gothic" ItemsSource="{Binding ClickEvent, ElementName=btnGestionusuario}">
+			<MenuItem x:Name="btnUsuarios" Header="   Usuarios" Width="96" Background="#FFE3E3E3" Click="btnUsuarios_Click" FontFamily="Century Gothic">
 				<MenuItem.Icon>
 					<Image Source="/Usuarios.png" Margin="-4,-15,-25,-14">
 						<Image.OpacityMask>
@@ -112,7 +114,8 @@
 						</Image.OpacityMask>
 					</Image>
 				</MenuItem.Icon>
-				<MenuItem Name="btnGestionusuario" Header="Gestionar" Click="btnGestionusuario_Click"/>
+				<MenuItem x:Name="btnGestionusuario" Header="Gestionar" Click="btnGestionusuario_Click"/>
+				<MenuItem x:Name="btnTipousuario" Header="Tipo Usuario" Click="btnTipousuario_Click"/>
 				<MenuItem Header="MenuItem"/>
 			</MenuItem>
 			<MenuItem x:Name="btnPersonal" Header="    Personal" Width="94" Background="#FFE3E3E3" FontFamily="Century Gothic" Click="btnPersonal_Click">
@@ -123,10 +126,10 @@
 						</Image.OpacityMask>
 					</Image>
 				</MenuItem.Icon>
-				<MenuItem Header="MenuItem"/>
+				<MenuItem x:Name="btnEmpleado" Header="Empleados" ItemsSource="{Binding ClickEvent, ElementName=btnEmpleado}" Click="btnEmpleado_Click"/>
 				<MenuItem Header="MenuItem"/>
 			</MenuItem>
-			<MenuItem x:Name="btnFinanzas" Header="    Finanzas" Width="94" Background="#FFE3E3E3" FontFamily="Century Gothic">
+			<MenuItem x:Name="btnFinanzas" Header="    Finanzas" Width="94" Background="#FFE3E3E3" FontFamily="Century Gothic" ItemsSource="{Binding ClickEvent, ElementName=btnFinanzas}">
 				<MenuItem.Icon>
 					<Image Source="/Finanzas.png" Margin="-4,-15,-25,-14">
 						<Image.OpacityMask>
@@ -134,10 +137,10 @@
 						</Image.OpacityMask>
 					</Image>
 				</MenuItem.Icon>
-				<MenuItem Header="MenuItem"/>
-				<MenuItem Header="MenuItem"/>
+				<MenuItem x:Name="btnTipocambio" Header="Tipo Cambio  " ItemsSource="{Binding ClickEvent, ElementName=btnTipocambio}" Click="btnTipocambio_Click"/>
+				<MenuItem x:Name="btnGestorFormasPago" Header="Formas de Pago" ItemsSource="{Binding ClickEvent, ElementName=btnGestorFormasPago}" Click="btnFormas_pago_Click"/>
 			</MenuItem>
-			<MenuItem x:Name="btnAdministracion" Header="   Administración" Width="135" Background="#FFE3E3E3" FontFamily="Century Gothic">
+			<MenuItem x:Name="btnAdministracion" Header="   Administración" Width="135" Background="#FFE3E3E3" FontFamily="Century Gothic" >
 				<MenuItem.Icon>
 					<Image Source="/Administracion.png" Margin="-4,-15,-25,-14">
 						<Image.OpacityMask>
@@ -145,8 +148,8 @@
 						</Image.OpacityMask>
 					</Image>
 				</MenuItem.Icon>
-				<MenuItem Header="MenuItem"/>
-				<MenuItem Header="MenuItem"/>
+				<MenuItem x:Name="btnGestorpacientes" Header="Pacientes" ItemsSource="{Binding CheckedEvent, ElementName=btnGestorpacientes}" Click="btnGestorpacientes_Click"/>
+				<MenuItem x:Name="btnGestorpuestos" Header="Puestos" ItemsSource="{Binding CheckedEvent, ElementName=btnGestorpuestos}" Click="btnGestorPuestos_Click"/>
 			</MenuItem>
 			<MenuItem x:Name="btnAyuda" Header="" Width="42" Background="#FFE3E3E3" FontFamily="Century Gothic">
 				<MenuItem.Icon>
@@ -184,6 +187,9 @@
 				<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center"><Run Language="es-gt" Text="Inicio"/></TextBlock>
 			</DockPanel>
 		</Button>
+		<Image HorizontalAlignment="Left" Height="200" Margin="-16,534,0,0" VerticalAlignment="Top" Width="405" Source="/eslogan.png" Opacity="0.1" Grid.ColumnSpan="2"/>
+		<Image HorizontalAlignment="Center" Height="368" VerticalAlignment="Top" Width="381" Source="/icono.png" Opacity="0.1" Grid.Column="1" Margin="0,175,0,0"/>
 
 	</Grid>
+
 </Window>

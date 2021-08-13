@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\DevSoft\cygwin64\home\kievk\Projects\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\
+C:\Users\sucel\Desktop\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\
 PrototipoLaboratorio
 none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
-C:\DevSoft\cygwin64\home\kievk\Projects\PrototipoLaboratorio\PrototipoLaboratorio\App.xaml
-22014812364
+C:\Users\sucel\Desktop\PrototipoLaboratorio\PrototipoLaboratorio\App.xaml
+18-1616559365
 
-6-446400413
-221537631871
-MainWindow.xaml;Ventanas\wpfGestorusuario.xaml;
+23957148559
+226-1616919719
+MainWindow.xaml;Ventanas\Examen.xaml;Ventanas\Formas_pago.xaml;Ventanas\Paquete.xaml;Ventanas\Tipo_examen.xaml;Ventanas\Tipo_muestra.xaml;Ventanas\wfpDescuentosaseguradoras.xaml;Ventanas\wpfAseguradoras.xaml;Ventanas\wpfEmpleados.xaml;Ventanas\wpfGestorcaja.xaml;Ventanas\wpfGestorCitas.xaml;Ventanas\wpfGestorusuario.xaml;Ventanas\wpfPacientes.xaml;Ventanas\wpfPuestos.xaml;Ventanas\wpfRequerimientosClinica.xaml;Ventanas\wpfRequerimientosPaciente.xaml;Ventanas\wpfTipocambio.xaml;Ventanas\wpfTipousuario.xaml;
 
-True
+False
 
