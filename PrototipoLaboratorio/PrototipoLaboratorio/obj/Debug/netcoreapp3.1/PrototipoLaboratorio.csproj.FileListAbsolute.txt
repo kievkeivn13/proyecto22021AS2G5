@@ -243,3 +243,4 @@ G:\Git\PLAB\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Deb
 G:\Git\PLAB\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio.csproj.CoreCompileInputs.cache
 G:\Git\PLAB\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio.csproj.CopyComplete
 G:\Git\PLAB\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio.genruntimeconfig.cache
+G:\Git\PLAB\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\PrototipoLaboratorio.csproj.AssemblyReference.cache
