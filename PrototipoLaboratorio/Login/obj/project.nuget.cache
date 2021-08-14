@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PAJr1g+fLu+7l5+BqYr0nafnQ5lL0UKP99xYTpGt7hgaIgrXK9cJerTJiZhxs6Wwk3zNe/avk9D7ebpDhHhjUA==",
+  "dgSpecHash": "DzXR2SCOmQuu9k/SzuvLY+8HQdSta7dJeSXTmv72caIF839Z8NpId0Kt17yV30yWFb8QHNiKQEWVFva8ZGmntA==",
   "success": true,
-  "projectFilePath": "G:\\Git\\PLAB\\proyecto22021AS2G5\\PrototipoLaboratorio\\PrototipoLaboratorio\\PrototipoLaboratorio.csproj",
+  "projectFilePath": "G:\\Git\\PLAB\\proyecto22021AS2G5\\PrototipoLaboratorio\\Login\\Login.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kievk\\.nuget\\packages\\bouncycastle.netcore\\1.8.5\\bouncycastle.netcore.1.8.5.nupkg.sha512",
     "C:\\Users\\kievk\\.nuget\\packages\\databasic.core\\1.2.8\\databasic.core.1.2.8.nupkg.sha512",
