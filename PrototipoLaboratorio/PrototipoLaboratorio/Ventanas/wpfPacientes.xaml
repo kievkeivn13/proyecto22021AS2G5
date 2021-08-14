@@ -1,0 +1,194 @@
+﻿<UserControl x:Class="PrototipoLaboratorio.Ventanas.wpfPacientes"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PrototipoLaboratorio.Ventanas"
+             mc:Ignorable="d" 
+             d:DesignHeight="666" d:DesignWidth="1310">
+    <Grid>
+        <Grid>
+            <Grid.Background>
+                <ImageBrush ImageSource="/Ventanas/fondo_2.jpg"/>
+            </Grid.Background>
+            <Button x:Name="btnModificar"  HorizontalAlignment="Left" Margin="585,574,0,0" VerticalAlignment="Top" Height="70" Width="126" RenderTransformOrigin="0.5,0.5" Background="#FFF0F4F4" FontFamily="Century Gothic" FontSize="14" Click="btnModificar_Click">
+                <Button.BorderBrush>
+                    <SolidColorBrush Color="#FF2FB0C8" Opacity="0.2"/>
+                </Button.BorderBrush>
+                <DockPanel>
+                    <Image Source="/Ventanas/edit_file_80px.png" Height="56" Width="54"></Image>
+                    <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center"><Run Language="es-gt" Text="Modificar"/></TextBlock>
+                </DockPanel>
+            </Button>
+            <Button x:Name="btnEliminar"  HorizontalAlignment="Left" Margin="1013,573,0,0" VerticalAlignment="Top" Height="71" Width="123" RenderTransformOrigin="0.5,0.5" FontFamily="Century Gothic" FontSize="14" Click="btnEliminar_Click">
+                <Button.Background>
+                    <SolidColorBrush Color="#FFF0F4F4" Opacity="0.2"/>
+                </Button.Background>
+                <Button.BorderBrush>
+                    <SolidColorBrush Color="#FF2FB0C8" Opacity="0.2"/>
+                </Button.BorderBrush>
+                <DockPanel Width="112">
+                    <Image Source="/Ventanas/delete_bin_80px.png" Width="60"/>
+                    <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center"><Run Language="es-gt" Text="Eliminar"/></TextBlock>
+                </DockPanel>
+            </Button>
+            <Button x:Name="btnLimpiar"  HorizontalAlignment="Left" Margin="873,573,0,0" VerticalAlignment="Top" Height="71" Width="123" RenderTransformOrigin="0.5,0.5" FontFamily="Century Gothic" FontSize="14" Click="btnLimpiar_Click">
+                <Button.Background>
+                    <SolidColorBrush Color="#FFF0F4F4" Opacity="0.002"/>
+                </Button.Background>
+                <Button.BorderBrush>
+                    <SolidColorBrush Color="#FF2FB0C8" Opacity="0.2"/>
+                </Button.BorderBrush>
+                <DockPanel>
+                    <Image Source="/Ventanas/broom_80px.png"/>
+                    <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center"><Run Language="es-gt" Text="Limpiar"/></TextBlock>
+                </DockPanel>
+            </Button>
+            <Button x:Name="btnInsertar"  HorizontalAlignment="Left" Margin="729,573,0,0" VerticalAlignment="Top" Height="71" Width="124" RenderTransformOrigin="0.5,0.5" Background="#FFF0F4F4" FontFamily="Century Gothic" FontSize="14" Click="btnInsertar_Click">
+                <Button.BorderBrush>
+                    <SolidColorBrush Color="#FF2FB0C8" Opacity="0.2"/>
+                </Button.BorderBrush>
+                <DockPanel>
+                    <Image Source="/Ventanas/save_as_80px.png"/>
+                    <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center"><Run Language="es-gt" Text="Insertar"/></TextBlock>
+                </DockPanel>
+            </Button>
+            <Button x:Name="btnBuscar"  HorizontalAlignment="Left" Margin="931,9,0,0" VerticalAlignment="Top" Height="38" Width="123" RenderTransformOrigin="0.5,0.5" Background="#FFF0F4F4" FontFamily="Century Gothic" FontSize="14" Click="btnBuscar_Click">
+                <Button.BorderBrush>
+                    <SolidColorBrush Color="#FF2FB0C8" Opacity="0.2"/>
+                </Button.BorderBrush>
+                <DockPanel>
+                    <Image Source="/Ventanas/search_80px.png"/>
+                    <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center"><Run Language="es-gt" Text="Busca"/><Run Text="r"/></TextBlock>
+                </DockPanel>
+            </Button>
+            <TextBox x:Name="txtIdPaciente" HorizontalAlignment="Left" Margin="145,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="38" TextAlignment="Left" FontSize="16" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}" FontWeight="Normal">
+                <TextBox.CaretBrush>
+                    <SolidColorBrush Color="#FF2FB0C8" Opacity="0.3"/>
+                </TextBox.CaretBrush>
+                <TextBox.Background>
+                    <SolidColorBrush Color="#FF2FB0C8" Opacity="0.15"/>
+                </TextBox.Background>
+            </TextBox>
+            <Label x:Name="lblIdPaciente" Content="ID PACIENTE:" HorizontalAlignment="Left" Margin="24,122,0,0" VerticalAlignment="Top" Height="38" Width="88" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center"/>
+            <TextBox x:Name="txtBuscar" HorizontalAlignment="Left" Margin="674,9,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="38" TextAlignment="Left" FontSize="16" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}" FontWeight="Normal">
+                <TextBox.CaretBrush>
+                    <SolidColorBrush Color="#FF2FB0C8" Opacity="0.3"/>
+                </TextBox.CaretBrush>
+                <TextBox.Background>
+                    <SolidColorBrush Color="#FF2FB0C8" Opacity="0.15"/>
+                </TextBox.Background>
+            </TextBox>
+            <TextBox x:Name="txtCui" HorizontalAlignment="Left" Margin="145,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="38" TextAlignment="Left" FontSize="16" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}" FontWeight="Normal">
+                <TextBox.CaretBrush>
+                    <SolidColorBrush Color="#FF2FB0C8" Opacity="0.3"/>
+                </TextBox.CaretBrush>
+                <TextBox.Background>
+                    <SolidColorBrush Color="#FF2FB0C8" Opacity="0.15"/>
+                </TextBox.Background>
+            </TextBox>
+            <Label x:Name="lblCui" Content="CUI:" HorizontalAlignment="Left" Margin="24,196,0,0" VerticalAlignment="Top" Height="38" Width="88" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center"/>
+            <TextBox x:Name="txtNit" HorizontalAlignment="Left" Margin="674,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="38" TextAlignment="Left" FontSize="16" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}" FontWeight="Normal">
+                <TextBox.CaretBrush>
+                    <SolidColorBrush Color="#FF2FB0C8" Opacity="0.3"/>
+                </TextBox.CaretBrush>
+                <TextBox.Background>
+                    <SolidColorBrush Color="#FF2FB0C8" Opacity="0.15"/>
+                </TextBox.Background>
+            </TextBox>
+            <Label x:Name="lblNit" Content="NIT:" HorizontalAlignment="Left" Margin="553,196,0,0" VerticalAlignment="Top" Height="38" Width="88" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center"/>
+            <TextBox x:Name="txtNombre" HorizontalAlignment="Left" Margin="149,295,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="366" Height="38" TextAlignment="Left" FontSize="16" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}" FontWeight="Normal">
+                <TextBox.CaretBrush>
+                    <SolidColorBrush Color="#FF2FB0C8" Opacity="0.3"/>
+                </TextBox.CaretBrush>
+                <TextBox.Background>
+                    <SolidColorBrush Color="#FF2FB0C8" Opacity="0.15"/>
+                </TextBox.Background>
+            </TextBox>
+            <Label x:Name="lblNombrePaciente" Content="NOMBRE:" HorizontalAlignment="Left" Margin="28,295,0,0" VerticalAlignment="Top" Height="38" Width="88" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center"/>
+            <TextBox x:Name="txtApellido" HorizontalAlignment="Left" Margin="692,295,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="410" Height="38" TextAlignment="Left" FontSize="16" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}" FontWeight="Normal">
+                <TextBox.CaretBrush>
+                    <SolidColorBrush Color="#FF2FB0C8" Opacity="0.3"/>
+                </TextBox.CaretBrush>
+                <TextBox.Background>
+                    <SolidColorBrush Color="#FF2FB0C8" Opacity="0.15"/>
+                </TextBox.Background>
+            </TextBox>
+            <Label x:Name="lblApellido" Content="APELLIDO:" HorizontalAlignment="Left" Margin="571,295,0,0" VerticalAlignment="Top" Height="38" Width="88" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center"/>
+            <TextBox x:Name="txtGenero" HorizontalAlignment="Left" Margin="149,374,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="38" TextAlignment="Left" FontSize="16" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}" FontWeight="Normal">
+                <TextBox.CaretBrush>
+                    <SolidColorBrush Color="#FF2FB0C8" Opacity="0.3"/>
+                </TextBox.CaretBrush>
+                <TextBox.Background>
+                    <SolidColorBrush Color="#FF2FB0C8" Opacity="0.15"/>
+                </TextBox.Background>
+            </TextBox>
+            <Label x:Name="lblGenero" Content="GENERO:" HorizontalAlignment="Left" Margin="28,374,0,0" VerticalAlignment="Top" Height="38" Width="88" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center"/>
+            <TextBox x:Name="txtEdad" HorizontalAlignment="Left" Margin="1013,374,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="38" TextAlignment="Left" FontSize="16" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}" FontWeight="Normal">
+                <TextBox.CaretBrush>
+                    <SolidColorBrush Color="#FF2FB0C8" Opacity="0.3"/>
+                </TextBox.CaretBrush>
+                <TextBox.Background>
+                    <SolidColorBrush Color="#FF2FB0C8" Opacity="0.15"/>
+                </TextBox.Background>
+            </TextBox>
+            <Label x:Name="lblNombreEmpleado_Copy5" Content="EDAD:" HorizontalAlignment="Left" Margin="890,374,0,0" VerticalAlignment="Top" Height="38" Width="88" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center"/>
+            <DatePicker x:Name="dpFecha" HorizontalAlignment="Left" Margin="597,374,0,0" VerticalAlignment="Top" Width="167"/>
+            <Button x:Name="btnCalcular"  HorizontalAlignment="Left" Margin="791,370,0,0" VerticalAlignment="Top" Height="42" Width="80" RenderTransformOrigin="0.5,0.5" Background="#FFF0F4F4" FontFamily="Century Gothic" FontSize="14" Click="btnCalcular_Click">
+                <Button.BorderBrush>
+                    <SolidColorBrush Color="#FF2FB0C8" Opacity="0.2"/>
+                </Button.BorderBrush>
+                <DockPanel>
+
+                    <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center"><Run Language="es-gt" Text="Calcula"/><Run Text="r"/></TextBlock>
+                </DockPanel>
+            </Button>
+        </Grid>
+        <TextBox x:Name="txtTelefono" HorizontalAlignment="Left" Margin="151,438,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="38" TextAlignment="Left" FontSize="16" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}" FontWeight="Normal">
+            <TextBox.CaretBrush>
+                <SolidColorBrush Color="#FF2FB0C8" Opacity="0.3"/>
+            </TextBox.CaretBrush>
+            <TextBox.Background>
+                <SolidColorBrush Color="#FF2FB0C8" Opacity="0.15"/>
+            </TextBox.Background>
+        </TextBox>
+        <Label x:Name="lblNombreEmpleado_Copy6" Content="TELEFONO:" HorizontalAlignment="Left" Margin="30,438,0,0" VerticalAlignment="Top" Height="38" Width="88" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="txtDireccion" HorizontalAlignment="Left" Margin="591,438,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="38" TextAlignment="Left" FontSize="16" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}" FontWeight="Normal">
+            <TextBox.CaretBrush>
+                <SolidColorBrush Color="#FF2FB0C8" Opacity="0.3"/>
+            </TextBox.CaretBrush>
+            <TextBox.Background>
+                <SolidColorBrush Color="#FF2FB0C8" Opacity="0.15"/>
+            </TextBox.Background>
+        </TextBox>
+        <Label x:Name="lblNombreEmpleado_Copy7" Content="DIRECCION::" HorizontalAlignment="Left" Margin="470,438,0,0" VerticalAlignment="Top" Height="38" Width="88" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Margin="151,512,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="38" TextAlignment="Left" FontSize="16" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}" FontWeight="Normal">
+            <TextBox.CaretBrush>
+                <SolidColorBrush Color="#FF2FB0C8" Opacity="0.3"/>
+            </TextBox.CaretBrush>
+            <TextBox.Background>
+                <SolidColorBrush Color="#FF2FB0C8" Opacity="0.15"/>
+            </TextBox.Background>
+        </TextBox>
+        <Label x:Name="lblNombreEmpleado_Copy8" Content="EMAIL:" HorizontalAlignment="Left" Margin="30,512,0,0" VerticalAlignment="Top" Height="38" Width="88" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="txtSeguro" HorizontalAlignment="Left" Margin="591,507,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="38" TextAlignment="Left" FontSize="16" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}" FontWeight="Normal">
+            <TextBox.CaretBrush>
+                <SolidColorBrush Color="#FF2FB0C8" Opacity="0.3"/>
+            </TextBox.CaretBrush>
+            <TextBox.Background>
+                <SolidColorBrush Color="#FF2FB0C8" Opacity="0.15"/>
+            </TextBox.Background>
+        </TextBox>
+        <Label x:Name="lblSeguro" Content="SEGURO:" HorizontalAlignment="Left" Margin="470,507,0,0" VerticalAlignment="Top" Height="38" Width="106" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center"/>
+        <Label x:Name="lblFecha" Content="FECHA NACIMIENTO:" HorizontalAlignment="Left" Margin="420,372,0,0" VerticalAlignment="Top" Height="38" Width="156" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="txtStatus" HorizontalAlignment="Left" Margin="1005,438,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="38" TextAlignment="Left" FontSize="16" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}" FontWeight="Normal">
+            <TextBox.CaretBrush>
+                <SolidColorBrush Color="#FF2FB0C8" Opacity="0.3"/>
+            </TextBox.CaretBrush>
+            <TextBox.Background>
+                <SolidColorBrush Color="#FF2FB0C8" Opacity="0.15"/>
+            </TextBox.Background>
+        </TextBox>
+        <Label x:Name="lblNombreEmpleado_Copy11" Content="STATUS:" HorizontalAlignment="Left" Margin="884,438,0,0" VerticalAlignment="Top" Height="38" Width="88" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center"/>
+    </Grid>
+</UserControl>
