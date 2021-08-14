@@ -29,29 +29,22 @@ namespace PrototipoLaboratorio.Ventanas
 
         void cargarCbo()
         {
-            try
+            string cadena = "SELECT nombre_aseguradora FROM CLINICA.ASEGURADORAS";
+
+            OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
+            consulta.ExecuteNonQuery();
+
+            OdbcDataReader busqueda;
+            busqueda = consulta.ExecuteReader();
+
+            cboNombreaseguradora.Items.Clear();
+
+            cboNombreaseguradora.Items.Add("Selecione una opción");
+            while (busqueda.Read())
             {
-                string cadena = "SELECT nombre_aseguradora FROM CLINICA.ASEGURADORAS";
-
-                OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
-                consulta.ExecuteNonQuery();
-
-                OdbcDataReader busqueda;
-                busqueda = consulta.ExecuteReader();
-
-                cboNombreaseguradora.Items.Clear();
-
-                cboNombreaseguradora.Items.Add("Selecione una opción");
-                while (busqueda.Read())
-                {
-                    cboNombreaseguradora.Items.Add(busqueda["nombre_aseguradora"].ToString());
-                }
-                cboNombreaseguradora.SelectedIndex = 0;
+                cboNombreaseguradora.Items.Add(busqueda["nombre_aseguradora"].ToString());
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+            cboNombreaseguradora.SelectedIndex = 0;
         }
 
         private void btnInsertar_Click(object sender, RoutedEventArgs e)

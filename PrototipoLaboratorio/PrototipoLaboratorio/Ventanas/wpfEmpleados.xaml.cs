@@ -263,26 +263,22 @@ namespace PrototipoLaboratorio.Ventanas
 
         void cargarCbxPuesto()
         {
-            try
+
+            string cadena = "SELECT nombre_puesto FROM PUESTO";
+
+            OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
+            consulta.ExecuteNonQuery();
+
+            OdbcDataReader busqueda;
+            busqueda = consulta.ExecuteReader();
+
+            cbxPuesto.Items.Clear();
+            while (busqueda.Read())
             {
-                string cadena = "SELECT nombre_puesto FROM PUESTO";
-
-                OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
-                consulta.ExecuteNonQuery();
-
-                OdbcDataReader busqueda;
-                busqueda = consulta.ExecuteReader();
-
-                cbxPuesto.Items.Clear();
-                while (busqueda.Read())
-                {
-                    cbxPuesto.Items.Add(busqueda["nombre_puesto"].ToString());
-                }
+                cbxPuesto.Items.Add(busqueda["nombre_puesto"].ToString());
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+
+
         }
 
         private void cbxPuesto_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -304,27 +300,22 @@ namespace PrototipoLaboratorio.Ventanas
         /*COMBO BOX SEDE*/
         void cargarCbxSede()
         {
-            try
+
+            string cadena = "SELECT nombre_sede FROM SEDE";
+
+            OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
+            consulta.ExecuteNonQuery();
+
+            OdbcDataReader busqueda;
+            busqueda = consulta.ExecuteReader();
+
+            cbxSede.Items.Clear();
+            while (busqueda.Read())
             {
-                string cadena = "SELECT nombre_sede FROM SEDE";
-
-                OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
-                consulta.ExecuteNonQuery();
-
-                OdbcDataReader busqueda;
-                busqueda = consulta.ExecuteReader();
-
-                cbxSede.Items.Clear();
-                while (busqueda.Read())
-                {
-                    cbxSede.Items.Add(busqueda["nombre_sede"].ToString());
-                }
-
+                cbxSede.Items.Add(busqueda["nombre_sede"].ToString());
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+
+
         }
 
         private void cbxSede_SelectionChanged(object sender, SelectionChangedEventArgs e)
