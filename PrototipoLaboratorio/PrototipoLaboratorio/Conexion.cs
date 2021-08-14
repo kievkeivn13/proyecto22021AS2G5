@@ -5,7 +5,7 @@ using System.Text;
 
 namespace PrototipoLaboratorio
 {
-    public class Conexion
+    class Conexion
     {
         public OdbcConnection conexion()
         {
