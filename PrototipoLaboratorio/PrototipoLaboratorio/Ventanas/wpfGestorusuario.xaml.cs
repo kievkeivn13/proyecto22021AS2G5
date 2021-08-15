@@ -29,24 +29,28 @@ namespace PrototipoLaboratorio.Ventanas
             InitializeComponent();
             CargarCbo();
             Cargartabla();
+            txtIdusuario.Focus();
         }
+
+        //RadioButton
         void rbnestado()
         {
             if (txtEstadousuario.Text == "1")
             {
                 rbnActivo.IsChecked = true;
-                rbnSuspensido.IsChecked = false;
+                rbnSuspendido.IsChecked = false;
             }
             else
             {
                 if (txtEstadousuario.Text == "0")
                 {
                     rbnActivo.IsChecked = false;
-                    rbnSuspensido.IsChecked = true;
+                    rbnSuspendido.IsChecked = true;
                 }
             }
         }
 
+        //Cargar Combobox
         private void CargarCbo() {
 
             try
@@ -75,6 +79,7 @@ namespace PrototipoLaboratorio.Ventanas
                        
         }
 
+        //Cargar Tabla
         void Cargartabla()
         {
             try
@@ -99,6 +104,7 @@ namespace PrototipoLaboratorio.Ventanas
             }
         }
 
+        //Funcion de Botones
         private void btnInsertar_Click(object sender, RoutedEventArgs e)
         {
             try
@@ -122,13 +128,12 @@ namespace PrototipoLaboratorio.Ventanas
                 txtNombreusuario.Text = "";
                 txtContraseñausuario.Password = "";
                 txtEstadousuario.Text = "";
-                txtBuscar.Text = "";
-                cboTipousuario.SelectedIndex = 0;
+                txtBuscar.Text = "";                
                 Cargartabla();
-                
+                CargarCbo();
                 btnModificar.IsEnabled = false;
                 btnEliminar.IsEnabled = false;
-                rbnSuspensido.IsChecked = false;
+                rbnSuspendido.IsChecked = false;
                 rbnActivo.IsChecked = false;
             }
             catch (Exception ex)
@@ -136,7 +141,6 @@ namespace PrototipoLaboratorio.Ventanas
                 MessageBox.Show(ex.Message);
             }
         }
-
         private void btnModificar_Click(object sender, RoutedEventArgs e)
         {
             try
@@ -166,16 +170,14 @@ namespace PrototipoLaboratorio.Ventanas
             txtContraseñausuario.Password = "";
             txtEstadousuario.Text = "";
             Cargartabla();
-           
-            cboTipousuario.SelectedIndex = 0;
+            CargarCbo();
             txtIdtipousuario.IsEnabled = true;
             btnInsertar.IsEnabled = true;
             btnModificar.IsEnabled = false;
             btnEliminar.IsEnabled = false;
-            rbnSuspensido.IsChecked = false;
+            rbnSuspendido.IsChecked = false;
             rbnActivo.IsChecked = false;
         }
-
         private void btnLimpiar_Click(object sender, RoutedEventArgs e)
         {
 
@@ -185,24 +187,21 @@ namespace PrototipoLaboratorio.Ventanas
             txtNombreusuario.Text = "";
             txtContraseñausuario.Password = "";
             txtEstadousuario.Text = "";
-            cboTipousuario.SelectedIndex = 0;
+            CargarCbo();
             txtIdtipousuario.IsEnabled = true;
             btnInsertar.IsEnabled = true;
             btnEliminar.IsEnabled = false;
             btnModificar.IsEnabled = false;
             Cargartabla();
-            rbnSuspensido.IsChecked = false;
+            rbnSuspendido.IsChecked = false;
             rbnActivo.IsChecked = false;
 
         } 
-
         private void btnEliminar_Click(object sender, RoutedEventArgs e)
         {
             try
             {
-
                 string cadena = "delete from CLINICA1.USUARIOS where id_usuario='" + this.txtIdusuario.Text + "';";
-
 
                 OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
                 consulta.ExecuteNonQuery();
@@ -219,10 +218,12 @@ namespace PrototipoLaboratorio.Ventanas
                 txtNombreusuario.Text = "";
                 txtContraseñausuario.Password = "";
                 txtEstadousuario.Text = "";
-                cboTipousuario.SelectedIndex = 0;
+                CargarCbo();
                 Cargartabla();
                 txtIdtipousuario.IsEnabled = true;
                 btnInsertar.IsEnabled = true;
+                rbnSuspendido.IsChecked = false;
+                rbnActivo.IsChecked = false;
             }
 
             catch (Exception ex)
@@ -230,7 +231,6 @@ namespace PrototipoLaboratorio.Ventanas
                 MessageBox.Show(ex.Message);
             }
         }
-
         private void btnBuscar_Click(object sender, RoutedEventArgs e)
         {
             
@@ -294,6 +294,7 @@ namespace PrototipoLaboratorio.Ventanas
                 btnEliminar.IsEnabled = true;
                 txtIdtipousuario.IsEnabled = false;
                 btnInsertar.IsEnabled = false;
+                cboTipousuario.Focus();
             }
             else
             {
@@ -302,6 +303,7 @@ namespace PrototipoLaboratorio.Ventanas
 
         }
 
+        //Seleccion en Combobox
         private void cboTipousuario_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             try
@@ -325,18 +327,117 @@ namespace PrototipoLaboratorio.Ventanas
             }
         }
 
+        //Funcion de Radiobutton
         private void rbnActivo_Checked(object sender, RoutedEventArgs e)
         {            
             rbnActivo.IsChecked = true;
-            rbnSuspensido.IsChecked = false;
+            rbnSuspendido.IsChecked = false;
             txtEstadousuario.Text = "1";
         }
-
         private void rbnSuspensido_Checked(object sender, RoutedEventArgs e)
         {
-            rbnSuspensido.IsChecked = true;
+            rbnSuspendido.IsChecked = true;
             rbnActivo.IsChecked = false;
             txtEstadousuario.Text = "0";
+        }
+  
+        //Funcion tecla enter
+        private void txtBuscar_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                e.Handled = true;//elimina el sonido
+                btnBuscar_Click(sender, e);//llama al evento click del boton
+            }
+        }
+        private void txtIdusuario_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                e.Handled = true;//elimina el sonido
+                cboTipousuario.Focus();
+            }
+        }
+        private void cboTipousuario_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                e.Handled = true;//elimina el sonido
+                txtNombreusuario.Focus();
+            }
+        }
+        private void txtNombreusuario_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                e.Handled = true;//elimina el sonido
+                txtContraseñausuario.Focus();
+            }
+        }
+        private void txtContraseñausuario_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                e.Handled = true;//elimina el sonido
+                rbnActivo.Focus();
+            }
+        }
+        private void rbnActivo_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                e.Handled = true;//elimina el sonido
+                rbnActivo_Checked(sender, e);
+
+                if(btnInsertar.IsEnabled == true || btnModificar.IsEnabled == false)
+                {
+                    btnInsertar_Click(sender, e);//llama al evento click del boton
+                }
+                else
+                {
+                    if (btnModificar.IsEnabled == true || btnInsertar.IsEnabled == false)
+                    {
+                        btnModificar_Click(sender, e);//llama al evento click del boton
+                    }
+                }
+            }
+            else
+            {
+                if (e.Key == Key.Right || e.Key == Key.Left)
+                {
+                    e.Handled = true;//elimina el sonido
+                    rbnSuspendido.Focus();
+                }
+                
+            }
+        }
+        private void rbnSuspensido_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                e.Handled = true;//elimina el sonido
+                rbnSuspensido_Checked(sender, e);
+
+                if (btnInsertar.IsEnabled == true || btnModificar.IsEnabled == false)
+                {
+                    btnInsertar_Click(sender, e);//llama al evento click del boton
+                }
+                else
+                {
+                    if (btnModificar.IsEnabled == true || btnInsertar.IsEnabled == false)
+                    {
+                        btnModificar_Click(sender, e);//llama al evento click del boton
+                    }
+                }
+            }
+            else
+            {
+                if (e.Key == Key.Left || e.Key == Key.Right)
+                {
+                    e.Handled = true;//elimina el sonido
+                    rbnActivo.Focus();
+                }
+            }
         }
     }
 }
