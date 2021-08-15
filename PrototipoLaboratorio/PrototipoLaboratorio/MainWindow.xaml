@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PrototipoLaboratorio"
         mc:Ignorable="d"
-        Title="Clinica Laboratorio" Height="750" Width="1315" WindowStartupLocation="CenterOwner" Icon="/icono.png" >
+        Title="Laboratorio ASII" Height="750" Width="1315" WindowStartupLocation="CenterScreen" Icon="/icono.png" >
 
 
 	<Grid>

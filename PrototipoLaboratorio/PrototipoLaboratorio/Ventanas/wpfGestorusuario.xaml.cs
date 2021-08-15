@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.Odbc;
 using System.Text;
 using System.Windows;
@@ -14,6 +15,7 @@ using System.Windows.Shapes;
 using MySqlConnector;
 using PrototipoLaboratorio;
 
+
 namespace PrototipoLaboratorio.Ventanas
 {
     /// <summary>
@@ -25,11 +27,28 @@ namespace PrototipoLaboratorio.Ventanas
         public wpfGestorusuario()
         {
             InitializeComponent();
-            cargarCbo();
+            CargarCbo();
+            Cargartabla();
+        }
+        void rbnestado()
+        {
+            if (txtEstadousuario.Text == "1")
+            {
+                rbnActivo.IsChecked = true;
+                rbnSuspensido.IsChecked = false;
+            }
+            else
+            {
+                if (txtEstadousuario.Text == "0")
+                {
+                    rbnActivo.IsChecked = false;
+                    rbnSuspensido.IsChecked = true;
+                }
+            }
         }
 
-        void cargarCbo()
-        {
+        private void CargarCbo() {
+
             try
             {
                 string cadena = "SELECT nombre_tipo_usuario FROM CLINICA1.TIPO_USUARIO";
@@ -47,13 +66,39 @@ namespace PrototipoLaboratorio.Ventanas
                     cboTipousuario.Items.Add(busqueda["nombre_tipo_usuario"].ToString());
                 }
                 cboTipousuario.SelectedIndex = 0;
+                busqueda.Close();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+                       
         }
-       
+
+        void Cargartabla()
+        {
+            try
+            {
+                string cadena = "SELECT * FROM CLINICA1.USUARIOS";
+
+                OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
+                consulta.ExecuteNonQuery();
+
+                OdbcDataAdapter dataAdp = new OdbcDataAdapter(consulta);
+                DataTable dt = new DataTable("CLINICA1.USUARIOS");
+
+                dataAdp.Fill(dt);
+                dgExamenes.ItemsSource = dt.DefaultView;
+
+                dataAdp.Update(dt);
+
+            }
+            catch (Exception ex)
+            {
+               MessageBox.Show(ex.Message);
+            }
+        }
+
         private void btnInsertar_Click(object sender, RoutedEventArgs e)
         {
             try
@@ -77,7 +122,10 @@ namespace PrototipoLaboratorio.Ventanas
                 txtNombreusuario.Text = "";
                 txtContraseñausuario.Password = "";
                 txtEstadousuario.Text = "";
-                cboTipousuario.Items.Clear();
+                txtBuscar.Text = "";
+                cboTipousuario.SelectedIndex = 0;
+                Cargartabla();
+               
 
             }
             catch (Exception ex)
@@ -114,9 +162,13 @@ namespace PrototipoLaboratorio.Ventanas
             txtNombreusuario.Text = "";
             txtContraseñausuario.Password = "";
             txtEstadousuario.Text = "";
-            cboTipousuario.Items.Clear();
+            Cargartabla();
+           
+            cboTipousuario.SelectedIndex = 0;
             txtIdtipousuario.IsEnabled = true;
             btnInsertar.IsEnabled = true;
+            rbnSuspensido.IsChecked = false;
+            rbnActivo.IsChecked = false;
         }
 
         private void btnLimpiar_Click(object sender, RoutedEventArgs e)
@@ -128,11 +180,12 @@ namespace PrototipoLaboratorio.Ventanas
             txtNombreusuario.Text = "";
             txtContraseñausuario.Password = "";
             txtEstadousuario.Text = "";
-            cboTipousuario.Items.Clear();
-            cboTipousuario.Items.Add("Selecione una opción");
             cboTipousuario.SelectedIndex = 0;
             txtIdtipousuario.IsEnabled = true;
             btnInsertar.IsEnabled = true;
+            Cargartabla();
+            rbnSuspensido.IsChecked = false;
+            rbnActivo.IsChecked = false;
 
         } 
 
@@ -159,8 +212,8 @@ namespace PrototipoLaboratorio.Ventanas
                 txtNombreusuario.Text = "";
                 txtContraseñausuario.Password = "";
                 txtEstadousuario.Text = "";
-                cboTipousuario.Items.Clear();
-
+                cboTipousuario.SelectedIndex = 0;
+                Cargartabla();
                 txtIdtipousuario.IsEnabled = true;
                 btnInsertar.IsEnabled = true;
             }
@@ -173,10 +226,13 @@ namespace PrototipoLaboratorio.Ventanas
 
         private void btnBuscar_Click(object sender, RoutedEventArgs e)
         {
+            
             if (txtBuscar.Text != "")
-            {
+            { 
+               
                 try
                 {
+                    CargarCbo();                  
                     string Query = "select * from CLINICA1.USUARIOS where id_usuario='" + this.txtBuscar.Text + "';";
 
                     OdbcCommand consulta = new OdbcCommand(Query, cn.conexion());
@@ -213,14 +269,15 @@ namespace PrototipoLaboratorio.Ventanas
                         }
                         int ultimo = cboTipousuario.Items.Count - 1;
                         cboTipousuario.SelectedIndex = ultimo;  //<-- con esto lo dejas seleccionado
-                        
+                        rbnestado();
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show(ex.Message);
+                      MessageBox.Show(ex.Message);
                     }
 
-                    this.txtBuscar.Text = "";
+                    txtBuscar.Text = "";
+                    
                 }
                 catch (Exception ex)
                 {
@@ -256,9 +313,22 @@ namespace PrototipoLaboratorio.Ventanas
             }
             catch(Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                //MessageBox.Show(ex.Message);
             }
         }
 
+        private void rbnActivo_Checked(object sender, RoutedEventArgs e)
+        {            
+            rbnActivo.IsChecked = true;
+            rbnSuspensido.IsChecked = false;
+            txtEstadousuario.Text = "1";
+        }
+
+        private void rbnSuspensido_Checked(object sender, RoutedEventArgs e)
+        {
+            rbnSuspensido.IsChecked = true;
+            rbnActivo.IsChecked = false;
+            txtEstadousuario.Text = "0";
+        }
     }
 }

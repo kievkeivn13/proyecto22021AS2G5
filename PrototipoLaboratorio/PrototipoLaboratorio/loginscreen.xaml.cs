@@ -22,6 +22,7 @@ namespace PrototipoLaboratorio
         public loginscreen()
         {
             InitializeComponent();
+            txtUsuario.Focus();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -48,7 +49,7 @@ namespace PrototipoLaboratorio
                     {
                         MessageBox.Show("Usuario o contraseña incorrecta.");
                         txtContraseña.Password = "";
-                        txtUsuario.Text = "";
+                        txtUsuario.Text = ""; txtUsuario.Focus();                        
                     }
 
                 }
@@ -60,8 +61,28 @@ namespace PrototipoLaboratorio
             else
             {
                 MessageBox.Show("Falta usuario o contraseña.");
+                txtUsuario.Focus();
             }
 
+        }
+
+      
+        private void txtContraseña_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            { 
+                e.Handled = true;//elimina el sonido
+                Button_Click(sender, e);//llama al evento click del boton
+            }
+        }
+
+        private void txtUsuario_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                e.Handled = true;//elimina el sonido
+                txtContraseña.Focus();
+            }
         }
     }
 }

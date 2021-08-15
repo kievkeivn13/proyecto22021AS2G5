@@ -11,7 +11,7 @@
 			<Grid.Background>
 				<ImageBrush ImageSource="/Ventanas/fondo_2.jpg"/>
 			</Grid.Background>
-			<TextBox x:Name="txtIdtipousuario" HorizontalAlignment="Left" Margin="440,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="108" Height="38" TextAlignment="Left" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}">
+			<TextBox x:Name="txtIdtipousuario" HorizontalAlignment="Left" Margin="440,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="108" Height="38" TextAlignment="Left" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}" Visibility="Hidden">
 				<TextBox.CaretBrush>
 					<SolidColorBrush Color="#FF2FB0C8" Opacity="0.3"/>
 				</TextBox.CaretBrush>
@@ -19,7 +19,7 @@
 					<SolidColorBrush Color="#FF2FB0C8" Opacity="0.15"/>
 				</TextBox.Background>
 			</TextBox>
-			<Button x:Name="btnModificar"  HorizontalAlignment="Left" Margin="585,574,0,0" VerticalAlignment="Top" Height="70" Width="126" RenderTransformOrigin="0.5,0.5" Background="#FFF0F4F4" FontFamily="Century Gothic" FontSize="14" Click="btnModificar_Click">
+			<Button x:Name="btnModificar"  HorizontalAlignment="Left" Margin="585,574,0,0" VerticalAlignment="Top" Height="70" Width="126" RenderTransformOrigin="0.5,0.5" Background="#FFF0F4F4" FontFamily="Century Gothic" FontSize="14" Click="btnModificar_Click" IsEnabled="False">
 				<Button.BorderBrush>
 					<SolidColorBrush Color="#FF2FB0C8" Opacity="0.2"/>
 				</Button.BorderBrush>
@@ -28,7 +28,7 @@
 					<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center"><Run Language="es-gt" Text="Modificar"/></TextBlock>
 				</DockPanel>
 			</Button>
-			<Button x:Name="btnEliminar"  HorizontalAlignment="Left" Margin="1013,573,0,0" VerticalAlignment="Top" Height="71" Width="123" RenderTransformOrigin="0.5,0.5" FontFamily="Century Gothic" FontSize="14" Click="btnEliminar_Click">
+			<Button x:Name="btnEliminar"  HorizontalAlignment="Left" Margin="1013,573,0,0" VerticalAlignment="Top" Height="71" Width="123" RenderTransformOrigin="0.5,0.5" FontFamily="Century Gothic" FontSize="14" Click="btnEliminar_Click" IsEnabled="False">
 				<Button.Background>
 					<SolidColorBrush Color="#FFF0F4F4" Opacity="0.2"/>
 				</Button.Background>
@@ -106,7 +106,7 @@
 				</TextBox.Background>
 			</TextBox>
 			<Label x:Name="lblContraseñausuario" Content="Contraseña:" HorizontalAlignment="Left" Margin="24,328,0,0" VerticalAlignment="Top" Height="38" Width="125" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center"/>
-			<TextBox x:Name="txtEstadousuario" HorizontalAlignment="Left" Margin="177,391,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="38" TextAlignment="Left" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}">
+			<TextBox x:Name="txtEstadousuario" HorizontalAlignment="Left" Margin="395,391,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="41" Height="38" TextAlignment="Left" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}" Visibility="Hidden">
 				<TextBox.CaretBrush>
 					<SolidColorBrush Color="Black" Opacity="0.8"/>
 				</TextBox.CaretBrush>
@@ -123,6 +123,16 @@
 					<SolidColorBrush Color="#FF2FB0C8" Opacity="0.15"/>
 				</PasswordBox.Background>
 			</PasswordBox>
+			<DataGrid x:Name="dgExamenes" Margin="601,122,105,273" FontFamily="Century Gothic" FontSize="16">
+				<DataGrid.BorderBrush>
+					<SolidColorBrush Color="#FF688CAF" Opacity="0.2"/>
+				</DataGrid.BorderBrush>
+				<DataGrid.Background>
+					<SolidColorBrush Color="#FFF0F0F0" Opacity="0.7"/>
+				</DataGrid.Background>
+			</DataGrid>
+			<RadioButton x:Name="rbnActivo" Content="Activo" HorizontalAlignment="Left" Margin="177,402,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="14" Checked="rbnActivo_Checked"/>
+			<RadioButton x:Name="rbnSuspensido" Content="Suspendido" HorizontalAlignment="Left" Margin="256,402,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="14" Checked="rbnSuspensido_Checked"/>
 		</Grid>
 
 	</Grid>
