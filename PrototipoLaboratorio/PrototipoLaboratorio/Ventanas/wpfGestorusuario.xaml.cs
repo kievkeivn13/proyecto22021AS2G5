@@ -88,7 +88,7 @@ namespace PrototipoLaboratorio.Ventanas
                 DataTable dt = new DataTable("CLINICA1.USUARIOS");
 
                 dataAdp.Fill(dt);
-                dgExamenes.ItemsSource = dt.DefaultView;
+                dgUsuarios.ItemsSource = dt.DefaultView;
 
                 dataAdp.Update(dt);
 
@@ -125,8 +125,11 @@ namespace PrototipoLaboratorio.Ventanas
                 txtBuscar.Text = "";
                 cboTipousuario.SelectedIndex = 0;
                 Cargartabla();
-               
-
+                
+                btnModificar.IsEnabled = false;
+                btnEliminar.IsEnabled = false;
+                rbnSuspensido.IsChecked = false;
+                rbnActivo.IsChecked = false;
             }
             catch (Exception ex)
             {
@@ -167,6 +170,8 @@ namespace PrototipoLaboratorio.Ventanas
             cboTipousuario.SelectedIndex = 0;
             txtIdtipousuario.IsEnabled = true;
             btnInsertar.IsEnabled = true;
+            btnModificar.IsEnabled = false;
+            btnEliminar.IsEnabled = false;
             rbnSuspensido.IsChecked = false;
             rbnActivo.IsChecked = false;
         }
@@ -183,6 +188,8 @@ namespace PrototipoLaboratorio.Ventanas
             cboTipousuario.SelectedIndex = 0;
             txtIdtipousuario.IsEnabled = true;
             btnInsertar.IsEnabled = true;
+            btnEliminar.IsEnabled = false;
+            btnModificar.IsEnabled = false;
             Cargartabla();
             rbnSuspensido.IsChecked = false;
             rbnActivo.IsChecked = false;
@@ -283,7 +290,8 @@ namespace PrototipoLaboratorio.Ventanas
                 {
                     MessageBox.Show(ex.Message);
                 }
-
+                btnModificar.IsEnabled = true;
+                btnEliminar.IsEnabled = true;
                 txtIdtipousuario.IsEnabled = false;
                 btnInsertar.IsEnabled = false;
             }
