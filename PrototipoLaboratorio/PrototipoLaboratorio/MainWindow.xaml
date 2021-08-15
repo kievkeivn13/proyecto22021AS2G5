@@ -159,7 +159,9 @@
 						</Image.OpacityMask>
 					</Image>
 				</MenuItem.Icon>
-				<MenuItem Header="MenuItem"/>
+				<MenuItem Header="Citas">
+					<MenuItem Header="Gestionar cita"/>
+				</MenuItem>
 				<MenuItem Header="MenuItem"/>
 			</MenuItem>
 

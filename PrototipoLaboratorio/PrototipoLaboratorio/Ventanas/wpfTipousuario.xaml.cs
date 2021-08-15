@@ -55,7 +55,7 @@ namespace PrototipoLaboratorio.Ventanas
             }
         }
 
-        //Botones
+        //Funcion de Botones
         private void btnModificar_Click(object sender, RoutedEventArgs e)
         {
             if (txtIdtipousuario.Text != "" || txtNombretipousuario.Text != "")
@@ -236,8 +236,7 @@ namespace PrototipoLaboratorio.Ventanas
                     {
                         btnModificar_Click(sender, e);//llama al evento click del boton
                     }
-                }
-                
+                }                
             }
         }
         private void txtBuscar_KeyDown(object sender, KeyEventArgs e)

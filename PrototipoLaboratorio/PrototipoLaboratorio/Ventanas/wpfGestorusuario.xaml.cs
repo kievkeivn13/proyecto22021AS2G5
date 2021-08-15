@@ -107,76 +107,92 @@ namespace PrototipoLaboratorio.Ventanas
         //Funcion de Botones
         private void btnInsertar_Click(object sender, RoutedEventArgs e)
         {
-            try
+            if (txtIdtipousuario.Text != "" || txtEstadousuario.Text != "" || txtIdusuario.Text != "" || txtNombreusuario.Text != "" || txtContraseñausuario.Password != "")
             {
-                string cadena = "INSERT INTO " +
-                    " CLINICA1.USUARIOS (id_usuario, id_tipo_usuario, nombre_usuario," +
-                    " passwd_usuario, estado_usuario) VALUES (" +
-                    "'" + txtIdusuario.Text + "', '"
-                     + txtIdtipousuario.Text + "', '"
-                     + txtNombreusuario.Text + "', '"
-                     + txtContraseñausuario.Password + "', '"
-                     + txtEstadousuario.Text + "' ); ";
+                try
+                {
+                    string cadena = "INSERT INTO " +
+                        " CLINICA1.USUARIOS (id_usuario, id_tipo_usuario, nombre_usuario," +
+                        " passwd_usuario, estado_usuario) VALUES (" +
+                        "'" + txtIdusuario.Text + "', '"
+                         + txtIdtipousuario.Text + "', '"
+                         + txtNombreusuario.Text + "', '"
+                         + txtContraseñausuario.Password + "', '"
+                         + txtEstadousuario.Text + "' ); ";
 
-                OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
+                    OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
 
-                consulta.ExecuteNonQuery();
-                MessageBox.Show("Inserción realizada");
+                    consulta.ExecuteNonQuery();
+                    MessageBox.Show("Inserción realizada");
+
+                    txtIdusuario.Text = "";
+                    txtIdtipousuario.Text = "";
+                    txtNombreusuario.Text = "";
+                    txtContraseñausuario.Password = "";
+                    txtEstadousuario.Text = "";
+                    txtBuscar.Text = "";
+                    Cargartabla();
+                    CargarCbo();
+                    btnModificar.IsEnabled = false;
+                    btnEliminar.IsEnabled = false;
+                    rbnSuspendido.IsChecked = false;
+                    rbnActivo.IsChecked = false;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Faltan datos.");
+                txtIdusuario.Focus();
+            }
+        }
+        private void btnModificar_Click(object sender, RoutedEventArgs e)
+        {
+            if (txtIdtipousuario.Text != "" || txtEstadousuario.Text != "" || txtIdusuario.Text != "" || txtNombreusuario.Text != "" || txtContraseñausuario.Password != "")
+            {
+                try
+                {
+                    string cadena = "update CLINICA1.USUARIOS set id_usuario ='" + this.txtIdusuario.Text
+                        + "',id_tipo_usuario ='" + this.txtIdtipousuario.Text
+                        + "',nombre_usuario ='" + this.txtNombreusuario.Text
+                        + "',passwd_usuario ='" + this.txtContraseñausuario.Password
+                        + "',estado_usuario ='" + this.txtEstadousuario.Text
+
+                        + "'where id_usuario='" + this.txtIdusuario.Text + "';";
+
+                    OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
+                    consulta.ExecuteNonQuery();
+
+                    MessageBox.Show("Modificacion realizada");
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
 
                 txtIdusuario.Text = "";
                 txtIdtipousuario.Text = "";
                 txtNombreusuario.Text = "";
                 txtContraseñausuario.Password = "";
                 txtEstadousuario.Text = "";
-                txtBuscar.Text = "";                
                 Cargartabla();
                 CargarCbo();
+                txtIdtipousuario.IsEnabled = true;
+                btnInsertar.IsEnabled = true;
                 btnModificar.IsEnabled = false;
                 btnEliminar.IsEnabled = false;
                 rbnSuspendido.IsChecked = false;
                 rbnActivo.IsChecked = false;
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Faltan datos.");
+                txtIdusuario.Focus();
             }
-        }
-        private void btnModificar_Click(object sender, RoutedEventArgs e)
-        {
-            try
-            {
-                string cadena = "update CLINICA1.USUARIOS set id_usuario ='" + this.txtIdusuario.Text
-                    + "',id_tipo_usuario ='" + this.txtIdtipousuario.Text
-                    + "',nombre_usuario ='" + this.txtNombreusuario.Text
-                    + "',passwd_usuario ='" + this.txtContraseñausuario.Password
-                    + "',estado_usuario ='" + this.txtEstadousuario.Text
-
-                    + "'where id_usuario='" + this.txtIdusuario.Text + "';";
-
-                OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
-                consulta.ExecuteNonQuery();
-
-                MessageBox.Show("Modificacion realizada");
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-
-            txtIdusuario.Text = "";
-            txtIdtipousuario.Text = "";
-            txtNombreusuario.Text = "";
-            txtContraseñausuario.Password = "";
-            txtEstadousuario.Text = "";
-            Cargartabla();
-            CargarCbo();
-            txtIdtipousuario.IsEnabled = true;
-            btnInsertar.IsEnabled = true;
-            btnModificar.IsEnabled = false;
-            btnEliminar.IsEnabled = false;
-            rbnSuspendido.IsChecked = false;
-            rbnActivo.IsChecked = false;
         }
         private void btnLimpiar_Click(object sender, RoutedEventArgs e)
         {
@@ -232,8 +248,7 @@ namespace PrototipoLaboratorio.Ventanas
             }
         }
         private void btnBuscar_Click(object sender, RoutedEventArgs e)
-        {
-            
+        {            
             if (txtBuscar.Text != "")
             { 
                
