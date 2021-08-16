@@ -40,7 +40,7 @@ namespace PrototipoLaboratorio
                     if (count == 1)
                     {
                         String user = txtUsuario.Text;
-                        MessageBox.Show("Bienvenido "+user);
+                        MessageBox.Show("     Bienvenido "+user+"    ");
                         MainWindow dashboard = new MainWindow();
                         dashboard.Show();
                         this.Close();

@@ -177,13 +177,12 @@
 			</MenuItem>
 
 		</Menu>
-		<Grid x:Name="pnlVentanas" Grid.ColumnSpan="2" Margin="0,50,0,0">
-			<Button x:Name="btnSignOut" Content="" HorizontalAlignment="Left" Margin="1251,-50,0,0" VerticalAlignment="Top" Height="36" Click="btnSignOut_Click" Width="36" BorderBrush="{x:Null}" >
-				<Button.Background>
-					<ImageBrush Stretch="UniformToFill" ImageSource="/signout.png"/>
-				</Button.Background>
-			</Button>
-		</Grid>
+		<Button x:Name="btnSignOut" Content="" HorizontalAlignment="Left" Margin="1264,1,0,0" VerticalAlignment="Top" Height="31" Click="btnSignOut_Click" Width="29" BorderBrush="{x:Null}" Grid.Column="1" >
+			<Button.Background>
+				<ImageBrush Stretch="UniformToFill" ImageSource="/signout.png"/>
+			</Button.Background>
+		</Button>
+		<Grid x:Name="pnlVentanas" Grid.ColumnSpan="2" Margin="0,50,0,0"/>
 		<Rectangle HorizontalAlignment="Left" Height="76" Margin="1106,33,0,0" VerticalAlignment="Top" Width="180" RadiusX="19" RadiusY="19" Opacity="0.31" Fill="#FFC6D7DF" Grid.Column="1">
 			<Rectangle.Stroke>
 				<SolidColorBrush Color="#FF015478" Opacity="0.31"/>

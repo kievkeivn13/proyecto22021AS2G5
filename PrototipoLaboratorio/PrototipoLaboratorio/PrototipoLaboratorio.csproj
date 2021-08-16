@@ -29,6 +29,7 @@
     <None Remove="user.png" />
     <None Remove="Usuarios.png" />
     <None Remove="Ventanas\broom_80px.png" />
+    <None Remove="Ventanas\calendar_80px.png" />
     <None Remove="Ventanas\delete_bin_80px.png" />
     <None Remove="Ventanas\edit_file_80px.png" />
     <None Remove="Ventanas\exit_80px.png" />
@@ -68,6 +69,7 @@
     <Resource Include="user.png" />
     <Resource Include="Usuarios.png" />
     <Resource Include="Ventanas\broom_80px.png" />
+    <Resource Include="Ventanas\calendar_80px.png" />
     <Resource Include="Ventanas\delete_bin_80px.png" />
     <Resource Include="Ventanas\edit_file_80px.png" />
     <Resource Include="Ventanas\exit_80px.png" />
