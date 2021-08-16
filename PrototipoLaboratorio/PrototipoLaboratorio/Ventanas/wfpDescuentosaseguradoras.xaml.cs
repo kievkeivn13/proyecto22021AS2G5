@@ -1,6 +1,7 @@
 ﻿using MySqlConnector;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.Odbc;
 using System.Text;
 using System.Windows;
@@ -25,11 +26,39 @@ namespace PrototipoLaboratorio.Ventanas
 		{
 			InitializeComponent();
             cargarCbo();
+            Cargartabla();
+            txtIddescuento.Focus();
 		}
 
+        //Cargar Tabla
+        void Cargartabla()
+        {
+            try
+            {
+                string cadena = "SELECT * FROM CLINICA1.DESCUENTOS_ASEGURADORAS";
+
+                OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
+                consulta.ExecuteNonQuery();
+
+                OdbcDataAdapter dataAdp = new OdbcDataAdapter(consulta);
+                DataTable dt = new DataTable("CLINICA1.DESCUENTOS_ASEGURADORAS");
+
+                dataAdp.Fill(dt);
+                dgDescuentoA.ItemsSource = dt.DefaultView;
+
+                dataAdp.Update(dt);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        //Cargar Combobox
         void cargarCbo()
         {
-            string cadena = "SELECT nombre_aseguradora FROM CLINICA.ASEGURADORAS";
+            string cadena = "SELECT nombre_aseguradora FROM CLINICA1.ASEGURADORAS";
 
             OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
             consulta.ExecuteNonQuery();
@@ -47,89 +76,108 @@ namespace PrototipoLaboratorio.Ventanas
             cboNombreaseguradora.SelectedIndex = 0;
         }
 
+        //Funcion de botones
         private void btnInsertar_Click(object sender, RoutedEventArgs e)
         {
-            try
+            if (txtIddescuento.Text != "" || txtNombredescuento.Text != "" || txtDescuento.Text != "" || txtIdaseguradora.Text != "")
             {
-                string cadena = "INSERT INTO " +
-                    " CLINICA.DESCUENTOS_ASEGURADORAS (id_descuento, nombre_descuento, descuento," +
-                    " id_aseguradora) VALUES (" +
-                    "'" + txtIddescuento.Text + "', '"
-                     + txtNombredescuento.Text + "', '"
-                     + txtDescuento.Text + "', '"
-                     + txtIdaseguradora.Text + "' ); ";
+                try
+                {
+                    string cadena = "INSERT INTO " +
+                        " CLINICA.DESCUENTOS_ASEGURADORAS (id_descuento, nombre_descuento, descuento," +
+                        " id_aseguradora) VALUES (" +
+                        "'" + txtIddescuento.Text + "', '"
+                         + txtNombredescuento.Text + "', '"
+                         + txtDescuento.Text + "', '"
+                         + txtIdaseguradora.Text + "' ); ";
 
-                OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
+                    OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
 
-                consulta.ExecuteNonQuery();
-                MessageBox.Show("Inserción realizada");
+                    consulta.ExecuteNonQuery();
+                    MessageBox.Show("Inserción realizada");
 
-                txtIddescuento.Text = "";
+                    txtIddescuento.Text = "";
+                    txtNombredescuento.Text = "";
+                    txtDescuento.Text = "";
+                    txtIdaseguradora.Text = "";
+                    cargarCbo();
+                    Cargartabla();
+                    txtIddescuento.IsEnabled = true;
+                    btnInsertar.IsEnabled = true;
+                    btnModificar.IsEnabled = false;
+                    btnEliminar.IsEnabled = false;
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Faltan datos.");
+                txtIddescuento.Focus();
+            }
+        }
+        private void btnModificar_Click(object sender, RoutedEventArgs e)
+        {
+            if (txtIddescuento.Text != "" || txtNombredescuento.Text != "" || txtDescuento.Text != "" || txtIdaseguradora.Text != "")
+            {
+                try
+                {
+                    string cadena = "update CLINICA.DESCUENTOS_ASEGURADORAS set id_descuento ='" + this.txtIddescuento.Text
+                        + "',nombre_descuento ='" + this.txtNombredescuento.Text
+                        + "',descuento='" + this.txtDescuento.Text
+                        + "',id_aseguradora ='" + this.txtIdaseguradora.Text
+
+                        + "'where id_descuento='" + this.txtIddescuento.Text + "';";
+
+                    OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
+                    consulta.ExecuteNonQuery();
+
+                    MessageBox.Show("Modificacion realizada");
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+
+                txtIdaseguradora.Text = "";
                 txtNombredescuento.Text = "";
                 txtDescuento.Text = "";
                 txtIdaseguradora.Text = "";
-                
-                cboNombreaseguradora.Items.Clear();
-
+                cargarCbo();
+                Cargartabla();
+                txtIddescuento.IsEnabled = true;
+                btnInsertar.IsEnabled = true;
+                btnModificar.IsEnabled = false;
+                btnEliminar.IsEnabled = false;
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Faltan datos.");
+                txtIddescuento.Focus();
             }
-
         }
-
-        private void btnModificar_Click(object sender, RoutedEventArgs e)
-        {
-            try
-            {
-                string cadena = "update CLINICA.DESCUENTOS_ASEGURADORAS set id_descuento ='" + this.txtIddescuento.Text
-                    + "',nombre_descuento ='" + this.txtNombredescuento.Text
-                    + "',descuento='" + this.txtDescuento.Text
-                    + "',id_aseguradora ='" + this.txtIdaseguradora.Text
-
-                    + "'where id_descuento='" + this.txtIddescuento.Text + "';";
-
-                OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
-                consulta.ExecuteNonQuery();
-
-                MessageBox.Show("Modificacion realizada");
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-
-            txtIdaseguradora.Text = "";
-            txtNombredescuento.Text = "";
-            txtDescuento.Text = "";
-            txtIdaseguradora.Text = "";
-            cboNombreaseguradora.Items.Clear();
-            txtIddescuento.IsEnabled = true;
-            btnInsertar.IsEnabled = true;
-
-        }
-
         private void btnLimpiar_Click(object sender, RoutedEventArgs e)
         {
             txtIdaseguradora.Text = "";
             txtNombredescuento.Text = "";
             txtDescuento.Text = "";
             txtIdaseguradora.Text = "";
-            cboNombreaseguradora.Items.Clear();
+            cargarCbo();
+            Cargartabla();
             txtIddescuento.IsEnabled = true;
             btnInsertar.IsEnabled = true;
-
+            btnModificar.IsEnabled = false;
+            btnEliminar.IsEnabled = false;
         }
-
         private void btnEliminar_Click(object sender, RoutedEventArgs e)
         {
             try
             {
-
                 string cadena = "delete from CLINICA.DESCUENTOS_ASEGURADORAS where id_descuento='" + this.txtIddescuento.Text + "';";
-
 
                 OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
                 consulta.ExecuteNonQuery();
@@ -145,9 +193,12 @@ namespace PrototipoLaboratorio.Ventanas
                 txtNombredescuento.Text = "";
                 txtDescuento.Text = "";
                 txtIdaseguradora.Text = "";
-                cboNombreaseguradora.Items.Clear();
+                cargarCbo();
+                Cargartabla();
                 txtIddescuento.IsEnabled = true;
                 btnInsertar.IsEnabled = true;
+                btnModificar.IsEnabled = false;
+                btnEliminar.IsEnabled = false;
             }
 
             catch (Exception ex)
@@ -156,7 +207,6 @@ namespace PrototipoLaboratorio.Ventanas
             }
 
         }
-
         private void btnBuscar_Click(object sender, RoutedEventArgs e)
         {
             if (txtBuscar.Text != "")
@@ -211,17 +261,20 @@ namespace PrototipoLaboratorio.Ventanas
                 {
                     MessageBox.Show(ex.Message);
                 }
-
+                cargarCbo();
+                Cargartabla();
                 txtIddescuento.IsEnabled = false;
                 btnInsertar.IsEnabled = false;
+                btnModificar.IsEnabled = true;
+                btnEliminar.IsEnabled = true;
             }
             else
             {
                 MessageBox.Show("Ingrese dato a buscar");
             }
-
         }
 
+        //Seleccion en Combobox
         private void cboTipousuario_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             try
@@ -237,11 +290,64 @@ namespace PrototipoLaboratorio.Ventanas
                 while (busqueda.Read())
                 {
                     txtIdaseguradora.Text = busqueda["id_aseguradora"].ToString();
+                   
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                //MessageBox.Show(ex.Message);
+            }
+        }
+
+        //Funcion tecla enter
+        private void txtBuscar_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                e.Handled = true;//elimina el sonido
+                btnBuscar_Click(sender, e);//llama al evento click del boton
+            }
+        }
+        private void txtIddescuento_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                e.Handled = true;//elimina el sonido
+                txtNombredescuento.Focus();
+            }
+        }
+        private void txtNombredescuento_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                e.Handled = true;//elimina el sonido
+                txtDescuento.Focus();
+            }
+        }
+        private void txtDescuento_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                e.Handled = true;//elimina el sonido
+                cboNombreaseguradora.Focus();
+            }
+        }
+        private void cboNombreaseguradora_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                e.Handled = true;//elimina el sonido
+                if (btnInsertar.IsEnabled == true || btnModificar.IsEnabled == false)
+                {
+                    btnInsertar_Click(sender, e);//llama al evento click del boton
+                }
+                else
+                {
+                    if (btnModificar.IsEnabled == true || btnInsertar.IsEnabled == false)
+                    {
+                        btnModificar_Click(sender, e);//llama al evento click del boton
+                    }
+                }
             }
         }
     }

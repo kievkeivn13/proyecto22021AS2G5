@@ -242,9 +242,17 @@ namespace PrototipoLaboratorio.Ventanas
 
         private void btnCalcular_Click(object sender, RoutedEventArgs e)
         {
-            DateTime fecha = dpFecha.SelectedDate.Value;
-            int edad = DateTime.Today.AddTicks(-fecha.Ticks).Year - 1;
-            this.txtEdad.Text = edad.ToString();
+            try
+            {
+                DateTime fecha = dpFecha.SelectedDate.Value;
+                int edad = DateTime.Today.AddTicks(-fecha.Ticks).Year - 1;
+                this.txtEdad.Text = edad.ToString();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
+
     }
 }

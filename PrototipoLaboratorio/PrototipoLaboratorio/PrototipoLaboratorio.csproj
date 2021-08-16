@@ -24,6 +24,7 @@
     <None Remove="logo LabASII.png" />
     <None Remove="Paquetes.png" />
     <None Remove="Personal.png" />
+    <None Remove="signout.png" />
     <None Remove="stethoscope_80px.png" />
     <None Remove="user.png" />
     <None Remove="Usuarios.png" />
@@ -62,6 +63,7 @@
     <Resource Include="logo LabASII.png" />
     <Resource Include="Paquetes.png" />
     <Resource Include="Personal.png" />
+    <Resource Include="signout.png" />
     <Resource Include="stethoscope_80px.png" />
     <Resource Include="user.png" />
     <Resource Include="Usuarios.png" />

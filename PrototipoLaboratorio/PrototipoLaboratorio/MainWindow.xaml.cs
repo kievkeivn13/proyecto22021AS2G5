@@ -116,7 +116,23 @@ namespace PrototipoLaboratorio
         {
             funGestorventas(new Ventanas.Paquete());
         }
-
+        private void btnEtiqueta_Click(object sender, RoutedEventArgs e)
+        {
+            funGestorventas(new Ventanas.wpfGestionarEtiqueta());
+        }
+        private void btnVentanaAyuda_Click(object sender, RoutedEventArgs e)
+        {
+            funGestorventas(new Ventanas.wpfVentanaAyuda());
+        }
+        private void btnCotizaciones_Click(object sender, RoutedEventArgs e)
+        {
+            funGestorventas(new Ventanas.wpfCotizaciones());
+        }
+        private void btnRptPaciantes_Click(object sender, RoutedEventArgs e)
+        {
+            rptPaciente dashboard = new rptPaciente();
+            dashboard.Show();
+        }
         private void funGestorventas(UserControl control)
         {
             this.pnlVentanas.Children.Clear();
@@ -126,6 +142,13 @@ namespace PrototipoLaboratorio
         private void btnSalir_Click(object sender, RoutedEventArgs e)
         {
             this.pnlVentanas.Children.Clear();
+        }
+
+        private void btnSignOut_Click(object sender, RoutedEventArgs e)
+        {
+            loginscreen dashboard = new loginscreen();
+            dashboard.Show();
+            this.Close();
         }
     }
 

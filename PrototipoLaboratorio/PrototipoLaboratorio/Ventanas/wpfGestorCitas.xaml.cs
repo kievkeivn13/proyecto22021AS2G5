@@ -23,6 +23,25 @@ namespace PrototipoLaboratorio.Ventanas
         public wpfGestorCitas()
         {
             InitializeComponent();
+            
+            
+        }
+        public void CreateMyDateTimePicker()
+        {
+            // Create a new DateTimePicker control and initialize it.
+            System.Windows.Forms.DateTimePicker dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+
+            // Set the MinDate and MaxDate.
+            dateTimePicker1.MinDate = new DateTime(1985, 6, 20);
+            dateTimePicker1.MaxDate = DateTime.Today;
+
+            // Set the CustomFormat string.
+            dateTimePicker1.CustomFormat = "MMMM dd, yyyy - dddd";
+            dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+
+            // Show the CheckBox and display the control as an up-down control.
+            dateTimePicker1.ShowCheckBox = true;
+            dateTimePicker1.ShowUpDown = true;
         }
 
         private void btnModificar_Click(object sender, RoutedEventArgs e)
@@ -64,6 +83,9 @@ namespace PrototipoLaboratorio.Ventanas
 
         private void btnInsertar_Click(object sender, RoutedEventArgs e)
         {
+
+            txtFecha.Text = dpFechaCita.SelectedDate.Value.ToString("yyyy-dd-MM");
+
             string cadena = "INSERT INTO" +
             " CLINICA1.CITAS VALUES (" + 
             "'" + txtIdCita.Text + "', '" 
@@ -176,5 +198,79 @@ namespace PrototipoLaboratorio.Ventanas
                 MessageBox.Show("Ingrese dato a buscar");
             }
         }
+        private void rbnActivo_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                e.Handled = true;//elimina el sonido
+                rbnActivo_Checked(sender, e);
+
+                if (btnInsertar.IsEnabled == true || btnModificar.IsEnabled == false)
+                {
+                    btnInsertar_Click(sender, e);//llama al evento click del boton
+                }
+                else
+                {
+                    if (btnModificar.IsEnabled == true || btnInsertar.IsEnabled == false)
+                    {
+                        btnModificar_Click(sender, e);//llama al evento click del boton
+                    }
+                }
+            }
+            else
+            {
+                if (e.Key == Key.Right || e.Key == Key.Left)
+                {
+                    e.Handled = true;//elimina el sonido
+                    rbnSuspendido.Focus();
+                }
+
+            }
+        }
+        private void rbnSuspensido_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                e.Handled = true;//elimina el sonido
+                rbnSuspensido_Checked(sender, e);
+
+                if (btnInsertar.IsEnabled == true || btnModificar.IsEnabled == false)
+                {
+                    btnInsertar_Click(sender, e);//llama al evento click del boton
+                }
+                else
+                {
+                    if (btnModificar.IsEnabled == true || btnInsertar.IsEnabled == false)
+                    {
+                        btnModificar_Click(sender, e);//llama al evento click del boton
+                    }
+                }
+            }
+            else
+            {
+                if (e.Key == Key.Left || e.Key == Key.Right)
+                {
+                    e.Handled = true;//elimina el sonido
+                    rbnActivo.Focus();
+                }
+            }
+        }
+
+        //Funcion de Radiobutton
+        private void rbnActivo_Checked(object sender, RoutedEventArgs e)
+        {
+            rbnActivo.IsChecked = true;
+            rbnSuspendido.IsChecked = false;
+            txtStatus.Text = "1";
+        }
+        private void rbnSuspensido_Checked(object sender, RoutedEventArgs e)
+        {
+            {
+                rbnSuspendido.IsChecked = true;
+                rbnActivo.IsChecked = false;
+                txtStatus.Text = "0";
+            }
+        }
+
     }
 }

@@ -62,7 +62,7 @@
 					<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center"><Run Language="es-gt" Text="Busca"/><Run Text="r"/></TextBlock>
 				</DockPanel>
 			</Button>
-			<TextBox x:Name="txtIddescuento" HorizontalAlignment="Left" Margin="177,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="38" TextAlignment="Left" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}">
+			<TextBox x:Name="txtIddescuento" HorizontalAlignment="Left" Margin="177,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="38" TextAlignment="Left" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}" KeyDown="txtIddescuento_KeyDown">
 				<TextBox.CaretBrush>
 					<SolidColorBrush Color="Black" Opacity="0.8"/>
 				</TextBox.CaretBrush>
@@ -71,7 +71,7 @@
 				</TextBox.Background>
 			</TextBox>
 			<Label x:Name="lblIddescuentoaseguradora" Content="ID Desacuento:" HorizontalAlignment="Left" Margin="24,122,0,0" VerticalAlignment="Top" Height="38" Width="125" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center"/>
-			<TextBox x:Name="txtBuscar" HorizontalAlignment="Left" Margin="674,9,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="38" TextAlignment="Left" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}">
+			<TextBox x:Name="txtBuscar" HorizontalAlignment="Left" Margin="674,9,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="38" TextAlignment="Left" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}" KeyDown="txtBuscar_KeyDown">
 				<TextBox.CaretBrush>
 					<SolidColorBrush Color="Black" Opacity="0.8"/>
 				</TextBox.CaretBrush>
@@ -81,7 +81,7 @@
 			</TextBox>
 			<Label x:Name="lblIdaseguradora" Content="Aseguradora:" HorizontalAlignment="Left" Margin="24,295,0,0" VerticalAlignment="Top" Height="38" Width="125" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center"/>
 			<Label x:Name="lblNombredescuento" Content="Nombre Descuento:" HorizontalAlignment="Left" Margin="24,183,0,0" VerticalAlignment="Top" Height="38" Width="148" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center"/>
-			<ComboBox x:Name="cboNombreaseguradora"  HorizontalAlignment="Left" Margin="177,295,0,0" VerticalAlignment="Top" Width="234" Height="38" SelectionChanged="cboTipousuario_SelectionChanged" FontFamily="Century Gothic" FontSize="14" VerticalContentAlignment="Center">
+			<ComboBox x:Name="cboNombreaseguradora"  HorizontalAlignment="Left" Margin="177,295,0,0" VerticalAlignment="Top" Width="234" Height="38" SelectionChanged="cboTipousuario_SelectionChanged" FontFamily="Century Gothic" FontSize="14" VerticalContentAlignment="Center" KeyDown="cboNombreaseguradora_KeyDown">
 				<ComboBox.Background>
 					<SolidColorBrush Color="#FF2FB0C8" Opacity="0.15"/>
 				</ComboBox.Background>
@@ -89,7 +89,7 @@
 					<SolidColorBrush Color="#FF2FB0C8" Opacity="0.2"/>
 				</ComboBox.BorderBrush>
 			</ComboBox>
-			<TextBox x:Name="txtNombredescuento" HorizontalAlignment="Left" Margin="177,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="38" TextAlignment="Left" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}">
+			<TextBox x:Name="txtNombredescuento" HorizontalAlignment="Left" Margin="177,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="38" TextAlignment="Left" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}" KeyDown="txtNombredescuento_KeyDown">
 				<TextBox.CaretBrush>
 					<SolidColorBrush Color="Black" Opacity="0.8"/>
 				</TextBox.CaretBrush>
@@ -106,7 +106,7 @@
 				</TextBox.Background>
 			</TextBox>
 			<Label x:Name="lblDescuento" Content="Descuento:" HorizontalAlignment="Left" Margin="24,241,0,0" VerticalAlignment="Top" Height="38" Width="125" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center"/>
-			<TextBox x:Name="txtDescuento" HorizontalAlignment="Left" Margin="177,241,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="38" TextAlignment="Left" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}">
+			<TextBox x:Name="txtDescuento" HorizontalAlignment="Left" Margin="177,241,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="38" TextAlignment="Left" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}" KeyDown="txtDescuento_KeyDown">
 				<TextBox.CaretBrush>
 					<SolidColorBrush Color="Black" Opacity="0.8"/>
 				</TextBox.CaretBrush>
@@ -115,7 +115,7 @@
 				</TextBox.Background>
 			</TextBox>
 		</Grid>
-		<DataGrid x:Name="dgCaja" Margin="601,122,105,273" FontFamily="Century Gothic" FontSize="16">
+		<DataGrid x:Name="dgDescuentoA" Margin="601,122,105,273" FontFamily="Century Gothic" FontSize="16">
 			<DataGrid.BorderBrush>
 				<SolidColorBrush Color="#FF688CAF" Opacity="0.2"/>
 			</DataGrid.BorderBrush>

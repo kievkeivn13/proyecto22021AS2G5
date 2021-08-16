@@ -1,0 +1,27 @@
+﻿<Window x:Class="PrototipoLaboratorio.rptPaciente"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PrototipoLaboratorio"
+        mc:Ignorable="d"
+        Title="rptPaciente" Height="450" Width="976">
+    <Grid>
+        <DataGrid Name="dataGrid" HorizontalAlignment="Center" Margin="0,34,0,60" Width="956" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding id}" ClipboardContentBinding="{x:Null}" Header="Id" IsReadOnly="True" Width="50"/>
+                <DataGridTextColumn Binding="{Binding cui}" ClipboardContentBinding="{x:Null}" Header="CUI" IsReadOnly="True" Width="100"/>
+                <DataGridTextColumn Binding="{Binding nit}" ClipboardContentBinding="{x:Null}" Header="NIT" IsReadOnly="True" Width="90"/>
+                <DataGridTextColumn Binding="{Binding nombre}" ClipboardContentBinding="{x:Null}" Header="Nombre" IsReadOnly="True" Width="90"/>
+                <DataGridTextColumn Binding="{Binding apellido}" ClipboardContentBinding="{x:Null}" Header="Apellido" IsReadOnly="True" Width="90"/>
+                <DataGridTextColumn Binding="{Binding genero}" ClipboardContentBinding="{x:Null}" Header="Genero" IsReadOnly="True" Width="50"/>
+                <DataGridTextColumn Binding="{Binding edad}" ClipboardContentBinding="{x:Null}" Header="Edad" IsReadOnly="True" Width="40"/>
+                <DataGridTextColumn Binding="{Binding telefono}" ClipboardContentBinding="{x:Null}" Header="Telefono" IsReadOnly="True" Width="60"/>
+                <DataGridTextColumn Binding="{Binding direccion}" ClipboardContentBinding="{x:Null}" Header="Direccion" IsReadOnly="True" Width="100"/>
+                <DataGridTextColumn Binding="{Binding email}" ClipboardContentBinding="{x:Null}" Header="Email" IsReadOnly="True" Width="80"/>
+                <DataGridTextColumn Binding="{Binding status}" ClipboardContentBinding="{x:Null}" Header="Status" IsReadOnly="True" Width="45"/>
+                <DataGridTextColumn Binding="{Binding seguro}" ClipboardContentBinding="{x:Null}" Header="Seguro" IsReadOnly="True" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

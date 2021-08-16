@@ -10,6 +10,9 @@
     <Compile Update="loginscreen.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Ventanas\wpfGestionarEtiqueta.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Ventanas\wpfGestorcaja.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -19,12 +22,18 @@
     <Compile Update="Ventanas\wpfTipocambio.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Ventanas\wpfVentanaAyuda.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="loginscreen.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="rptPaciente.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Ventanas\Examen.xaml">
@@ -48,7 +57,13 @@
     <Page Update="Ventanas\wpfAseguradoras.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Ventanas\wpfCotizaciones.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Ventanas\wpfEmpleados.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Ventanas\wpfGestionarEtiqueta.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Ventanas\wpfGestorcaja.xaml">
@@ -73,6 +88,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Ventanas\wpfTipocambio.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Ventanas\wpfVentanaAyuda.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
